@@ -34,7 +34,15 @@ export function Lightbox({ items, index, onClose, onNav }: Props) {
       {item && (
         <div className="lightbox__inner" key={index}>
           <div className="lightbox__media">
-            <Image src={item.image} alt={item.caption ?? item.title} placeholder="blur" sizes="(max-width: 760px) 100vw, 80vw" quality={90} />
+            <Image
+              src={item.image}
+              alt={item.caption ?? item.title}
+              placeholder="blur"
+              sizes="(max-width: 760px) 100vw, 80vw"
+              quality={90}
+              // never enlarge past the file's real size, so small pieces stay sharp
+              style={{ maxWidth: `min(100%, ${item.image.width}px)` }}
+            />
           </div>
           <div className="lightbox__bar">
             <div>
