@@ -897,7 +897,7 @@ export const experience = [
     company: "EURL Flash Graphic",
     href: "https://www.flashgraphic.net",
     role: "Multidisciplinary Graphic Designer & Social Media Manager",
-    period: "09/2022 — 03/2025",
+    period: "09/2021 — 03/2024",
     points: [
       "Developed branding materials, packaging designs and marketing visuals.",
       "Designed and managed social media content for Facebook, Instagram and LinkedIn.",
