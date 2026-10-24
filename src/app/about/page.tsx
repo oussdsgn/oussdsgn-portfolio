@@ -73,6 +73,10 @@ export default function AboutPage() {
             <Reveal className="tools" delay={120}>
               <h3 className="tools__title">Toolkit</h3>
               <ul className="tools__list">{about.tools.map((t) => <li key={t}>{t}</li>)}</ul>
+              <h3 className="tools__title tools__title--next">AI & generative tools</h3>
+              <ul className="tools__list">{about.aiTools.map((t) => <li key={t}>{t}</li>)}</ul>
+              <h3 className="tools__title tools__title--next">Languages</h3>
+              <ul className="tools__list">{about.languages.map((t) => <li key={t}>{t}</li>)}</ul>
             </Reveal>
           </div>
         </div>

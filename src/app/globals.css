@@ -718,6 +718,7 @@ ul, ol { list-style: none; padding: 0; }
 .edu__note { margin-top: 10px; max-width: 520px; font-size: 16px; font-weight: 500; line-height: 1.4; }
 .tools { padding-top: 30px; }
 .tools__title { margin-bottom: 16px; font-size: 16px; font-weight: 500; color: var(--grey); }
+.tools__title--next { margin-top: 28px; }
 .tools__list { display: flex; flex-wrap: wrap; gap: 8px; }
 .tools__list li { padding: 9px 16px; border: 1px solid var(--line); border-radius: 999px; font-size: 16px; font-weight: 500; }
 

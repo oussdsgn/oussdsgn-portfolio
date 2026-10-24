@@ -768,7 +768,7 @@ export const stats: Stat[] = [
   { value: 7, suffix: "+", label: "years of experience", text: "Branding, social media, print and UI/UX design since 2017." },
   { value: 14, suffix: "+", label: "brands & clients", text: "From Heetch and Beko to AMS Groupe and INPHA-MédiS." },
   { value: 2.7, decimals: 1, suffix: "K+", label: "stock assets published", text: "Graphic assets designed for Freepik and Adobe Stock." },
-  { value: 46, suffix: "K+", label: "downloads worldwide", text: "Assets downloaded by designers around the world." },
+  { value: 85, suffix: "K+", label: "downloads worldwide", text: "Assets downloaded by designers around the world." },
 ];
 
 // Newest first
@@ -875,32 +875,57 @@ export const about = {
     "Hi, I’m Ouss — a multidisciplinary graphic designer with 7+ years of experience across branding, visual communication, UI/UX design and social media content. I strengthen brand identities, grow engagement and deliver high-impact digital and print work.",
   approach:
     "I believe great design sits at the intersection of function and emotion. Every decision is guided by clarity, usability, and impact—ensuring that the final product communicates effectively while delivering a seamless user experience. AI-assisted tools are part of my process too: they speed up exploration and production, while the craft and the brand always stay in charge.",
-  tools: ["Photoshop", "Illustrator", "InDesign", "After Effects", "Figma", "AI-assisted design"],
+  tools: ["Photoshop", "Illustrator", "InDesign", "Premiere Pro", "Figma", "Framer"],
+  aiTools: ["Adobe Firefly", "ChatGPT", "Gemini", "Leonardo AI", "Freepik AI", "Higgsfield AI", "Google Whisk", "Google AI Studio", "Nano Banana Pro"],
+  languages: ["Arabic", "English", "French", "German"],
 };
 
 export const experience = [
   {
     company: "AMS Group SPA",
     href: "https://amsgroupes.com",
-    role: "Graphic Designer",
+    role: "Multidisciplinary Graphic Designer",
     period: "2024 — Present",
     points: [
       "Create visual assets for digital and print communication.",
-      "Ensure brand consistency across social media and marketing channels.",
+      "Ensure branding consistency across social media and marketing channels.",
       "Support marketing teams with creative concepts and visual execution.",
-      "Integrate AI-assisted tools to speed up concept development, exploration and production while keeping brand integrity.",
+      "Integrate AI-assisted tools to accelerate concept development, visual exploration and production while maintaining brand integrity.",
     ],
   },
   {
-    company: "Flash Graphic",
+    company: "EURL Flash Graphic",
     href: "https://www.flashgraphic.net",
-    role: "Graphic Designer & Community Manager",
-    period: "09/2021 — Present",
+    role: "Multidisciplinary Graphic Designer & Social Media Manager",
+    period: "09/2022 — 03/2025",
     points: [
-      "Responsible for all visual output, from print to web.",
-      "Designed adhesive tapes and aluminium films for manufacturing, and operate the Roland large-format printer.",
-      "Run the brand and its social presence on Facebook, Instagram and LinkedIn, plus the website and Ouedkniss store page.",
-      "Improved customer service by 30% in six months through strategic social media campaigns, and increased product demand through paid ads.",
+      "Developed branding materials, packaging designs and marketing visuals.",
+      "Designed and managed social media content for Facebook, Instagram and LinkedIn.",
+      "Increased customer engagement by 30% within 6 months through targeted campaigns.",
+      "Maintained and updated the company website and online store.",
+      "Operated Roland large-format printers and handled pre-press preparation.",
+    ],
+  },
+  {
+    company: "University of Health Sciences, Algiers",
+    role: "Freelance Designer & Design Instructor",
+    period: "02/2022 — 11/2024",
+    points: [
+      "Created visual materials for university programs, events and digital channels.",
+      "Delivered workshops on graphic design fundamentals at the Startup Incubator.",
+      "Supervised student design projects to ensure professional standards.",
+      "Used AI-assisted tools to speed up visual ideation and concept development.",
+    ],
+  },
+  {
+    company: "IB Digital (Belgium, remote)",
+    href: "https://ib-digital.com",
+    role: "UI/UX Designer",
+    period: "02/2022 — 11/2022",
+    points: [
+      "Designed landing pages, website previews and UI components.",
+      "Improved usability and interface consistency across digital platforms.",
+      "Optimized existing websites for better user experience and brand alignment.",
     ],
   },
   {
@@ -909,26 +934,29 @@ export const experience = [
     // TODO: add the year both accounts closed, e.g. "09/2021 — 2025"
     period: "From 09/2021",
     points: [
-      "Reached Level 3 contributor on Freepik with 2.7K+ published assets and 46.4K+ downloads.",
+      "Reached Level 3 contributor on Freepik with 2.7K+ published assets and 85K+ downloads.",
       "Published 500+ assets on Adobe Stock.",
+      "Created templates, illustrations, patterns, icons and editable resources.",
       "Now selling digital assets directly on Gumroad.",
     ],
   },
   {
-    company: "IB Digital (Belgium)",
-    href: "https://ib-digital.com",
-    role: "UI/UX Designer",
-    period: "02/2022 — 11/2022",
+    company: "AIESEC in Algeria (Tlemcen)",
+    role: "Graphic Designer & Team Leader",
+    period: "02/2019 — 08/2020",
     points: [
-      "Designed website previews and templates proposed to prospective clients.",
-      "Optimized existing websites and landing pages for clients.",
+      "Led a creative team producing digital and print visual materials.",
+      "Designed graphics, event branding and communication assets.",
     ],
   },
   {
-    company: "Merch Digger",
-    role: "Junior Graphic Designer",
+    company: "Merch Digger (Merch by Amazon)",
+    role: "Graphic Designer",
     period: "10/2018 — 08/2020",
-    points: [],
+    points: [
+      "Designed branding materials and visual content for products and marketing.",
+      "Collaborated with team members to maintain a consistent visual identity.",
+    ],
   },
   {
     company: "Freelance",
@@ -944,8 +972,8 @@ export const experience = [
 
 export const education = [
   { school: "International Media Academy", title: "Professional Trainer — Infographic Design", period: "2025", note: "50 hours · MARAS 2025 session. Certified trainer in infographic design and visual information structuring." },
-  { school: "Tlemcen University", title: "Master’s Degree in Sociolinguistics", period: "2018 — 2020" },
-  { school: "Tlemcen University", title: "Bachelor’s Degree in English Language", period: "2015 — 2018" },
+  { school: "University of Tlemcen", title: "Master’s Degree in Sociolinguistics", period: "2018 — 2020", note: "Thesis: Social factors and their effects on language use on the internet." },
+  { school: "University of Tlemcen", title: "Bachelor’s Degree in English Language & Literature", period: "2015 — 2018", note: "Thesis: English between social media and language learners." },
 ] as { school: string; title: string; period: string; note?: string }[];
 
 /**
