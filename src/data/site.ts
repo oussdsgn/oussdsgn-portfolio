@@ -1064,10 +1064,6 @@ export const webProjects = [
     name: "IMMO Agency",
     note: "Resident app (Android & web) and agency dashboard — designed and built",
     url: "https://oussdsgn.github.io/immo-agency/",
-    links: [
-      { label: "Android app", href: "https://github.com/oussdsgn/immo-agency/releases/latest" },
-      { label: "Code", href: "https://github.com/oussdsgn/immo-agency" },
-    ],
     desktop: immoDashboard,
     mobile: immoHome,
     background: "linear-gradient(140deg, #f7c7a8, #e0622a)",
@@ -1076,7 +1072,6 @@ export const webProjects = [
     name: "Benyahia Hicham",
     note: "Portfolio website for an art director — designed and built",
     url: "https://hichembenyahia.vercel.app",
-    links: [{ label: "Code", href: "https://github.com/oussdsgn/hicham-portfolio" }],
     desktop: hichamDesktop,
     mobile: hichamMobile,
     background: "linear-gradient(140deg, #e9e9e9, #bdbdbd)",
