@@ -590,7 +590,7 @@ export const projects: Project[] = [
   {
     slug: "esook",
     title: "eSook",
-    tags: ["Brand Identity", "UI/UX"],
+    tags: ["Brand Identity"],
     image: behance.esook[0],
     services: ["Brand Identity", "UI/UX"],
     year: "2023",
