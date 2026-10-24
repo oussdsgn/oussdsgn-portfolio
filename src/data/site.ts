@@ -1075,6 +1075,7 @@ export const webProjects = [
   {
     name: "Benyahia Hicham",
     note: "Portfolio website for an art director — designed and built",
+    url: "https://hichembenyahia.vercel.app",
     links: [{ label: "Code", href: "https://github.com/oussdsgn/hicham-portfolio" }],
     desktop: hichamDesktop,
     mobile: hichamMobile,
