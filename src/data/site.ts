@@ -110,6 +110,10 @@ import jAlgerian1 from "@/assets/images/journal/algerian-1.jpg";
 import jAlgerian2 from "@/assets/images/journal/algerian-2.jpg";
 import jFraenk1 from "@/assets/images/journal/fraenk-1.jpg";
 import jFraenk2 from "@/assets/images/journal/fraenk-2.jpg";
+import immoDashboard from "@/assets/images/web/immo-dashboard.jpg";
+import immoHome from "@/assets/images/web/immo-home.jpg";
+import hichamDesktop from "@/assets/images/web/hicham-desktop.jpg";
+import hichamMobile from "@/assets/images/web/hicham-mobile.jpg";
 import buzzDesktop from "@/assets/images/web/buzz-desktop.jpg";
 import ibDesktop from "@/assets/images/web/ib-digital-desktop.jpg";
 import ibMobile from "@/assets/images/web/ib-digital-mobile.jpg";
@@ -188,6 +192,7 @@ export const site = {
     { label: "Behance", href: "https://behance.net/oussamaaba" },
     { label: "LinkedIn", href: "https://linkedin.com/in/oussama-aba-tlm" },
     { label: "Instagram", href: "https://instagram.com/oussdesigns/" },
+    { label: "GitHub", href: "https://github.com/oussdsgn" },
   ],
   /** Where to buy work, shown as cards on the Assets Store page */
   stores: [
@@ -1055,11 +1060,31 @@ export const archive: ArchiveGroup[] = [
 
 /** Website projects, shown in laptop / phone mockups on the Works page */
 export const webProjects = [
+  {
+    name: "IMMO Agency",
+    note: "Resident app (Android & web) and agency dashboard — designed and built",
+    url: "https://oussdsgn.github.io/immo-agency/",
+    links: [
+      { label: "Android app", href: "https://github.com/oussdsgn/immo-agency/releases/latest" },
+      { label: "Code", href: "https://github.com/oussdsgn/immo-agency" },
+    ],
+    desktop: immoDashboard,
+    mobile: immoHome,
+    background: "linear-gradient(140deg, #f7c7a8, #e0622a)",
+  },
+  {
+    name: "Benyahia Hicham",
+    note: "Portfolio website for an art director — designed and built",
+    links: [{ label: "Code", href: "https://github.com/oussdsgn/hicham-portfolio" }],
+    desktop: hichamDesktop,
+    mobile: hichamMobile,
+    background: "linear-gradient(140deg, #e9e9e9, #bdbdbd)",
+  },
   { name: "Buzz", note: "Landing page & app — online services marketplace", desktop: buzzDesktop, background: "linear-gradient(140deg, #ff3b7f, #c3004f)" },
   { name: "IB Digital", note: "Agency website", url: "https://ib-digital.com", desktop: ibDesktop, mobile: ibMobile, background: "linear-gradient(140deg, #e9e5ff, #ffe8df)" },
   { name: "Karin Bastin", note: "Consulting website", url: "https://karinbastin.com", desktop: kbDesktop, mobile: kbMobile, background: "linear-gradient(140deg, #24314a, #0c1220)" },
   { name: "AMS Groupe", note: "Group website & subsidiaries", url: "https://amsgroupes.com", desktop: amsDesktop, mobile: amsMobile, background: "linear-gradient(140deg, #2a63c4, #0a2a66)" },
-] as { name: string; note: string; url?: string; desktop: StaticImageData; mobile?: StaticImageData; background: string }[];
+] as { name: string; note: string; url?: string; links?: { label: string; href: string }[]; desktop: StaticImageData; mobile?: StaticImageData; background: string }[];
 
 /**
  * Products shown under the store cards on the Assets Store page (hidden while empty).

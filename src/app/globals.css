@@ -834,6 +834,8 @@ ul, ol { list-style: none; padding: 0; }
 @media (pointer: coarse) { .web-card__hit { cursor: zoom-in; } }
 .web-card__meta { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 18px; }
 .web-card__name { font-size: 22px; font-weight: 600; letter-spacing: -0.05em; }
+.web-card__links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.cs-link--ghost { border-color: var(--line); }
 .web-card__note { margin-top: 2px; font-size: 15px; font-weight: 500; color: var(--grey); }
 .device-scene { position: relative; display: grid; place-items: center; aspect-ratio: 16 / 11; padding: 7% 9% 9%; overflow: hidden; border-radius: var(--radius); background: var(--scene-bg, #ddd); }
 .device-scene.has-phone { padding-right: 15%; }

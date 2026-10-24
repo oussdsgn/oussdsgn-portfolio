@@ -52,7 +52,12 @@ export function ArchivePieces({ group }: { group: ArchiveGroup }) {
                     <h3 className="web-card__name">{w.name}</h3>
                     <p className="web-card__note">{w.note}</p>
                   </div>
-                  {w.url && <a className="cs-link" href={w.url} target="_blank" rel="noopener noreferrer">Visit site <span aria-hidden="true">↗</span></a>}
+                  <div className="web-card__links">
+                    {w.url && <a className="cs-link" href={w.url} target="_blank" rel="noopener noreferrer">Visit site <span aria-hidden="true">↗</span></a>}
+                    {w.links?.map((l) => (
+                      <a key={l.href} className="cs-link cs-link--ghost" href={l.href} target="_blank" rel="noopener noreferrer">{l.label} <span aria-hidden="true">↗</span></a>
+                    ))}
+                  </div>
                 </div>
               </Reveal>
             ))

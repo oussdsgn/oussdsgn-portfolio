@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { archive, projects, workCategories } from "@/data/site";
+import { archive, projects, webProjects, workCategories } from "@/data/site";
 import { ArchivePieces } from "./Archive";
 import { Reveal } from "./Reveal";
 
@@ -29,7 +29,7 @@ export function WorkExplorer() {
   const cat = workCategories.find((k) => k.label === active);
   const shown = cat ? projects.filter((p) => p.tags.some((t) => cat.tags.includes(t))) : projects;
   const group = cat ? archive.find((g) => g.title === cat.archive) : undefined;
-  const pieces = (g?: (typeof archive)[number]) => (g ? (g.kind === "web" ? 4 : g.mocks?.length ?? g.items.length) : 0);
+  const pieces = (g?: (typeof archive)[number]) => (g ? (g.kind === "web" ? webProjects.length : g.mocks?.length ?? g.items.length) : 0);
   const count = (k: (typeof workCategories)[number]) =>
     projects.filter((p) => p.tags.some((t) => k.tags.includes(t))).length + pieces(archive.find((g) => g.title === k.archive));
 
@@ -67,7 +67,7 @@ export function WorkExplorer() {
       {group && (
         <section className="more" key={active} aria-labelledby="more-title">
           <div className="more__head">
-            <h2 id="more-title" className="more__title">{shown.length ? `More ${cat!.label.toLowerCase()}` : cat!.label}</h2>
+            <h2 id="more-title" className="more__title">{shown.length ? `More ${cat!.label}` : cat!.label}</h2>
             <p className="more__note">Click any piece to see it full-size.</p>
           </div>
           <ArchivePieces group={group} />
