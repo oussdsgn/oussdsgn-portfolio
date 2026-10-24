@@ -885,7 +885,7 @@ export const experience = [
     company: "AMS Group SPA",
     href: "https://amsgroupes.com",
     role: "Multidisciplinary Graphic Designer",
-    period: "2024 — Present",
+    period: "03/2024 — Present",
     points: [
       "Create visual assets for digital and print communication.",
       "Ensure branding consistency across social media and marketing channels.",
