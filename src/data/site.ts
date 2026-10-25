@@ -110,6 +110,8 @@ import jAlgerian1 from "@/assets/images/journal/algerian-1.jpg";
 import jAlgerian2 from "@/assets/images/journal/algerian-2.jpg";
 import jFraenk1 from "@/assets/images/journal/fraenk-1.jpg";
 import jFraenk2 from "@/assets/images/journal/fraenk-2.jpg";
+import citeDesktop from "@/assets/images/web/cite-desktop.jpg";
+import citeMobile from "@/assets/images/web/cite-mobile.jpg";
 import immoDashboard from "@/assets/images/web/immo-dashboard.jpg";
 import immoHome from "@/assets/images/web/immo-home.jpg";
 import hichamDesktop from "@/assets/images/web/hicham-desktop.jpg";
@@ -1088,6 +1090,14 @@ export const archive: ArchiveGroup[] = [
 
 /** Website projects, shown in laptop / phone mockups on the Works page */
 export const webProjects = [
+  {
+    name: "La Cité Asiatique",
+    note: "Restaurant website — designed and built",
+    url: "https://la-cit-asiatique-rho.vercel.app",
+    desktop: citeDesktop,
+    mobile: citeMobile,
+    background: "linear-gradient(140deg, #e3263f, #6d0b18)",
+  },
   {
     name: "IMMO Agency",
     note: "Resident app (Android & web) and agency dashboard — designed and built",
