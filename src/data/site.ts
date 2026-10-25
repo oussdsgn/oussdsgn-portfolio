@@ -343,13 +343,33 @@ export const projects: Project[] = [
   {
     slug: "inpha-medis",
     title: "INPHA-MédiS 25th Anniversary",
-    tags: ["Rebrand"],
+    tags: ["Rebrand", "Social Media"],
     image: inpha,
+    services: ["Art Direction", "Branding", "Social Media"],
     year: "2025",
-    // TODO: the Framer page for this project still has template placeholder text — add the real story here.
+    info: [
+      "INPHA-MédiS celebrated 25 years “au service de la santé”. The anniversary called for an identity that marks the milestone while staying true to the company’s established brand.",
+      "The work centres on a “25 years” anniversary mark that sits alongside the INPHA-MédiS logo, carried across print, merchandise, signage and social media throughout the year.",
+    ],
+    // TODO: replace with Oussama's own brief/challenge wording when available.
     blocks: [
       row(1, [{ image: inStationery, alt: "INPHA-MédiS 25th anniversary stationery, mugs, calendar and tote bag" }]),
+      text(
+        "Challenge",
+        "An anniversary needs to feel like a celebration without competing with the main brand. The 25-year mark had to sit naturally next to the existing logo and stay consistent across very different touchpoints — from a business card to the front of a building.",
+      ),
       row(1, [{ image: inBuilding, alt: "INPHA-MédiS 25 years banner on a glass office building at dusk" }]),
+      text(
+        "Solution",
+        "The “25 years” mark uses the brand’s own blue and clean, clinical layouts, so it reads as part of INPHA-MédiS rather than a separate campaign.",
+        "It was applied to stationery, mugs, calendars, tote bags and large-format building signage, and extended into social media posts for national and health awareness days — 1 November, the International Day of Persons with Disabilities, World Diabetes Day and screening campaigns.",
+      ),
+      row(4, [
+        { image: w_post_17, alt: "INPHA-MédiS 1 November post" },
+        { image: w_post_18, alt: "INPHA-MédiS disability day post" },
+        { image: w_post_19, alt: "INPHA-MédiS world diabetes day post" },
+        { image: w_post_20, alt: "INPHA-MédiS screening post" },
+      ]),
     ],
   },
   {
