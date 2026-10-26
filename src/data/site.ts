@@ -110,6 +110,8 @@ import jAlgerian1 from "@/assets/images/journal/algerian-1.jpg";
 import jAlgerian2 from "@/assets/images/journal/algerian-2.jpg";
 import jFraenk1 from "@/assets/images/journal/fraenk-1.jpg";
 import jFraenk2 from "@/assets/images/journal/fraenk-2.jpg";
+import faritDesktop from "@/assets/images/web/farit-desktop.jpg";
+import faritMobile from "@/assets/images/web/farit-mobile.jpg";
 import citeDesktop from "@/assets/images/web/cite-desktop.jpg";
 import citeMobile from "@/assets/images/web/cite-mobile.jpg";
 import immoDashboard from "@/assets/images/web/immo-dashboard.jpg";
@@ -1110,6 +1112,14 @@ export const archive: ArchiveGroup[] = [
 
 /** Website projects, shown in laptop / phone mockups on the Works page */
 export const webProjects = [
+  {
+    name: "FAR-IT",
+    note: "IT recruitment agency website — designed and built",
+    url: "https://far-it.vercel.app",
+    desktop: faritDesktop,
+    mobile: faritMobile,
+    background: "linear-gradient(140deg, #3a3f25, #14171a)",
+  },
   {
     name: "La Cité Asiatique",
     note: "Restaurant website — designed and built",
