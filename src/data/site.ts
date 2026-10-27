@@ -114,7 +114,6 @@ import jFraenk2 from "@/assets/images/journal/fraenk-2.jpg";
 import phPackaging1 from "@/assets/images/placeholders/packaging-1.jpg";
 import phPackaging2 from "@/assets/images/placeholders/packaging-2.jpg";
 import phThumbnails from "@/assets/images/placeholders/thumbnails.jpg";
-import phMotion from "@/assets/images/placeholders/motion.jpg";
 import faritDesktop from "@/assets/images/web/farit-desktop.jpg";
 import faritMobile from "@/assets/images/web/farit-mobile.jpg";
 import citeDesktop from "@/assets/images/web/cite-desktop.jpg";
@@ -210,7 +209,7 @@ export const site = {
     { id: "deviantart", name: "DeviantArt", handle: "deviantart.com/oussdesigns", note: "Artworks & illustration", cta: "See artworks", href: "https://www.deviantart.com/oussdesigns" },
   ] as { id: "gumroad" | "magnific" | "deviantart"; name: string; handle: string; note: string; cta: string; href: string }[],
   images: { hero, portrait },
-  marquee: ["Brand Identity", "Social Media", "Packaging", "Print Design", "UI/UX Design", "Motion Graphics"],
+  marquee: ["Brand Identity", "Social Media", "Packaging", "Print Design", "UI/UX Design"],
 };
 
 export const nav = [
@@ -794,17 +793,6 @@ const allProjects: Project[] = [
       },
     ],
   },
-  {
-    slug: "motion-graphics",
-    title: "Motion Graphics",
-    tags: ["Motion"],
-    image: phMotion,
-    services: ["Motion Graphics"],
-    year: "TODO",
-    draft: true,
-    info: ["TODO: A short intro to the reel — which clients or projects it includes and the tools used."],
-    blocks: [{ type: "video", title: "Motion reel" }],
-  },
 ];
 
 export const projects: Project[] = allProjects.filter((p) => showDrafts || !p.draft);
@@ -829,7 +817,6 @@ export const workCategories: { label: string; tags: string[]; archive?: string }
   { label: "Illustration & Posters", tags: ["Illustration"], archive: "Posters & Apparel" },
   { label: "Web Banners", tags: ["Web Banners"], archive: "Web Banners" },
   { label: "Thumbnails", tags: ["Thumbnails"] },
-  { label: "Motion", tags: ["Motion"] },
 ];
 
 export const services = [
@@ -870,9 +857,9 @@ export const process = [
 export const testimonials: { quote: string; name: string; role: string; image?: StaticImageData }[] = [
   {
     quote:
-      "Working with them was seamless from start to finish. They understood our vision, elevated it with thoughtful design, and delivered results that truly set our brand apart.",
+      "Working with Oussama was seamless from start to finish. They understood our vision, elevated it with thoughtful design, and delivered results that truly set our brand apart.",
     name: "Nihad Ahmed Bensoltane",
-    role: "Head of AMS Agency",
+    role: "Head of AMS Agency · My manager at AMS Group",
     image: nihad,
   },
 ];
