@@ -86,8 +86,7 @@ import w_print_netto_magic from "@/assets/images/work/print-netto-magic.jpg";
 import w_print_netto_star from "@/assets/images/work/print-netto-star.jpg";
 import boxLtFront from "@/assets/images/work/box-latrasse-front.jpg";
 import boxLtSide from "@/assets/images/work/box-latrasse-side.jpg";
-import cutRivanoBuckets from "@/assets/images/work/cut-pack-rivano-buckets.png";
-import cutRivanoPails from "@/assets/images/work/cut-pack-rivano-pails.png";
+import rivanoFixPrimer from "@/assets/images/work/pack-rivano-fix-primer.jpg";
 import cutHoney from "@/assets/images/work/cut-pack-honey-jar.png";
 import cutMedal1 from "@/assets/images/work/cut-medal-1.png";
 import cutMedal2 from "@/assets/images/work/cut-medal-2.png";
@@ -105,10 +104,11 @@ import jAlgerian1 from "@/assets/images/journal/algerian-1.jpg";
 import jAlgerian2 from "@/assets/images/journal/algerian-2.jpg";
 import jFraenk1 from "@/assets/images/journal/fraenk-1.jpg";
 import jFraenk2 from "@/assets/images/journal/fraenk-2.jpg";
-import infBox3d from "@/assets/images/projects/infinix-pubg/box-3d.jpg";
-import infUpright from "@/assets/images/projects/infinix-pubg/box-upright.jpg";
-import infDieline from "@/assets/images/projects/infinix-pubg/dieline.jpg";
-import infMockup from "@/assets/images/projects/infinix-pubg/box-mockup.jpg";
+import infUpright from "@/assets/images/projects/infinix-pubg/box-upright-table.jpg";
+import infUnboxing from "@/assets/images/projects/infinix-pubg/box-unboxing.jpg";
+import infStore from "@/assets/images/projects/infinix-pubg/box-in-store.jpg";
+import infDieline from "@/assets/images/projects/infinix-pubg/dieline-desk.jpg";
+import infLid from "@/assets/images/projects/infinix-pubg/box-lid.jpg";
 import dbFamily from "@/assets/images/projects/doubby-dor/family.jpg";
 import dbPistachio from "@/assets/images/projects/doubby-dor/box-pistachio.jpg";
 import dbGreen from "@/assets/images/projects/doubby-dor/box-green.jpg";
@@ -290,25 +290,28 @@ const allProjects: Project[] = [
     slug: "infinix-pubg",
     title: "Infinix HOT 20S × PUBG Mobile",
     tags: ["Packaging"],
-    image: infBox3d,
+    image: infUpright,
     services: ["Packaging Design", "Art Direction"],
     year: "TODO",
     info: [
       "Special-edition packaging for the Infinix HOT 20S, co-branded with PUBG Mobile. The box had to carry two brands at once: a smartphone maker and one of the best-known mobile games.",
     ],
     blocks: [
-      row(1, [{ image: infUpright, alt: "Infinix HOT 20S × PUBG Mobile special-edition box, standing" }]),
+      row(1, [{ image: infUnboxing, alt: "Infinix HOT 20S × PUBG Mobile box in shrink-wrap on a table" }]),
       text(
         "Challenge",
         "A phone box is usually quiet and product-led. A gaming special edition needs to feel like the game itself, without losing the phone’s own name, key specs and the Infinix brand.",
       ),
-      row(1, [{ image: infDieline, alt: "Flat die-line of the Infinix HOT 20S × PUBG Mobile box" }]),
+      row(1, [{ image: infDieline, alt: "Die-line of the Infinix HOT 20S × PUBG Mobile box with colour swatches on a desk" }]),
       text(
         "Solution",
         "The lid is built around a PUBG character over Infinix teal, with the model name “HOT 20S” set large on the long edge and the key specs — 120Hz FHD+ and 13GB RAM — called out as yellow game-style tags.",
         "Every face of the box has a job: the long side carries the game’s “Winner winner chicken dinner” line with chicken and rifle icons, the end panel carries the Special Edition mark, the top flap repeats the Infinix | PUBG Mobile lock-up, and the bottom flap holds the handling and recycling symbols.",
       ),
-      row(1, [{ image: infMockup, alt: "Infinix HOT 20S × PUBG Mobile box mock-up" }]),
+      row(2, [
+        { image: infStore, alt: "Infinix HOT 20S × PUBG Mobile box held in a phone shop" },
+        { image: infLid, alt: "Infinix HOT 20S × PUBG Mobile box with its lid on" },
+      ], "4 / 3"),
       {
         type: "specs",
         title: "Technical details",
@@ -319,7 +322,6 @@ const allProjects: Project[] = [
           { label: "Printing method", value: "TODO: e.g. offset, digital" },
         ],
       },
-      slots(3, "4 / 5", "Photo of the printed box", "Photo of the printed box", "Photo of the printed box"),
     ],
   },
   {
@@ -1185,8 +1187,7 @@ export const archive: ArchiveGroup[] = [
   { title: "Packaging", kind: "mockups", items: [], mocks: [
     { kind: "box", front: boxLtFront, side: boxLtSide, top: "#0b100d", alt: "La Trasse Dubai chocolate box", bg: "linear-gradient(160deg, #2f5d4a, #0f2a20)" },
     { kind: "product", image: cutHoney, alt: "My Honey “secret recipe” jar", bg: "radial-gradient(90% 80% at 50% 30%, #f6d88a, #d79a2b)" },
-    { kind: "product", image: cutRivanoBuckets, alt: "Rivano Fix Primer paint buckets", bg: "radial-gradient(90% 80% at 50% 30%, #f1f3f8, #c9d0df)" },
-    { kind: "product", image: cutRivanoPails, alt: "Rivano Fix Primer pails", bg: "radial-gradient(90% 80% at 50% 30%, #ffe0dc, #e9a8a0)" },
+    { kind: "photo", image: rivanoFixPrimer, alt: "Rivano Fix Primer paint buckets and pails" },
   ] },
   { title: "Print & Medals", kind: "mockups", items: [], mocks: [
     { kind: "rollups", images: [w_print_netto_magic, w_print_netto_star], alt: "Netto Magic and Netto Star roll-up banners", bg: "linear-gradient(180deg, #f2efe9 0 74%, #ddd6ca 74%)" },
