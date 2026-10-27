@@ -115,6 +115,8 @@ import dbGreen from "@/assets/images/projects/doubby-dor/box-green.jpg";
 import dbDielines from "@/assets/images/projects/doubby-dor/dielines.jpg";
 import dbBar from "@/assets/images/projects/doubby-dor/bar-mockup.jpg";
 import phThumbnails from "@/assets/images/placeholders/thumbnails.jpg";
+import islemDesktop from "@/assets/images/web/islem-desktop.jpg";
+import islemMobile from "@/assets/images/web/islem-mobile.jpg";
 import faritDesktop from "@/assets/images/web/farit-desktop.jpg";
 import faritMobile from "@/assets/images/web/farit-mobile.jpg";
 import citeDesktop from "@/assets/images/web/cite-desktop.jpg";
@@ -1232,6 +1234,14 @@ export const archive: ArchiveGroup[] = [
 
 /** Website projects, shown in laptop / phone mockups on the Works page */
 export const webProjects = [
+  {
+    name: "Rahil Mohamed Islam",
+    note: "Portfolio website for a full-stack developer — designed and built",
+    url: "https://portfolio-islem-one.vercel.app/en",
+    desktop: islemDesktop,
+    mobile: islemMobile,
+    background: "linear-gradient(140deg, #ff8a65, #2a1a14)",
+  },
   {
     name: "FAR-IT",
     note: "IT recruitment agency website — designed and built",
