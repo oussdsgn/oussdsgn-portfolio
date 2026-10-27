@@ -902,7 +902,7 @@ export const process = [
 export const testimonials: { quote: string; name: string; role: string; image?: StaticImageData }[] = [
   {
     quote:
-      "Working with Oussama was seamless from start to finish. They understood our vision, elevated it with thoughtful design, and delivered results that truly set our brand apart.",
+      "Working with Oussama was seamless from start to finish. He understood our vision, elevated it with thoughtful design, and delivered results that truly set our brand apart.",
     name: "Nihad Ahmed Bensoltane",
     role: "Head of AMS Agency · My manager at AMS Group",
     image: nihad,
