@@ -33,25 +33,24 @@ export function ContactForm() {
     const name = `${d.get("first_name")} ${d.get("last_name")}`;
     setStatus("sending");
     try {
-      // Web3Forms emails the message straight to site.email's inbox.
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          access_key: site.formKey,
-          subject: `New project enquiry from ${name}`,
-          from_name: "oussdsgn portfolio",
-          name,
-          email: d.get("email"),
-          message: d.get("message"),
-          botcheck: d.get("botcheck") ? true : "",
-        }),
-      });
+      // Web3Forms emails the message to the inbox the access key was created for.
+      // Sent as plain form data (no custom headers) so the browser makes a
+      // simple request without a CORS preflight.
+      const payload = new FormData();
+      payload.append("access_key", site.formKey);
+      payload.append("subject", `New project enquiry from ${name}`);
+      payload.append("from_name", "oussdsgn portfolio");
+      payload.append("name", name);
+      payload.append("email", String(d.get("email")));
+      payload.append("message", String(d.get("message")));
+      if (d.get("botcheck")) payload.append("botcheck", "on");
+      const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: payload });
       const json = await res.json().catch(() => null);
       if (!res.ok || !json?.success) throw new Error(json?.message || res.statusText);
       setStatus("sent");
       form.reset();
-    } catch {
+    } catch (err) {
+      console.error("Contact form failed:", err);
       setStatus("error");
     }
   };
