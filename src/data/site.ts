@@ -113,7 +113,6 @@ import dbFamily from "@/assets/images/projects/doubby-dor/family.jpg";
 import dbPistachio from "@/assets/images/projects/doubby-dor/box-pistachio.jpg";
 import dbGreen from "@/assets/images/projects/doubby-dor/box-green.jpg";
 import dbDielines from "@/assets/images/projects/doubby-dor/dielines.jpg";
-import dbBar from "@/assets/images/projects/doubby-dor/bar-mockup.jpg";
 import phThumbnails from "@/assets/images/placeholders/thumbnails.jpg";
 import islemDesktop from "@/assets/images/web/islem-desktop.jpg";
 import islemMobile from "@/assets/images/web/islem-mobile.jpg";
@@ -343,13 +342,12 @@ const allProjects: Project[] = [
         "Challenge",
         "Dubai-style pistachio chocolate is a crowded, trend-driven category. The pack had to make the product’s filling and indulgence obvious at a glance, while giving the brand its own recognisable look.",
       ),
-      row(1, [{ image: dbDielines, alt: "Flat die-lines of the Doubby dôr carton in both colourways" }]),
       text(
         "Solution",
         "The front leads with the Doubby dôr mark and a chocolate splash that flows into a cut-through photo of the pistachio-filled bar, over a geometric pattern. A script “Chocolat dubaï” runs along the side panel, and the back carries ingredients in English and Arabic, the nutrition table, barcode and recycling symbols.",
         "Keeping the layout identical and changing only the background colour lets each variant stand out while the two cartons clearly belong together.",
       ),
-      row(1, [{ image: dbBar, alt: "Doubby dôr chocolate bar mock-up on a wooden table" }]),
+      row(1, [{ image: dbDielines, alt: "Flat die-lines of the Doubby dôr carton in both colourways" }]),
       {
         type: "specs",
         title: "Technical details",
