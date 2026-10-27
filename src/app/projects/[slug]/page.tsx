@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CaseStudyBlocks } from "@/components/CaseStudyMedia";
+import { Copy, isTodo } from "@/components/Placeholder";
 import { Reveal } from "@/components/Reveal";
 import { Cta } from "@/components/Cta";
 import { Arrow } from "@/components/Logo";
@@ -39,6 +40,9 @@ export default async function ProjectPage({ params }: Params) {
       <article className="page-top case-study">
         <div className="container">
           <Link className="cs-back" href="/projects"><span aria-hidden="true">←</span> All works</Link>
+          {project.draft && (
+            <p className="cs-draft" role="note">Draft — placeholder content. This page is hidden on the live site until the real content is added.</p>
+          )}
           <h1 className="cs-title"><span className="line"><span>{project.title}</span></span></h1>
 
           <Reveal className="cs-cover">
@@ -54,7 +58,7 @@ export default async function ProjectPage({ params }: Params) {
               {project.year && (
                 <div>
                   <h2 className="cs-label">Year</h2>
-                  <p className="cs-list">{project.year}</p>
+                  <p className={`cs-list ${isTodo(project.year) ? "is-todo" : ""}`}>{project.year}</p>
                 </div>
               )}
               {project.link && (
@@ -66,7 +70,7 @@ export default async function ProjectPage({ params }: Params) {
             {project.info && (
               <Reveal className="cs-info" delay={80}>
                 <h2 className="cs-label">Info</h2>
-                <div className="cs-copy">{project.info.map((p) => <p key={p}>{p}</p>)}</div>
+                <div className="cs-copy">{project.info.map((p) => <Copy key={p} text={p} />)}</div>
               </Reveal>
             )}
           </section>

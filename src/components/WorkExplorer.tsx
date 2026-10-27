@@ -39,7 +39,7 @@ export function WorkExplorer() {
         <button className="filter" aria-pressed={active === ALL} onClick={() => choose(ALL)}>
           All projects<sup>{projects.length}</sup>
         </button>
-        {workCategories.map((k) => (
+        {workCategories.filter((k) => count(k) > 0).map((k) => (
           <button key={k.label} className="filter" aria-pressed={active === k.label} onClick={() => choose(k.label)}>
             {k.label}<sup>{count(k)}</sup>
           </button>

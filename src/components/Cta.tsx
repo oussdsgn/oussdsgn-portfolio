@@ -31,7 +31,7 @@ export function Cta() {
   return (
     <section className="cta" data-header-dark aria-labelledby="cta-title">
       <div ref={bg} className="cta__bg">
-        <Image src={site.images.hero} alt="" fill sizes="100vw" placeholder="blur" style={{ objectFit: "cover", objectPosition: "center 20%" }} />
+        <Image src={site.images.hero} alt="" fill sizes="(max-aspect-ratio: 16/9) 178vh, 100vw" quality={90} placeholder="blur" style={{ objectFit: "cover", objectPosition: "center 20%" }} />
       </div>
       <Reveal className="cta__inner">
         <h2 id="cta-title" className="cta__title">Let’s make something<br />amazing together.</h2>

@@ -1,6 +1,7 @@
 // All site content lives here — edit text, links and images in one place.
 import type { StaticImageData } from "next/image";
 import { behance } from "./behance";
+import { showDrafts } from "./env";
 import type { Mock } from "@/components/Mockups";
 
 import hero from "@/assets/images/hero.jpg";
@@ -110,6 +111,10 @@ import jAlgerian1 from "@/assets/images/journal/algerian-1.jpg";
 import jAlgerian2 from "@/assets/images/journal/algerian-2.jpg";
 import jFraenk1 from "@/assets/images/journal/fraenk-1.jpg";
 import jFraenk2 from "@/assets/images/journal/fraenk-2.jpg";
+import phPackaging1 from "@/assets/images/placeholders/packaging-1.jpg";
+import phPackaging2 from "@/assets/images/placeholders/packaging-2.jpg";
+import phThumbnails from "@/assets/images/placeholders/thumbnails.jpg";
+import phMotion from "@/assets/images/placeholders/motion.jpg";
 import faritDesktop from "@/assets/images/web/farit-desktop.jpg";
 import faritMobile from "@/assets/images/web/farit-mobile.jpg";
 import citeDesktop from "@/assets/images/web/cite-desktop.jpg";
@@ -228,13 +233,22 @@ export const footerLinks = [
  *   { type: "gallery", cols, ratio?, images }      — 1, 2 or 3 images in a row;
  *       `ratio` (e.g. "4 / 5") crops every image in the row to the same shape,
  *       leave it out to show images uncropped.
+ *   { type: "placeholder", cols, ratio, labels }   — marked empty slots for images still to come
+ *   { type: "specs", title, items }                — label / value list, e.g. "Technical details"
+ *   { type: "compare", pairs }                     — before / after image pairs (or placeholders)
+ *   { type: "video", src?, poster?, title }        — muted autoplaying loop (or a placeholder)
+ * Any paragraph or spec value starting with "TODO" is shown as a marked placeholder.
  * Projects without blocks still get a page (cover + services + next project).
  */
 type Shot = { image: StaticImageData; alt: string };
 
 export type ProjectBlock =
   | { type: "text"; title: string; paragraphs: string[] }
-  | { type: "gallery"; cols: 1 | 2 | 3 | 4; ratio?: string; images: Shot[] };
+  | { type: "gallery"; cols: 1 | 2 | 3 | 4; ratio?: string; images: Shot[] }
+  | { type: "placeholder"; cols: 1 | 2 | 3; ratio: string; labels: string[] }
+  | { type: "specs"; title: string; items: { label: string; value: string }[] }
+  | { type: "compare"; pairs: { before?: Shot; after?: Shot; label: string }[] }
+  | { type: "video"; title: string; src?: string; poster?: StaticImageData };
 
 export type Project = {
   slug: string;
@@ -251,8 +265,11 @@ export type Project = {
   info?: string[];
   /** Optional external link shown under the services, e.g. the full Behance case study */
   link?: { label: string; href: string };
+  /** Placeholder project: shown locally and on preview deployments, hidden on the live site */
+  draft?: boolean;
   blocks?: ProjectBlock[];
 };
+
 
 const text = (title: string, ...paragraphs: string[]): ProjectBlock => ({ type: "text", title, paragraphs });
 const row = (cols: 1 | 2 | 3 | 4, images: Shot[], ratio?: string): ProjectBlock => ({ type: "gallery", cols, ratio, images });
@@ -263,9 +280,41 @@ const deck = (slug: string, label: string, cols: 1 | 2, from = 0): ProjectBlock[
   for (let i = 0; i < imgs.length; i += cols) rows.push(row(Math.min(cols, imgs.length - i) as 1 | 2, imgs.slice(i, i + cols)));
   return rows;
 };
+const slots = (cols: 1 | 2 | 3, ratio: string, ...labels: string[]): ProjectBlock => ({ type: "placeholder", cols, ratio, labels });
 const be = (path: string) => ({ label: "Full project on Behance", href: `https://www.behance.net/gallery/${path}` });
 
-export const projects: Project[] = [
+// Draft packaging case study — every TODO waits for Oussama's project details and files.
+const packagingDraft = (n: 1 | 2, image: StaticImageData): Project => ({
+  slug: `packaging-project-${n}`,
+  title: `Packaging Project ${String(n).padStart(2, "0")}`,
+  tags: ["Packaging"],
+  image,
+  services: ["Packaging Design", "Print Production"],
+  year: "TODO",
+  draft: true,
+  info: ["TODO: The brief — client, product, what they asked for and where it is sold."],
+  blocks: [
+    text("Challenge", "TODO: The challenge — shelf competition, constraints, audience, budget or production limits."),
+    slots(1, "16 / 9", "Flat die-line with keylines and bleed"),
+    text("Solution", "TODO: The solution — concept, structure, typography and colour choices, and why they work on shelf."),
+    slots(2, "4 / 3", "3D mockup — front three-quarter view", "3D mockup — second angle or packaging family"),
+    {
+      type: "specs",
+      title: "Technical details",
+      items: [
+        { label: "Colour", value: "TODO: CMYK / Pantone references" },
+        { label: "Material / substrate", value: "TODO: e.g. board type and weight" },
+        { label: "Finishes", value: "TODO: e.g. hot foil, spot UV, embossing, lamination" },
+        { label: "Printing method", value: "TODO: e.g. offset, flexo, digital" },
+      ],
+    },
+    slots(3, "4 / 5", "Photo of the printed product", "Photo of the printed product", "Photo of the printed product"),
+  ],
+});
+
+const allProjects: Project[] = [
+  packagingDraft(1, phPackaging1),
+  packagingDraft(2, phPackaging2),
   {
     slug: "adem-fitt",
     title: "Adem Fitt Group",
@@ -721,9 +770,50 @@ export const projects: Project[] = [
     link: be("147436869/Animal-shapes-logo-concepts"),
     blocks: deck("animal-logos", "Animal shapes logo concepts", 1, 1),
   },
+  {
+    slug: "youtube-thumbnails",
+    title: "YouTube Thumbnails",
+    tags: ["Thumbnails"],
+    image: phThumbnails,
+    services: ["Thumbnail Design", "Art Direction"],
+    year: "TODO",
+    draft: true,
+    info: [
+      "A thumbnail has a split second to earn the click, usually at phone size in a crowded feed. These redesigns put the original next to my version.",
+      "Each one is built for click-through and readability on mobile: one clear focal point, a short line of text that stays legible at small sizes, and strong contrast between subject and background.",
+    ],
+    blocks: [
+      {
+        type: "compare",
+        pairs: [
+          { label: "TODO: Thumbnail 1 — channel / video title" },
+          { label: "TODO: Thumbnail 2 — channel / video title" },
+          { label: "TODO: Thumbnail 3 — channel / video title" },
+          { label: "TODO: Thumbnail 4 — channel / video title" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "motion-graphics",
+    title: "Motion Graphics",
+    tags: ["Motion"],
+    image: phMotion,
+    services: ["Motion Graphics"],
+    year: "TODO",
+    draft: true,
+    info: ["TODO: A short intro to the reel — which clients or projects it includes and the tools used."],
+    blocks: [{ type: "video", title: "Motion reel" }],
+  },
 ];
 
+export const projects: Project[] = allProjects.filter((p) => showDrafts || !p.draft);
+
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);
+
+/** Home page "Selected works", in this order (draft projects are skipped on the live site). */
+const selectedSlugs = ["packaging-project-1", "adem-fitt", "packaging-project-2", "heetch", "inpha-medis", "ultra-rapide", "twsel", "innovea"];
+export const selectedWorks: Project[] = selectedSlugs.map(getProject).filter((p): p is Project => !!p);
 
 /**
  * Categories on the Works page. Each one shows the case studies whose tags match,
@@ -738,6 +828,8 @@ export const workCategories: { label: string; tags: string[]; archive?: string }
   { label: "UI/UX & Web", tags: ["UI/UX", "Web"], archive: "UI/UX & Web" },
   { label: "Illustration & Posters", tags: ["Illustration"], archive: "Posters & Apparel" },
   { label: "Web Banners", tags: ["Web Banners"], archive: "Web Banners" },
+  { label: "Thumbnails", tags: ["Thumbnails"] },
+  { label: "Motion", tags: ["Motion"] },
 ];
 
 export const services = [
@@ -775,7 +867,7 @@ export const process = [
 ];
 
 // Add more testimonials here — the slider arrows enable themselves.
-export const testimonials = [
+export const testimonials: { quote: string; name: string; role: string; image?: StaticImageData }[] = [
   {
     quote:
       "Working with them was seamless from start to finish. They understood our vision, elevated it with thoughtful design, and delivered results that truly set our brand apart.",

@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <>
       <section className="about-hero" data-header-dark aria-hidden="true">
-        <Image src={site.images.hero} alt="" fill priority placeholder="blur" sizes="100vw" style={{ objectFit: "cover", objectPosition: "center 18%" }} />
+        <Image src={site.images.hero} alt="" fill priority placeholder="blur" sizes="(max-aspect-ratio: 16/9) 178vh, 100vw" quality={90} style={{ objectFit: "cover", objectPosition: "center 18%" }} />
       </section>
 
       <section className="about-intro">

@@ -10,10 +10,12 @@ export function Testimonials() {
   const many = testimonials.length > 1;
 
   return (
-    <div className="testimonial">
-      <div className="testimonial__media">
-        <Image key={t.name} className="fade-swap" src={t.image} alt={t.name} placeholder="blur" sizes="(max-width: 760px) 100vw, 40vw" />
-      </div>
+    <div className={`testimonial ${t.image ? "" : "testimonial--no-photo"}`}>
+      {t.image && (
+        <div className="testimonial__media">
+          <Image key={t.name} className="fade-swap" src={t.image} alt={t.name} placeholder="blur" sizes="(max-width: 760px) 100vw, 40vw" />
+        </div>
+      )}
       <figure className="testimonial__body">
         <blockquote key={t.quote} className="testimonial__quote fade-swap">“{t.quote}”</blockquote>
         <figcaption className="testimonial__foot">

@@ -32,12 +32,12 @@ export function Hero() {
   return (
     <section className="hero" data-header-dark aria-labelledby="hero-title">
       <div ref={media} className="hero__media">
-        <Image className="hero__img" src={site.images.hero} alt="" fill priority placeholder="blur" sizes="100vw" />
+        <Image className="hero__img" src={site.images.hero} alt="" fill priority placeholder="blur" sizes="(max-aspect-ratio: 16/9) 178vh, 100vw" quality={90} />
       </div>
       <div ref={content} className="hero__inner container">
         <p className="hero__services">
           <span className="line"><span>Brand Design</span></span>
-          <span className="line"><span>Web Design</span></span>
+          <span className="line"><span>Packaging &amp; Print</span></span>
           <span className="line"><span>Graphic Design</span></span>
         </p>
         <p className="hero__tagline">

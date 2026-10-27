@@ -5,6 +5,7 @@ import { useCallback, useMemo, useState, type CSSProperties } from "react";
 import type { ProjectBlock } from "@/data/site";
 import { Lightbox, type LightboxItem } from "./Lightbox";
 import { Reveal } from "./Reveal";
+import { Copy, isTodo, Slot } from "./Placeholder";
 
 const SIZES = { 1: "(max-width: 760px) 100vw, 1440px", 2: "(max-width: 760px) 100vw, 50vw", 3: "(max-width: 760px) 100vw, 33vw", 4: "(max-width: 760px) 50vw, 25vw" };
 
@@ -27,9 +28,62 @@ export function CaseStudyBlocks({ blocks, title }: { blocks: ProjectBlock[]; tit
             <section key={i} className="cs-row cs-text">
               <Reveal as="h2" className="cs-label">{b.title}</Reveal>
               <Reveal className="cs-copy" delay={80}>
-                {b.paragraphs.map((p) => <p key={p}>{p}</p>)}
+                {b.paragraphs.map((p) => <Copy key={p} text={p} />)}
               </Reveal>
             </section>
+          );
+        if (b.type === "placeholder")
+          return (
+            <div key={i} className={`cs-gallery cs-gallery--${b.cols}`}>
+              {b.labels.map((l, j) => <Slot key={j} label={l} ratio={b.ratio} />)}
+            </div>
+          );
+        if (b.type === "specs")
+          return (
+            <section key={i} className="cs-row cs-text">
+              <Reveal as="h2" className="cs-label">{b.title}</Reveal>
+              <Reveal as="dl" className="cs-specs" delay={80}>
+                {b.items.map((it) => (
+                  <div key={it.label} className="cs-specs__row">
+                    <dt>{it.label}</dt>
+                    <dd className={isTodo(it.value) ? "is-todo" : undefined}>{it.value}</dd>
+                  </div>
+                ))}
+              </Reveal>
+            </section>
+          );
+        if (b.type === "compare")
+          return (
+            <div key={i} className="cs-compare">
+              {b.pairs.map((pair, j) => (
+                <Reveal key={j} className="cs-compare__pair" delay={(j % 2) * 90}>
+                  {(["before", "after"] as const).map((side) => {
+                    const shot = pair[side];
+                    return (
+                      <figure key={side} className="cs-compare__side">
+                        {shot ? (
+                          <Image src={shot.image} alt={shot.alt} placeholder="blur" sizes="(max-width: 760px) 50vw, 25vw" quality={90} />
+                        ) : (
+                          <Slot label={side === "before" ? "Original thumbnail" : "My redesign"} ratio="16 / 9" />
+                        )}
+                        <figcaption>{side === "before" ? "Original" : "Redesign"}</figcaption>
+                      </figure>
+                    );
+                  })}
+                  <p className={`cs-compare__label ${isTodo(pair.label) ? "is-todo" : ""}`}>{pair.label}</p>
+                </Reveal>
+              ))}
+            </div>
+          );
+        if (b.type === "video")
+          return (
+            <Reveal key={i} className="cs-video">
+              {b.src ? (
+                <video src={b.src} poster={b.poster?.src} autoPlay muted loop playsInline preload="metadata" aria-label={b.title} />
+              ) : (
+                <Slot label={`${b.title} — video file (MP4) and poster image`} ratio="16 / 9" />
+              )}
+            </Reveal>
           );
         return (
           <div

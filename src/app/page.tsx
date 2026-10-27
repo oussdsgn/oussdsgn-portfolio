@@ -12,7 +12,7 @@ import { ArticleCard } from "@/components/ArticleCard";
 import { Cta } from "@/components/Cta";
 import { Arrow } from "@/components/Logo";
 import { Phone } from "@/components/DeviceMockup";
-import { articles, process, projects, services, site, stats } from "@/data/site";
+import { articles, process, selectedWorks, services, site, stats } from "@/data/site";
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
       <section className="works">
         <div className="container">
           <SectionLabel index="03" title="Selected Works" />
-          <WorkGallery items={projects.slice(0, 6)} />
+          <WorkGallery items={selectedWorks} />
           <div className="works__more"><Link className="btn" href="/projects">All works <Arrow /></Link></div>
         </div>
       </section>
