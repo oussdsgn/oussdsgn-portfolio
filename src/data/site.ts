@@ -87,7 +87,7 @@ import w_print_netto_star from "@/assets/images/work/print-netto-star.jpg";
 import boxLtFront from "@/assets/images/work/box-latrasse-front.jpg";
 import boxLtSide from "@/assets/images/work/box-latrasse-side.jpg";
 import rivanoFixPrimer from "@/assets/images/work/pack-rivano-fix-primer.jpg";
-import cutHoney from "@/assets/images/work/cut-pack-honey-jar.png";
+import honeyJar from "@/assets/images/work/pack-my-honey.jpg";
 import cutMedal1 from "@/assets/images/work/cut-medal-1.png";
 import cutMedal2 from "@/assets/images/work/cut-medal-2.png";
 import cutMedal3 from "@/assets/images/work/cut-medal-3.png";
@@ -1186,7 +1186,7 @@ export const archive: ArchiveGroup[] = [
   ] },
   { title: "Packaging", kind: "mockups", items: [], mocks: [
     { kind: "box", front: boxLtFront, side: boxLtSide, top: "#0b100d", alt: "La Trasse Dubai chocolate box", bg: "linear-gradient(160deg, #2f5d4a, #0f2a20)" },
-    { kind: "product", image: cutHoney, alt: "My Honey “secret recipe” jar", bg: "radial-gradient(90% 80% at 50% 30%, #f6d88a, #d79a2b)" },
+    { kind: "photo", image: honeyJar, alt: "My Honey “secret recipe” jar" },
     { kind: "photo", image: rivanoFixPrimer, alt: "Rivano Fix Primer paint buckets and pails" },
   ] },
   { title: "Print & Medals", kind: "mockups", items: [], mocks: [
