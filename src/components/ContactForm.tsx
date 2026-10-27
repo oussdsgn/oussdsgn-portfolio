@@ -14,11 +14,13 @@ function validate(d: FormData): Errors {
   return e;
 }
 
+type Status = "idle" | "sending" | "sent" | "error";
+
 export function ContactForm() {
   const [errors, setErrors] = useState<Errors>({});
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
 
-  const onSubmit = (ev: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (ev: FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
     const form = ev.currentTarget;
     const d = new FormData(form);
@@ -29,11 +31,29 @@ export function ContactForm() {
       return;
     }
     const name = `${d.get("first_name")} ${d.get("last_name")}`;
-    const subject = `New project enquiry from ${name}`;
-    const body = `${d.get("message")}\n\n— ${name} (${d.get("email")})`;
-    window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    setSent(true);
-    form.reset();
+    setStatus("sending");
+    try {
+      // Web3Forms emails the message straight to site.email's inbox.
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: site.formKey,
+          subject: `New project enquiry from ${name}`,
+          from_name: "oussdsgn portfolio",
+          name,
+          email: d.get("email"),
+          message: d.get("message"),
+          botcheck: d.get("botcheck") ? true : "",
+        }),
+      });
+      const json = await res.json().catch(() => null);
+      if (!res.ok || !json?.success) throw new Error(json?.message || res.statusText);
+      setStatus("sent");
+      form.reset();
+    } catch {
+      setStatus("error");
+    }
   };
 
   const field = (name: keyof Errors, label: string, props: Record<string, string>, full = false, area = false) => (
@@ -54,11 +74,16 @@ export function ContactForm() {
       {field("last_name", "Last name", { placeholder: "Doe", autoComplete: "family-name" })}
       {field("email", "Email", { type: "email", placeholder: "you@company.com", autoComplete: "email" }, true)}
       {field("message", "Message", { placeholder: "Tell me about your project, timeline and budget…" }, true, true)}
-      <button className="form__submit" type="submit">
-        <span>Submit</span>
+      {/* honeypot: hidden from people, bots fill it in */}
+      <input type="checkbox" name="botcheck" className="form__trap" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+      <button className="form__submit" type="submit" disabled={status === "sending"}>
+        <span>{status === "sending" ? "Sending…" : "Submit"}</span>
       </button>
-      <p className="form__status" role="status">
-        {sent && "Thanks! Your mail app should open with the message ready to send."}
+      <p className={`form__status ${status === "error" ? "is-error" : ""}`} role="status">
+        {status === "sent" && "Thanks! Your message has been sent — I’ll get back to you soon."}
+        {status === "error" && (
+          <>Sorry, the message couldn’t be sent. Please email me directly at <a href={`mailto:${site.email}`}>{site.email}</a>.</>
+        )}
       </p>
     </form>
   );

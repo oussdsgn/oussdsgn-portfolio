@@ -991,6 +991,10 @@ p.cs-list.is-todo { display: inline-block; }
 .form__submit:hover { color: var(--white); }
 .form__submit:hover::before { transform: none; }
 .form__status { grid-column: 1 / -1; margin-top: -30px; min-height: 1em; color: var(--grey-light); }
+.form__status.is-error { color: var(--error); }
+.form__status a { text-decoration: underline; }
+.form__submit:disabled { opacity: 0.6; cursor: progress; }
+.form__trap { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 
 /* 404 */
 .not-found { display: grid; align-items: center; min-height: 100svh; padding: 120px 0; }

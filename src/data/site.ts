@@ -195,8 +195,10 @@ export const site = {
   city: "Algiers",
   timeZone: "Africa/Algiers",
   year: 2026,
-  // Where the contact form sends messages (opens the visitor's mail app).
   email: "oussamaaba1@outlook.com",
+  // Web3Forms access key — the contact form delivers to the inbox this key was
+  // created for. It is meant to be public (it can only send to that inbox).
+  formKey: "ee8a8da1-dce7-46d1-94a7-f5d170b1af73",
   phone: "+213 777 58 59 66",
   socials: [
     { label: "Behance", href: "https://behance.net/oussamaaba" },

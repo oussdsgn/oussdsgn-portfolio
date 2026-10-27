@@ -19,7 +19,7 @@ All text, links, projects, articles, stats and testimonials are in **`src/data/s
 
 - **Images:** replace files in `src/assets/images/` with the originals, keeping the same filenames. Next.js resizes them, converts them to AVIF/WebP and generates the blur-up placeholders automatically.
 - **Socials:** the `socials` list in `site.ts`.
-- **Contact email:** `site.email` in `site.ts`. The form opens the visitor's mail app with the message already written.
+- **Contact form:** sends through Web3Forms (`site.formKey` in `site.ts`) straight to the inbox the key was created for. `site.email` is shown as a fallback if sending fails.
 - **Testimonials:** add entries to the `testimonials` array; the slider arrows appear automatically.
 - **Projects:** add an entry to `projects`. Its tags feed the filter buttons on /projects.
 - **Case studies:** each project's `blocks` mix text sections and image rows (1–4 columns); `link` adds a Behance button.
