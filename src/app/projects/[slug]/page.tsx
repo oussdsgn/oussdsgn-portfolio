@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CaseStudyBlocks } from "@/components/CaseStudyMedia";
 import { Copy, isTodo } from "@/components/Placeholder";
+import { showDrafts } from "@/data/env";
 import { Reveal } from "@/components/Reveal";
 import { Cta } from "@/components/Cta";
 import { Arrow } from "@/components/Logo";
@@ -55,7 +56,7 @@ export default async function ProjectPage({ params }: Params) {
                 <h2 className="cs-label">Services</h2>
                 <ul className="cs-list">{services.map((s) => <li key={s}>{s}</li>)}</ul>
               </div>
-              {project.year && (
+              {project.year && (showDrafts || !isTodo(project.year)) && (
                 <div>
                   <h2 className="cs-label">Year</h2>
                   <p className={`cs-list ${isTodo(project.year) ? "is-todo" : ""}`}>{project.year}</p>

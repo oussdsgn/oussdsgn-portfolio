@@ -6,6 +6,7 @@ import type { ProjectBlock } from "@/data/site";
 import { Lightbox, type LightboxItem } from "./Lightbox";
 import { Reveal } from "./Reveal";
 import { Copy, isTodo, Slot } from "./Placeholder";
+import { showDrafts } from "@/data/env";
 
 const SIZES = { 1: "(max-width: 760px) 100vw, 1440px", 2: "(max-width: 760px) 100vw, 50vw", 3: "(max-width: 760px) 100vw, 33vw", 4: "(max-width: 760px) 50vw, 25vw" };
 
@@ -33,17 +34,19 @@ export function CaseStudyBlocks({ blocks, title }: { blocks: ProjectBlock[]; tit
             </section>
           );
         if (b.type === "placeholder")
-          return (
+          return !showDrafts ? null : (
             <div key={i} className={`cs-gallery cs-gallery--${b.cols}`}>
               {b.labels.map((l, j) => <Slot key={j} label={l} ratio={b.ratio} />)}
             </div>
           );
-        if (b.type === "specs")
+        if (b.type === "specs") {
+          const rows = b.items.filter((it) => showDrafts || !isTodo(it.value));
+          if (!rows.length) return null;
           return (
             <section key={i} className="cs-row cs-text">
               <Reveal as="h2" className="cs-label">{b.title}</Reveal>
               <Reveal as="dl" className="cs-specs" delay={80}>
-                {b.items.map((it) => (
+                {rows.map((it) => (
                   <div key={it.label} className="cs-specs__row">
                     <dt>{it.label}</dt>
                     <dd className={isTodo(it.value) ? "is-todo" : undefined}>{it.value}</dd>
@@ -52,6 +55,7 @@ export function CaseStudyBlocks({ blocks, title }: { blocks: ProjectBlock[]; tit
               </Reveal>
             </section>
           );
+        }
         if (b.type === "compare")
           return (
             <div key={i} className="cs-compare">

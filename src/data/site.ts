@@ -33,8 +33,6 @@ import w_logo_12 from "@/assets/images/work/logo-12.png";
 import w_logo_13 from "@/assets/images/work/logo-13.png";
 import w_logo_14 from "@/assets/images/work/logo-14.png";
 import w_logo_15 from "@/assets/images/work/logo-15.png";
-import w_pack_doubby_mockup from "@/assets/images/work/pack-doubby-mockup.jpg";
-import w_pack_infinix_box from "@/assets/images/work/pack-infinix-box.jpg";
 import w_post_01 from "@/assets/images/work/post-01.jpg";
 import w_post_02 from "@/assets/images/work/post-02.jpg";
 import w_post_03 from "@/assets/images/work/post-03.jpg";
@@ -88,10 +86,6 @@ import w_print_netto_magic from "@/assets/images/work/print-netto-magic.jpg";
 import w_print_netto_star from "@/assets/images/work/print-netto-star.jpg";
 import boxLtFront from "@/assets/images/work/box-latrasse-front.jpg";
 import boxLtSide from "@/assets/images/work/box-latrasse-side.jpg";
-import boxDyFront from "@/assets/images/work/box-doubby-y-front.jpg";
-import boxDySide from "@/assets/images/work/box-doubby-y-side.jpg";
-import boxDgFront from "@/assets/images/work/box-doubby-g-front.jpg";
-import boxDgSide from "@/assets/images/work/box-doubby-g-side.jpg";
 import cutRivanoBuckets from "@/assets/images/work/cut-pack-rivano-buckets.png";
 import cutRivanoPails from "@/assets/images/work/cut-pack-rivano-pails.png";
 import cutHoney from "@/assets/images/work/cut-pack-honey-jar.png";
@@ -111,8 +105,15 @@ import jAlgerian1 from "@/assets/images/journal/algerian-1.jpg";
 import jAlgerian2 from "@/assets/images/journal/algerian-2.jpg";
 import jFraenk1 from "@/assets/images/journal/fraenk-1.jpg";
 import jFraenk2 from "@/assets/images/journal/fraenk-2.jpg";
-import phPackaging1 from "@/assets/images/placeholders/packaging-1.jpg";
-import phPackaging2 from "@/assets/images/placeholders/packaging-2.jpg";
+import infBox3d from "@/assets/images/projects/infinix-pubg/box-3d.jpg";
+import infUpright from "@/assets/images/projects/infinix-pubg/box-upright.jpg";
+import infDieline from "@/assets/images/projects/infinix-pubg/dieline.jpg";
+import infMockup from "@/assets/images/projects/infinix-pubg/box-mockup.jpg";
+import dbFamily from "@/assets/images/projects/doubby-dor/family.jpg";
+import dbPistachio from "@/assets/images/projects/doubby-dor/box-pistachio.jpg";
+import dbGreen from "@/assets/images/projects/doubby-dor/box-green.jpg";
+import dbDielines from "@/assets/images/projects/doubby-dor/dielines.jpg";
+import dbBar from "@/assets/images/projects/doubby-dor/bar-mockup.jpg";
 import phThumbnails from "@/assets/images/placeholders/thumbnails.jpg";
 import faritDesktop from "@/assets/images/web/farit-desktop.jpg";
 import faritMobile from "@/assets/images/web/farit-mobile.jpg";
@@ -282,38 +283,82 @@ const deck = (slug: string, label: string, cols: 1 | 2, from = 0): ProjectBlock[
 const slots = (cols: 1 | 2 | 3, ratio: string, ...labels: string[]): ProjectBlock => ({ type: "placeholder", cols, ratio, labels });
 const be = (path: string) => ({ label: "Full project on Behance", href: `https://www.behance.net/gallery/${path}` });
 
-// Draft packaging case study — every TODO waits for Oussama's project details and files.
-const packagingDraft = (n: 1 | 2, image: StaticImageData): Project => ({
-  slug: `packaging-project-${n}`,
-  title: `Packaging Project ${String(n).padStart(2, "0")}`,
-  tags: ["Packaging"],
-  image,
-  services: ["Packaging Design", "Print Production"],
-  year: "TODO",
-  draft: true,
-  info: ["TODO: The brief — client, product, what they asked for and where it is sold."],
-  blocks: [
-    text("Challenge", "TODO: The challenge — shelf competition, constraints, audience, budget or production limits."),
-    slots(1, "16 / 9", "Flat die-line with keylines and bleed"),
-    text("Solution", "TODO: The solution — concept, structure, typography and colour choices, and why they work on shelf."),
-    slots(2, "4 / 3", "3D mockup — front three-quarter view", "3D mockup — second angle or packaging family"),
-    {
-      type: "specs",
-      title: "Technical details",
-      items: [
-        { label: "Colour", value: "TODO: CMYK / Pantone references" },
-        { label: "Material / substrate", value: "TODO: e.g. board type and weight" },
-        { label: "Finishes", value: "TODO: e.g. hot foil, spot UV, embossing, lamination" },
-        { label: "Printing method", value: "TODO: e.g. offset, flexo, digital" },
-      ],
-    },
-    slots(3, "4 / 5", "Photo of the printed product", "Photo of the printed product", "Photo of the printed product"),
-  ],
-});
-
 const allProjects: Project[] = [
-  packagingDraft(1, phPackaging1),
-  packagingDraft(2, phPackaging2),
+  {
+    slug: "infinix-pubg",
+    title: "Infinix HOT 20S × PUBG Mobile",
+    tags: ["Packaging"],
+    image: infBox3d,
+    services: ["Packaging Design", "Art Direction"],
+    year: "TODO",
+    info: [
+      "Special-edition packaging for the Infinix HOT 20S, co-branded with PUBG Mobile. The box had to carry two brands at once: a smartphone maker and one of the best-known mobile games.",
+    ],
+    blocks: [
+      row(1, [{ image: infUpright, alt: "Infinix HOT 20S × PUBG Mobile special-edition box, standing" }]),
+      text(
+        "Challenge",
+        "A phone box is usually quiet and product-led. A gaming special edition needs to feel like the game itself, without losing the phone’s own name, key specs and the Infinix brand.",
+      ),
+      row(1, [{ image: infDieline, alt: "Flat die-line of the Infinix HOT 20S × PUBG Mobile box" }]),
+      text(
+        "Solution",
+        "The lid is built around a PUBG character over Infinix teal, with the model name “HOT 20S” set large on the long edge and the key specs — 120Hz FHD+ and 13GB RAM — called out as yellow game-style tags.",
+        "Every face of the box has a job: the long side carries the game’s “Winner winner chicken dinner” line with chicken and rifle icons, the end panel carries the Special Edition mark, the top flap repeats the Infinix | PUBG Mobile lock-up, and the bottom flap holds the handling and recycling symbols.",
+      ),
+      row(1, [{ image: infMockup, alt: "Infinix HOT 20S × PUBG Mobile box mock-up" }]),
+      {
+        type: "specs",
+        title: "Technical details",
+        items: [
+          { label: "Colour", value: "TODO: CMYK / Pantone references" },
+          { label: "Material / substrate", value: "TODO: board type and weight" },
+          { label: "Finishes", value: "TODO: e.g. hot foil, spot UV, lamination" },
+          { label: "Printing method", value: "TODO: e.g. offset, digital" },
+        ],
+      },
+      slots(3, "4 / 5", "Photo of the printed box", "Photo of the printed box", "Photo of the printed box"),
+    ],
+  },
+  {
+    slug: "doubby-dor",
+    title: "Doubby dôr",
+    tags: ["Packaging"],
+    image: dbFamily,
+    services: ["Packaging Design"],
+    year: "TODO",
+    info: [
+      "Carton packaging for Doubby dôr, a 200 g Dubai-style pistachio chocolate, designed in two colourways — pistachio and deep green — so the range reads as one family on shelf.",
+    ],
+    blocks: [
+      row(2, [
+        { image: dbPistachio, alt: "Doubby dôr carton, pistachio colourway" },
+        { image: dbGreen, alt: "Doubby dôr carton, green colourway" },
+      ]),
+      text(
+        "Challenge",
+        "Dubai-style pistachio chocolate is a crowded, trend-driven category. The pack had to make the product’s filling and indulgence obvious at a glance, while giving the brand its own recognisable look.",
+      ),
+      row(1, [{ image: dbDielines, alt: "Flat die-lines of the Doubby dôr carton in both colourways" }]),
+      text(
+        "Solution",
+        "The front leads with the Doubby dôr mark and a chocolate splash that flows into a cut-through photo of the pistachio-filled bar, over a geometric pattern. A script “Chocolat dubaï” runs along the side panel, and the back carries ingredients in English and Arabic, the nutrition table, barcode and recycling symbols.",
+        "Keeping the layout identical and changing only the background colour lets each variant stand out while the two cartons clearly belong together.",
+      ),
+      row(1, [{ image: dbBar, alt: "Doubby dôr chocolate bar mock-up on a wooden table" }]),
+      {
+        type: "specs",
+        title: "Technical details",
+        items: [
+          { label: "Colour", value: "TODO: CMYK / Pantone references" },
+          { label: "Material / substrate", value: "TODO: board type and weight" },
+          { label: "Finishes", value: "TODO: e.g. hot foil, spot UV, lamination" },
+          { label: "Printing method", value: "TODO: e.g. offset, digital" },
+        ],
+      },
+      slots(3, "4 / 5", "Photo of the printed carton", "Photo of the printed carton", "Photo of the printed carton"),
+    ],
+  },
   {
     slug: "adem-fitt",
     title: "Adem Fitt Group",
@@ -800,7 +845,7 @@ export const projects: Project[] = allProjects.filter((p) => showDrafts || !p.dr
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);
 
 /** Home page "Selected works", in this order (draft projects are skipped on the live site). */
-const selectedSlugs = ["packaging-project-1", "adem-fitt", "packaging-project-2", "heetch", "inpha-medis", "ultra-rapide", "twsel", "innovea"];
+const selectedSlugs = ["infinix-pubg", "adem-fitt", "doubby-dor", "heetch", "inpha-medis", "ultra-rapide", "twsel", "innovea"];
 export const selectedWorks: Project[] = selectedSlugs.map(getProject).filter((p): p is Project => !!p);
 
 /**
@@ -1137,10 +1182,6 @@ export const archive: ArchiveGroup[] = [
   ] },
   { title: "Packaging", kind: "mockups", items: [], mocks: [
     { kind: "box", front: boxLtFront, side: boxLtSide, top: "#0b100d", alt: "La Trasse Dubai chocolate box", bg: "linear-gradient(160deg, #2f5d4a, #0f2a20)" },
-    { kind: "box", front: boxDyFront, side: boxDySide, top: "#9aa42b", alt: "Doubby dôr pistachio chocolate box", bg: "linear-gradient(160deg, #f3f0dc, #d9d3a8)" },
-    { kind: "box", front: boxDgFront, side: boxDgSide, top: "#0f5f45", alt: "Doubby dôr chocolate box, green edition", bg: "linear-gradient(160deg, #e1efe8, #b9d6c7)" },
-    { kind: "photo", image: w_pack_infinix_box, alt: "Infinix Hot 20S × PUBG Mobile special-edition box" },
-    { kind: "photo", image: w_pack_doubby_mockup, alt: "Doubby dôr chocolate bar on a wooden table" },
     { kind: "product", image: cutHoney, alt: "My Honey “secret recipe” jar", bg: "radial-gradient(90% 80% at 50% 30%, #f6d88a, #d79a2b)" },
     { kind: "product", image: cutRivanoBuckets, alt: "Rivano Fix Primer paint buckets", bg: "radial-gradient(90% 80% at 50% 30%, #f1f3f8, #c9d0df)" },
     { kind: "product", image: cutRivanoPails, alt: "Rivano Fix Primer pails", bg: "radial-gradient(90% 80% at 50% 30%, #ffe0dc, #e9a8a0)" },
