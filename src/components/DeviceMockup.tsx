@@ -7,7 +7,6 @@ export function DeviceScene({ desktop, mobile, name, background }: { desktop: St
     <div className={`device-scene ${mobile ? "has-phone" : ""}`} style={{ "--scene-bg": background } as CSSProperties}>
       <div className="laptop">
         <div className="laptop__screen">
-          <span className="laptop__camera" aria-hidden="true" />
           <div className="laptop__display">
             <Image src={desktop} alt={`${name} website on a laptop`} placeholder="blur" sizes="(max-width: 760px) 90vw, 45vw" quality={85} />
           </div>
@@ -23,7 +22,6 @@ export function DeviceScene({ desktop, mobile, name, background }: { desktop: St
 export function Phone({ image, alt, className = "", feed = false }: { image: StaticImageData; alt: string; className?: string; feed?: boolean }) {
   return (
     <div className={`phone ${className}`}>
-      <span className="phone__island" aria-hidden="true" />
       <div className={`phone__display ${feed ? "phone__display--feed" : ""}`}>
         {feed && <span className="feed__head" aria-hidden="true"><i /><b /></span>}
         <Image src={image} alt={alt} placeholder="blur" sizes="(max-width: 760px) 40vw, 14vw" quality={85} />

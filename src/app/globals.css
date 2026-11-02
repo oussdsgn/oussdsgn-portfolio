@@ -884,17 +884,15 @@ p.cs-list.is-todo { display: inline-block; }
 .device-scene.has-phone { padding-right: 15%; }
 .laptop { position: relative; width: 100%; transition: transform 0.9s var(--ease); }
 .web-card__hit:hover .laptop { transform: translateY(-6px); }
-/* thin-bezel laptop (MacBook-style notch) */
+/* thin-bezel laptop, no notch */
 .laptop__screen { position: relative; padding: 1.3% 1.3% 1.6%; border-radius: 12px 12px 3px 3px; background: #0b0b0c; box-shadow: 0 0 0 1.5px #c9cacf, 0 30px 60px -30px rgba(0, 0, 0, 0.5); }
-.laptop__camera { position: absolute; top: 1.3%; left: 50%; z-index: 1; width: 11%; height: 3.2%; transform: translateX(-50%); border-radius: 0 0 6px 6px; background: #0b0b0c; }
 .laptop__display { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-radius: 2px; background: #fff; }
 .laptop__display img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .laptop__base { position: relative; width: 112%; margin-left: -6%; height: 0; padding-bottom: 2.4%; border-radius: 0 0 12px 12px / 0 0 70% 70%; background: linear-gradient(#ececef, #c4c5ca 55%, #9a9ba0); box-shadow: 0 16px 26px -16px rgba(0, 0, 0, 0.5); }
 .laptop__base span { position: absolute; top: 0; left: 50%; width: 14%; height: 34%; transform: translateX(-50%); border-radius: 0 0 8px 8px; background: linear-gradient(#b4b5ba, #d6d7db); }
-/* thin-bezel phone with a slim silver frame and a small Dynamic Island */
+/* thin-bezel phone with a slim silver frame, no cut-out */
 /* fixed bezel: percentage padding would be measured against the parent scene, not the phone */
 .phone { position: relative; aspect-ratio: 9 / 19.5; padding: 3px; border-radius: 15% / 7%; background: #0b0b0c; box-shadow: 0 0 0 1.5px #c9cacf, 0 0 0 2.5px #e6e7ea, 0 24px 46px -20px rgba(0, 0, 0, 0.5); }
-.phone__island { position: absolute; top: 2.6%; left: 50%; z-index: 1; width: 26%; height: 2.6%; transform: translateX(-50%); border-radius: 999px; background: #0b0b0c; }
 .phone__display { position: relative; height: 100%; overflow: hidden; border-radius: 13.6% / 6.3%; background: #fff; }
 .phone__display img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .device-scene__phone { position: absolute; right: 7%; bottom: 7%; width: 19%; transition: transform 0.9s var(--ease); }
