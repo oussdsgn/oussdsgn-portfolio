@@ -125,6 +125,8 @@ import immoHome from "@/assets/images/web/immo-home.jpg";
 import hichamDesktop from "@/assets/images/web/hicham-desktop.jpg";
 import hichamMobile from "@/assets/images/web/hicham-mobile.jpg";
 import buzzDesktop from "@/assets/images/web/buzz-desktop.jpg";
+import apronDesktop from "@/assets/images/web/apron-desktop.jpg";
+import apronMobile from "@/assets/images/web/apron-mobile.jpg";
 import ibDesktop from "@/assets/images/web/ib-digital-desktop.jpg";
 import ibMobile from "@/assets/images/web/ib-digital-mobile.jpg";
 import kbDesktop from "@/assets/images/web/karin-bastin-desktop.jpg";
@@ -1274,6 +1276,14 @@ export const webProjects = [
     desktop: hichamDesktop,
     mobile: hichamMobile,
     background: "linear-gradient(140deg, #e9e9e9, #bdbdbd)",
+  },
+  {
+    name: "Apron",
+    note: "E-commerce website for chef workwear, aprons and kitchen utensils",
+    url: "https://chef-apron.vercel.app/",
+    desktop: apronDesktop,
+    mobile: apronMobile,
+    background: "linear-gradient(140deg, #5a3a2a, #1a110c)",
   },
   { name: "Buzz", note: "Landing page & app — online services marketplace", desktop: buzzDesktop, background: "linear-gradient(140deg, #ff3b7f, #c3004f)" },
   { name: "IB Digital", note: "Agency website", url: "https://ib-digital.com", desktop: ibDesktop, mobile: ibMobile, background: "linear-gradient(140deg, #e9e5ff, #ffe8df)" },
