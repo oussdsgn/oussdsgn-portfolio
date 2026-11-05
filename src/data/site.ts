@@ -231,7 +231,6 @@ export const nav = [
 ];
 
 export const footerLinks = [
-  { label: "Home", href: "/" },
   { label: "Work", href: "/projects" },
   { label: "Journal", href: "/journal" },
   { label: "Store", href: "/store" },
