@@ -16,7 +16,7 @@ export function Clock({ className, showCity = true }: { className?: string; show
 
   return (
     <span className={className}>
-      {showCity && <><span className="clock__city">{site.city.toUpperCase()} :</span> </>}<time suppressHydrationWarning>{time}</time>
+      {showCity && <><span className="clock__city">{site.city.toUpperCase()}</span> </>}<time suppressHydrationWarning>{time}</time>
     </span>
   );
 }
