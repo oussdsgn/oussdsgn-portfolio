@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!project) return {};
   return {
     title: project.title,
-    description: project.info?.[0] ?? `${project.title} — ${project.tags.join(", ")}`,
+    description: project.info?.[0] ?? `${project.title}: ${project.tags.join(", ")}`,
   };
 }
 
@@ -42,12 +42,12 @@ export default async function ProjectPage({ params }: Params) {
         <div className="container">
           <Link className="cs-back" href="/projects"><span aria-hidden="true">←</span> All works</Link>
           {project.draft && (
-            <p className="cs-draft" role="note">Draft — placeholder content. This page is hidden on the live site until the real content is added.</p>
+            <p className="cs-draft" role="note">Draft: placeholder content. This page is hidden on the live site until the real content is added.</p>
           )}
           <h1 className="cs-title"><span className="line"><span>{project.title}</span></span></h1>
 
           <Reveal className="cs-cover">
-            <Image src={project.cover ?? project.image} alt={`${project.title} — cover`} placeholder="blur" priority sizes="(max-width: 760px) 100vw, 1440px" />
+            <Image src={project.cover ?? project.image} alt={`${project.title} cover`} placeholder="blur" priority sizes="(max-width: 760px) 100vw, 1440px" />
           </Reveal>
 
           <section className="cs-row cs-meta">

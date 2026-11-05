@@ -79,7 +79,7 @@ export function ContactForm() {
         <span>{status === "sending" ? "Sending…" : "Submit"}</span>
       </button>
       <p className={`form__status ${status === "error" ? "is-error" : ""}`} role="status">
-        {status === "sent" && "Thanks! Your message has been sent — I’ll get back to you soon."}
+        {status === "sent" && "Thanks! Your message has been sent. I’ll get back to you soon."}
         {status === "error" && (
           <>Sorry, the message couldn’t be sent. Please email me directly at <a href={`mailto:${site.email}`}>{site.email}</a>.</>
         )}

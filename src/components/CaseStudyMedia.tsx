@@ -85,7 +85,7 @@ export function CaseStudyBlocks({ blocks, title }: { blocks: ProjectBlock[]; tit
               {b.src ? (
                 <video src={b.src} poster={b.poster?.src} autoPlay muted loop playsInline preload="metadata" aria-label={b.title} />
               ) : (
-                <Slot label={`${b.title} — video file (MP4) and poster image`} ratio="16 / 9" />
+                <Slot label={`${b.title}: video file (MP4) and poster image`} ratio="16 / 9" />
               )}
             </Reveal>
           );

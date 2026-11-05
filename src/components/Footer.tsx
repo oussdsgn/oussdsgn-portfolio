@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="container footer__grid">
-        <Link className="footer__logo" href="/" aria-label={`${site.name} — home`}>
+        <Link className="footer__logo" href="/" aria-label={`${site.name}, home`}>
           <LogoMark />
         </Link>
         <ul className="footer__links">

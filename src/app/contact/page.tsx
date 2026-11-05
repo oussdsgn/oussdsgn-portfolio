@@ -23,7 +23,7 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="contact__key">Based in</p>
-              <p className="contact__value">{site.city} — <Clock showCity={false} /> local time</p>
+              <p className="contact__value">{site.city}, <Clock showCity={false} /> local time</p>
             </div>
             <div>
               <p className="contact__key">Follow</p>

@@ -11,9 +11,9 @@ const font = Inter_Tight({ subsets: ["latin"], weight: ["400", "500", "600", "70
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://oussdsgn.vercel.app"),
-  title: { default: `${site.name} — Graphic Designer · Branding, Packaging & Print`, template: `%s — ${site.name}` },
-  description: `${site.fullName} (${site.name}) — multidisciplinary graphic designer based in ${site.city}: brand identity, packaging and print, social media and web design.`,
-  openGraph: { title: `${site.name} — ${site.role}`, type: "website", url: "/" },
+  title: { default: `${site.name} | Graphic Designer · Branding, Packaging & Print`, template: `%s | ${site.name}` },
+  description: `${site.fullName} (${site.name}), a multidisciplinary graphic designer based in ${site.city}: brand identity, packaging and print, social media and web design.`,
+  openGraph: { title: `${site.name} | ${site.role}`, type: "website", url: "/" },
   alternates: { canonical: "/" },
 };
 

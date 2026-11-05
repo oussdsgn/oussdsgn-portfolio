@@ -16,7 +16,7 @@ export default function StorePage() {
             <h1 className="page-title"><span className="line"><span>Store</span></span></h1>
           </div>
           <Reveal as="p" className="store__intro">
-            Alongside client work, I create digital assets and artwork for other creatives — available on Gumroad, Magnific and DeviantArt.
+            Alongside client work, I create digital assets and artwork for other creatives, available on Gumroad, Magnific and DeviantArt.
           </Reveal>
           <div className="store__cards">
             {site.stores.map((st, i) => (

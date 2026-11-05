@@ -86,7 +86,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="explorations__head">
             <h2 className="clients__title">Visual explorations</h2>
-            <p className="explorations__note">Personal image-making — light, colour and portraiture.</p>
+            <p className="explorations__note">Personal image-making: light, colour and portraiture.</p>
           </div>
           <div className="explorations__grid">
             {explorations.map((img, i) => (

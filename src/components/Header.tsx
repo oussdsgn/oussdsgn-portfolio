@@ -63,7 +63,7 @@ export function Header() {
   return (
     <header ref={ref} className={cls}>
       <div className="header__brand">
-        <Link className="logo" href="/" aria-label={`${site.name} — home`}>
+        <Link className="logo" href="/" aria-label={`${site.name}, home`}>
           <LogoMark className="logo__mark" />
           <span className="logo__word">{site.name}</span>
         </Link>

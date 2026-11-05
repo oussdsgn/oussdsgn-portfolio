@@ -287,7 +287,7 @@ const text = (title: string, ...paragraphs: string[]): ProjectBlock => ({ type: 
 const row = (cols: 1 | 2 | 3 | 4, images: Shot[], ratio?: string): ProjectBlock => ({ type: "gallery", cols, ratio, images });
 /** The images of a Behance project as gallery rows, in the original order. */
 const deck = (slug: string, label: string, cols: 1 | 2, from = 0): ProjectBlock[] => {
-  const imgs = behance[slug].map((image, i) => ({ image, alt: `${label} — page ${i + 1}` })).slice(from);
+  const imgs = behance[slug].map((image, i) => ({ image, alt: `${label}, page ${i + 1}` })).slice(from);
   const rows: ProjectBlock[] = [];
   for (let i = 0; i < imgs.length; i += cols) rows.push(row(Math.min(cols, imgs.length - i) as 1 | 2, imgs.slice(i, i + cols)));
   return rows;
@@ -315,7 +315,7 @@ const allProjects: Project[] = [
       row(1, [{ image: infDieline, alt: "Die-line of the Infinix HOT 20S × PUBG Mobile box with colour swatches on a desk" }]),
       text(
         "Solution",
-        "The lid is built around a PUBG character over Infinix teal, with the model name “HOT 20S” set large on the long edge and the key specs — 120Hz FHD+ and 13GB RAM — called out as yellow game-style tags.",
+        "The lid is built around a PUBG character over Infinix teal, with the model name “HOT 20S” set large on the long edge and the key specs (120Hz FHD+ and 13GB RAM) called out as yellow game-style tags.",
         "Every face of the box has a job: the long side carries the game’s “Winner winner chicken dinner” line with chicken and rifle icons, the end panel carries the Special Edition mark, the top flap repeats the Infinix | PUBG Mobile lock-up, and the bottom flap holds the handling and recycling symbols.",
       ),
       row(2, [
@@ -342,7 +342,7 @@ const allProjects: Project[] = [
     services: ["Packaging Design"],
     year: "TODO",
     info: [
-      "Carton packaging for Doubby dôr, a 200 g Dubai-style pistachio chocolate, designed in two colourways — pistachio and deep green — so the range reads as one family on shelf.",
+      "Carton packaging for Doubby dôr, a 200 g Dubai-style pistachio chocolate, designed in two colourways, pistachio and deep green, so the range reads as one family on shelf.",
     ],
     blocks: [
       row(2, [
@@ -464,13 +464,13 @@ const allProjects: Project[] = [
       row(1, [{ image: inStationery, alt: "INPHA-MédiS 25th anniversary stationery, mugs, calendar and tote bag" }]),
       text(
         "Challenge",
-        "An anniversary needs to feel like a celebration without competing with the main brand. The 25-year mark had to sit naturally next to the existing logo and stay consistent across very different touchpoints — from a business card to the front of a building.",
+        "An anniversary needs to feel like a celebration without competing with the main brand. The 25-year mark had to sit naturally next to the existing logo and stay consistent across very different touchpoints, from a business card to the front of a building.",
       ),
       row(1, [{ image: inBuilding, alt: "INPHA-MédiS 25 years banner on a glass office building at dusk" }]),
       text(
         "Solution",
         "The “25 years” mark uses the brand’s own blue and clean, clinical layouts, so it reads as part of INPHA-MédiS rather than a separate campaign.",
-        "It was applied to stationery, mugs, calendars, tote bags and large-format building signage, and extended into social media posts for national and health awareness days — 1 November, the International Day of Persons with Disabilities, World Diabetes Day and screening campaigns.",
+        "It was applied to stationery, mugs, calendars, tote bags and large-format building signage, and extended into social media posts for national and health awareness days: 1 November, the International Day of Persons with Disabilities, World Diabetes Day and screening campaigns.",
       ),
       row(4, [
         { image: w_post_17, alt: "INPHA-MédiS 1 November post" },
@@ -560,7 +560,7 @@ const allProjects: Project[] = [
     year: "2025",
     info: [
       "Innovea Laboratoires is a pharmaceutical and healthcare research company requiring a full brand identity to reflect its position in scientific innovation and clinical excellence.",
-      "The brief called for a complete visual system — logo, color palette, typography, and brand applications — professional and credible enough for a pharmaceutical audience, while still feeling modern and distinct within a fairly conservative industry.",
+      "The brief called for a complete visual system (logo, color palette, typography and brand applications), professional and credible enough for a pharmaceutical audience, while still feeling modern and distinct within a fairly conservative industry.",
     ],
     blocks: [
       row(2, [
@@ -569,7 +569,7 @@ const allProjects: Project[] = [
       ], "1 / 1"),
       text(
         "Concept",
-        "I designed the identity around a refined “V” monogram, rendered as a sharp, faceted mark that reads as both a laboratory instrument and a mark of precision — evoking accuracy, trust, and scientific rigor.",
+        "I designed the identity around a refined “V” monogram, rendered as a sharp, faceted mark that reads as both a laboratory instrument and a mark of precision, evoking accuracy, trust, and scientific rigor.",
         "A deep navy and metallic silver-blue palette grounds the brand in credibility and clinical professionalism, while a secondary electric blue adds energy and a more contemporary, tech-forward edge.",
         "The wordmark pairs a clean, confident “INNOVEA” with a lighter tracked “LABORATOIRES” beneath it, keeping the full name legible and formal across all applications. The system was built to move fluidly between corporate, scientific, and event contexts without losing its identity.",
       ),
@@ -598,7 +598,7 @@ const allProjects: Project[] = [
     info: [
       "A complete, editorial brand identity system for Dikra Madjdouline, a personal lash and brow studio. The identity is built around a delicate “dm” monogram, a warm palette of blush, cream, ink black and gold, and a soft, precise, unmistakably feminine tone.",
       "The 15-page guideline covers the full visual language: logo suite and clear-space rules, colour palette, typography, supporting motifs, photography direction, brand voice, and real-world applications across social media and stationery.",
-      "Soft natural light, warm tones and room to breathe — detail over drama throughout. Designed to feel calm, refined and reassuring: where a steady hand becomes quiet beauty.",
+      "Soft natural light, warm tones and room to breathe, detail over drama throughout. Designed to feel calm, refined and reassuring: where a steady hand becomes quiet beauty.",
     ],
     link: be("252455061/Dikra-Madjdouline-Lash-Brow-Studio-Brand-Identity"),
     blocks: deck("dikra-madjdouline", "Dikra Madjdouline brand guidelines", 2, 1),
@@ -611,13 +611,13 @@ const allProjects: Project[] = [
     services: ["Brand Identity", "Logo Design"],
     year: "2024",
     info: [
-      "Ariadne is a youthful clothing brand. The brief was to create a memorable brand identity with a minimalist, modern logo — simple, effective, and appealing to a young, progressive audience — built on three principles: comfort, relevance to fashion trends, and expression of individuality.",
+      "Ariadne is a youthful clothing brand. The brief was to create a memorable brand identity with a minimalist, modern logo: simple, effective and appealing to a young, progressive audience, built on three principles: comfort, relevance to fashion trends, and expression of individuality.",
     ],
     link: be("208883737/Ariadne-Clothing-Brand-Identity"),
     blocks: [
       text(
         "Solution",
-        "The wordmark features a distinctive stylized “A”, the first letter of the brand name, while the “R” is drawn in a cursive style that adds a touch of elegance and sophistication. This stylized “R” becomes the key element of the identity — a simple, memorable symbol of the brand’s commitment to quality.",
+        "The wordmark features a distinctive stylized “A”, the first letter of the brand name, while the “R” is drawn in a cursive style that adds a touch of elegance and sophistication. This stylized “R” becomes the key element of the identity, a simple, memorable symbol of the brand’s commitment to quality.",
         "A predominantly monochromatic colour scheme with a single red accent balances individuality with current fashion trends, giving Ariadne a modern, distinctive presence.",
       ),
       ...deck("ariadne", "Ariadne brand identity", 1, 1),
@@ -637,7 +637,7 @@ const allProjects: Project[] = [
     blocks: [
       text(
         "Solution",
-        "The logotype was fully hand-lettered — simple but elegant, to convey a sense of glamour and refinement — and paired with Playfair Display for supporting typography.",
+        "The logotype was fully hand-lettered, simple but elegant to convey a sense of glamour and refinement, and paired with Playfair Display for supporting typography.",
         "A warm palette of brown, off-white, coral and black carries the identity across shopping bags, garment tags, stickers and apparel, with black, colour and white versions of the logo for every background.",
       ),
       ...deck("hiba-co", "Hiba & Co brand identity", 1),
@@ -645,7 +645,7 @@ const allProjects: Project[] = [
   },
   {
     slug: "algerie-poste",
-    title: "Algérie Poste — Chlef",
+    title: "Algérie Poste Chlef",
     tags: ["Packaging", "Rebrand"],
     image: behance["algerie-poste"][5],
     services: ["Packaging", "Print Production"],
@@ -713,7 +713,7 @@ const allProjects: Project[] = [
     image: behance["glow-body"][0],
     services: ["Brand Identity", "Brand Handbook"],
     year: "2023",
-    info: ["Brand handbook for Glow Body, a surgery clinic — a brand meant to feel safe, compassionate, efficient, professional and caring. It covers the logo build-up, typography (Magnia and Gotham), colour palette and stationery."],
+    info: ["Brand handbook for Glow Body, a surgery clinic. The brand is meant to feel safe, compassionate, efficient, professional and caring. It covers the logo build-up, typography (Magnia and Gotham), colour palette and stationery."],
     link: be("165251291/Glow-Body-Surgery-Clinic-Brand-Handbook"),
     blocks: deck("glow-body", "Glow Body brand handbook", 1, 1),
   },
@@ -752,7 +752,7 @@ const allProjects: Project[] = [
   },
   {
     slug: "playing-cards",
-    title: "Ace — Playing Cards",
+    title: "Ace Playing Cards",
     tags: ["Illustration", "Packaging"],
     image: behance["playing-cards"][0],
     services: ["Illustration", "Packaging"],
@@ -843,10 +843,10 @@ const allProjects: Project[] = [
       {
         type: "compare",
         pairs: [
-          { label: "TODO: Thumbnail 1 — channel / video title" },
-          { label: "TODO: Thumbnail 2 — channel / video title" },
-          { label: "TODO: Thumbnail 3 — channel / video title" },
-          { label: "TODO: Thumbnail 4 — channel / video title" },
+          { label: "TODO: Thumbnail 1: channel / video title" },
+          { label: "TODO: Thumbnail 2: channel / video title" },
+          { label: "TODO: Thumbnail 3: channel / video title" },
+          { label: "TODO: Thumbnail 4: channel / video title" },
         ],
       },
     ],
@@ -882,13 +882,13 @@ export const services = [
     title: "Brand Identity",
     image: afLogoNavy as StaticImageData | null,
     phone: null as StaticImageData | null,
-    text: "I develop cohesive brand systems that go beyond logos—defining how your brand looks, feels, and communicates. The result is a distinct, memorable identity that builds trust and stands out in a crowded market.",
+    text: "I develop cohesive brand systems that go beyond logos, defining how your brand looks, feels, and communicates. The result is a distinct, memorable identity that builds trust and stands out in a crowded market.",
   },
   {
     title: "Social Media & Campaigns",
     image: hePromo,
     phone: null,
-    text: "I design scroll-stopping social content and campaign visuals—from monthly calendars to product launches and city openings—built on a clear system so every post strengthens the brand and drives engagement.",
+    text: "I design scroll-stopping social content and campaign visuals, from monthly calendars to product launches and city openings, built on a clear system so every post strengthens the brand and drives engagement.",
   },
   {
     title: "Packaging & Print",
@@ -1023,8 +1023,8 @@ export const articles: Article[] = [
       { img: jEllis1, alt: "Ellis Butchers identity by Studio Blackburn" },
       { p: "No livestock silhouettes. No cut charts. Studio Blackburn ripped up the butcher-branding rulebook for Ellis Butchers." },
       { img: jEllis2, alt: "Ellis Butchers meat characters" },
-      { p: "Instead of humanising the animal, they humanised the meat — giving cuts of meat their own legs, led by a mascot called Meat Ellis, a cast of characters wholesome, unexpected and genuinely fun." },
-      { p: "Two shops, one parent brand, two distinct personalities — proof that identity systems can flex by neighbourhood without losing coherence." },
+      { p: "Instead of humanising the animal, they humanised the meat, giving cuts of meat their own legs, led by a mascot called Meat Ellis, a cast of characters wholesome, unexpected and genuinely fun." },
+      { p: "Two shops, one parent brand, two distinct personalities. Proof that identity systems can flex by neighbourhood without losing coherence." },
     ],
     source: { label: "Full project", href: "https://lnkd.in/dBnTxXWh" },
   },
@@ -1054,9 +1054,9 @@ export const explorations = [explore1, explore2, explore3, explore4, explore5];
 
 export const about = {
   intro:
-    "Hi, I’m Ouss — a multidisciplinary graphic designer with 7+ years of experience across branding, visual communication, UI/UX design and social media content. I strengthen brand identities, grow engagement and deliver high-impact digital and print work.",
+    "Hi, I’m Ouss, a multidisciplinary graphic designer with 7+ years of experience across branding, visual communication, UI/UX design and social media content. I strengthen brand identities, grow engagement and deliver high-impact digital and print work.",
   approach:
-    "I believe great design sits at the intersection of function and emotion. Every decision is guided by clarity, usability, and impact—ensuring that the final product communicates effectively while delivering a seamless user experience. AI-assisted tools are part of my process too: they speed up exploration and production, while the craft and the brand always stay in charge.",
+    "I believe great design sits at the intersection of function and emotion. Every decision is guided by clarity, usability and impact, ensuring that the final product communicates effectively while delivering a seamless user experience. AI-assisted tools are part of my process too: they speed up exploration and production, while the craft and the brand always stay in charge.",
   tools: ["Photoshop", "Illustrator", "InDesign", "Premiere Pro", "Figma", "Framer"],
   aiTools: ["Adobe Firefly", "ChatGPT", "Gemini", "Leonardo AI", "Freepik AI", "Higgsfield AI", "Google Whisk", "Google AI Studio", "Nano Banana Pro"],
   languages: ["Arabic", "English", "French", "German"],
@@ -1067,7 +1067,7 @@ export const experience = [
     company: "AMS Group SPA",
     href: "https://amsgroupes.com",
     role: "Multidisciplinary Graphic Designer",
-    period: "03/2024 — Present",
+    period: "03/2024 – Present",
     points: [
       "Create visual assets for digital and print communication.",
       "Ensure branding consistency across social media and marketing channels.",
@@ -1079,7 +1079,7 @@ export const experience = [
     company: "EURL Flash Graphic",
     href: "https://www.flashgraphic.net",
     role: "Multidisciplinary Graphic Designer & Social Media Manager",
-    period: "09/2021 — 03/2024",
+    period: "09/2021 – 03/2024",
     points: [
       "Developed branding materials, packaging designs and marketing visuals.",
       "Designed and managed social media content for Facebook, Instagram and LinkedIn.",
@@ -1091,7 +1091,7 @@ export const experience = [
   {
     company: "University of Health Sciences, Algiers",
     role: "Freelance Designer & Design Instructor",
-    period: "02/2022 — 11/2024",
+    period: "02/2022 – 11/2024",
     points: [
       "Created visual materials for university programs, events and digital channels.",
       "Delivered workshops on graphic design fundamentals at the Startup Incubator.",
@@ -1103,7 +1103,7 @@ export const experience = [
     company: "IB Digital (Belgium, remote)",
     href: "https://ib-digital.com",
     role: "UI/UX Designer",
-    period: "02/2022 — 11/2022",
+    period: "02/2022 – 11/2022",
     points: [
       "Designed landing pages, website previews and UI components.",
       "Improved usability and interface consistency across digital platforms.",
@@ -1125,7 +1125,7 @@ export const experience = [
   {
     company: "AIESEC in Algeria (Tlemcen)",
     role: "Graphic Designer & Team Leader",
-    period: "02/2019 — 08/2020",
+    period: "02/2019 – 08/2020",
     points: [
       "Led a creative team producing digital and print visual materials.",
       "Designed graphics, event branding and communication assets.",
@@ -1134,7 +1134,7 @@ export const experience = [
   {
     company: "Merch Digger (Merch by Amazon)",
     role: "Graphic Designer",
-    period: "10/2018 — 08/2020",
+    period: "10/2018 – 08/2020",
     points: [
       "Designed branding materials and visual content for products and marketing.",
       "Collaborated with team members to maintain a consistent visual identity.",
@@ -1143,7 +1143,7 @@ export const experience = [
   {
     company: "Freelance",
     role: "Graphic Designer",
-    period: "2017 — Present",
+    period: "2017 – Present",
     points: [
       "Logos, posters, banners, social media content and brand identities.",
       "Identity design for Innovea Labs, A+ English School, Dikra Madjdouline Beauty Salon, Lekna Space Languages School, Pulse University Club Algiers, Stoflish University Club Tlemcen and others.",
@@ -1153,9 +1153,9 @@ export const experience = [
 ] as { company: string; href?: string; role: string; period: string; points: string[] }[];
 
 export const education = [
-  { school: "International Media Academy", title: "Professional Trainer — Infographic Design", period: "2025", note: "50 hours · MARAS 2025 session. Certified trainer in infographic design and visual information structuring." },
-  { school: "University of Tlemcen", title: "Master’s Degree in Sociolinguistics", period: "2018 — 2020", note: "Thesis: Social factors and their effects on language use on the internet." },
-  { school: "University of Tlemcen", title: "Bachelor’s Degree in English Language & Literature", period: "2015 — 2018", note: "Thesis: English between social media and language learners." },
+  { school: "International Media Academy", title: "Professional Trainer in Infographic Design", period: "2025", note: "50 hours · MARAS 2025 session. Certified trainer in infographic design and visual information structuring." },
+  { school: "University of Tlemcen", title: "Master’s Degree in Sociolinguistics", period: "2018 – 2020", note: "Thesis: Social factors and their effects on language use on the internet." },
+  { school: "University of Tlemcen", title: "Bachelor’s Degree in English Language & Literature", period: "2015 – 2018", note: "Thesis: English between social media and language learners." },
 ] as { school: string; title: string; period: string; note?: string }[];
 
 /**
@@ -1267,7 +1267,7 @@ export const archive: ArchiveGroup[] = [
 export const webProjects = [
   {
     name: "Rahil Mohamed Islam",
-    note: "Portfolio website for a full-stack developer — designed and built",
+    note: "Portfolio website for a full-stack developer, designed and built",
     url: "https://portfolio-islem-one.vercel.app/en",
     desktop: islemDesktop,
     mobile: islemMobile,
@@ -1275,7 +1275,7 @@ export const webProjects = [
   },
   {
     name: "FAR-IT",
-    note: "IT recruitment agency website — designed and built",
+    note: "IT recruitment agency website, designed and built",
     url: "https://far-it.vercel.app",
     desktop: faritDesktop,
     mobile: faritMobile,
@@ -1283,7 +1283,7 @@ export const webProjects = [
   },
   {
     name: "La Cité Asiatique",
-    note: "Restaurant website — designed and built",
+    note: "Restaurant website, designed and built",
     url: "https://la-cit-asiatique-rho.vercel.app",
     desktop: citeDesktop,
     mobile: citeMobile,
@@ -1291,7 +1291,7 @@ export const webProjects = [
   },
   {
     name: "IMMO Agency",
-    note: "Resident app (Android & web) and agency dashboard — designed and built",
+    note: "Resident app (Android & web) and agency dashboard, designed and built",
     url: "https://oussdsgn.github.io/immo-agency/",
     desktop: immoDashboard,
     mobile: immoHome,
@@ -1299,7 +1299,7 @@ export const webProjects = [
   },
   {
     name: "Benyahia Hicham",
-    note: "Portfolio website for an art director — designed and built",
+    note: "Portfolio website for an art director, designed and built",
     url: "https://hichembenyahia.vercel.app",
     desktop: hichamDesktop,
     mobile: hichamMobile,
@@ -1313,7 +1313,7 @@ export const webProjects = [
     mobile: apronMobile,
     background: "linear-gradient(140deg, #5a3a2a, #1a110c)",
   },
-  { name: "Buzz", note: "Landing page & app — online services marketplace", desktop: buzzDesktop, background: "linear-gradient(140deg, #ff3b7f, #c3004f)" },
+  { name: "Buzz", note: "Landing page & app for an online services marketplace", desktop: buzzDesktop, background: "linear-gradient(140deg, #ff3b7f, #c3004f)" },
   { name: "IB Digital", note: "Agency website", url: "https://ib-digital.com", desktop: ibDesktop, mobile: ibMobile, background: "linear-gradient(140deg, #e9e5ff, #ffe8df)" },
   { name: "Karin Bastin", note: "Consulting website", url: "https://karinbastin.com", desktop: kbDesktop, mobile: kbMobile, background: "linear-gradient(140deg, #24314a, #0c1220)" },
   { name: "AMS Groupe", note: "Group website & subsidiaries", url: "https://amsgroupes.com", desktop: amsDesktop, mobile: amsMobile, background: "linear-gradient(140deg, #2a63c4, #0a2a66)" },

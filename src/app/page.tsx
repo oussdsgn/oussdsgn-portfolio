@@ -28,7 +28,7 @@ export default function Home() {
               <Image src={site.images.portrait} alt={`Portrait of ${site.owner}`} placeholder="blur" sizes="230px" />
             </Reveal>
             <Reveal as="p" className="intro__text" delay={80}>
-              I’m {site.owner}, a creative focused on shaping bold visuals and purposeful digital experiences. My work sits at the intersection of clarity and expression—where strong ideas meet clean execution.
+              I’m {site.owner}, a creative focused on shaping bold visuals and purposeful digital experiences. My work sits at the intersection of clarity and expression, where strong ideas meet clean execution.
             </Reveal>
             <Reveal as="p" className="intro__text" delay={160}>
               I approach every project with intention, crafting solutions that not only look refined but communicate effectively and leave a lasting impression.
