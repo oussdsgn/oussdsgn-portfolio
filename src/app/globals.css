@@ -184,15 +184,13 @@ ul, ol { list-style: none; padding: 0; }
 .clock__city { font-weight: 600; }
 
 .nav { position: absolute; left: 50%; transform: translateX(-50%); display: flex; gap: 24px; }
-.nav a,
-.header__contact {
+.nav a {
   position: relative;
   font-size: var(--nav-fs);
   font-weight: 500;
   letter-spacing: -0.01em;
 }
 .nav a::after,
-.header__contact::after,
 .link-arrow::after {
   content: "";
   position: absolute;
@@ -207,8 +205,6 @@ ul, ol { list-style: none; padding: 0; }
 }
 .nav a:hover::after,
 .nav a[aria-current="page"]::after,
-.header__contact:hover::after,
-.header__contact[aria-current="page"]::after,
 .link-arrow:hover::after { transform: scaleX(1); transform-origin: left; }
 
 .menu-toggle, .mobile-menu { display: none; }
@@ -1055,7 +1051,8 @@ p.cs-list.is-todo { display: inline-block; }
   :root { --header-h: 56px; }
   body { font-size: 16px; }
 
-  .nav, .header__contact { display: none; }
+  .nav { display: none; }
+  .header .clock { margin-left: auto; margin-right: 16px; }
   .header { --nav-fs: 24px; } /* line the clock up with the logo word instead */
   .menu-toggle { display: block; position: relative; z-index: 3; width: 32px; height: 32px; }
   .menu-toggle span,

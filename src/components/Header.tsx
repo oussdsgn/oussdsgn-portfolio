@@ -67,7 +67,6 @@ export function Header() {
           <LogoMark className="logo__mark" />
           <span className="logo__word">{site.name}</span>
         </Link>
-        <Clock className="clock" />
       </div>
 
       <nav className="nav" aria-label="Main">
@@ -78,9 +77,7 @@ export function Header() {
         ))}
       </nav>
 
-      <Link className="header__contact" href="/contact" aria-current={isActive("/contact") ? "page" : undefined}>
-        Contact
-      </Link>
+      <Clock className="clock" />
 
       <button className="menu-toggle" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen((o) => !o)}>
         <span />
@@ -88,7 +85,7 @@ export function Header() {
 
       <div id="mobile-menu" className="mobile-menu" hidden={!open}>
         <nav aria-label="Mobile">
-          {[...nav, { label: "Contact", href: "/contact" }].map((item, i) => (
+          {nav.map((item, i) => (
             <Link key={item.href} href={item.href} style={{ transitionDelay: `${80 + i * 60}ms` }}>
               {item.label}
             </Link>
