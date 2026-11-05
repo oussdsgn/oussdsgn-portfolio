@@ -1,3 +1,10 @@
 {
-  "products": []
+  "products": [
+    {
+      "name": "Division - Bold Geometric Font Family",
+      "href": "0",
+      "price": 0,
+      "image": "products/0/image.jpg"
+    }
+  ]
 }
