@@ -1,21 +1,19 @@
 import type { Metadata } from "next";
-import { ArticleCard } from "@/components/ArticleCard";
 import { Reveal } from "@/components/Reveal";
-import { SectionLabel } from "@/components/SectionLabel";
 import { Cta } from "@/components/Cta";
 import Image from "next/image";
-import { articles, products, site } from "@/data/site";
+import { products, site } from "@/data/site";
 import { StoreLogo } from "@/components/StoreLogo";
 
-export const metadata: Metadata = { title: "Assets Store" };
+export const metadata: Metadata = { title: "Store" };
 
-export default function AssetsStorePage() {
+export default function StorePage() {
   return (
     <>
       <div className="page-top">
         <div className="container">
           <div className="page-head">
-            <h1 className="page-title"><span className="line"><span>Assets Store</span></span></h1>
+            <h1 className="page-title"><span className="line"><span>Store</span></span></h1>
           </div>
           <Reveal as="p" className="store__intro">
             Alongside client work, I create digital assets and artwork for other creatives — available on Gumroad, Magnific and DeviantArt.
@@ -46,13 +44,6 @@ export default function AssetsStorePage() {
               </Reveal>
             ))}
           </div>}
-          <div className="journal" id="journal">
-            <SectionLabel index="01" title="Journal" />
-            <p className="journal__note">Notes on design — my own concepts and work from other studios that caught my eye.</p>
-            <div className="grid-2">
-              {articles.map((a, i) => <ArticleCard key={a.slug} {...a} wide delay={(i % 2) * 90} />)}
-            </div>
-          </div>
         </div>
       </div>
       <Cta />

@@ -72,7 +72,7 @@ export default async function ArticlePage({ params }: Params) {
     <>
       <article className="page-top journal-article">
         <div className="container">
-          <Link className="cs-back" href="/assets-store#journal"><span aria-hidden="true">←</span> Journal</Link>
+          <Link className="cs-back" href="/journal"><span aria-hidden="true">←</span> Journal</Link>
           <header className="ja-head">
             <p className="article__meta">{a.category} / {a.date}</p>
             <h1 className="ja-title"><span className="line"><span>{a.title}</span></span></h1>

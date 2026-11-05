@@ -25,14 +25,14 @@ All text, links, projects, articles, stats and testimonials are in **`src/data/s
 - **Case studies:** each project's `blocks` mix text sections and image rows (1–4 columns); `link` adds a Behance button.
 - **About:** `about`, `experience` and `education` in `site.ts`; the client wall uses the logos in `src/assets/images/clients/`.
 - **More work archive:** the `archive` list in `site.ts` (boards are slides from the portfolio PDF, in `src/assets/images/archive/`).
-- **Assets Store:** the `stock` profiles and `stockFeatured` boards in `site.ts`.
+- **Store:** the `stock` profiles and `stockFeatured` boards in `site.ts`.
 - **Logo:** `src/components/Logo.tsx` (inline SVG) and `src/app/icon.svg` (favicon).
 - **Colors and fonts:** CSS variables at the top of `src/app/globals.css`. The red accent is `--accent`.
 
 ## Structure
 
 ```
-src/app/            routes: / /projects /about /assets-store /contact, plus 404
+src/app/            routes: / /projects /about /journal /store /contact, plus 404
 src/components/     Header, Footer, Hero, WorkGallery (+ Lightbox), Testimonials, ...
 src/data/site.ts    all content
 src/assets/images/  images

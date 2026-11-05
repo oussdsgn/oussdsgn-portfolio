@@ -225,14 +225,16 @@ export const site = {
 export const nav = [
   { label: "Works", href: "/projects" },
   { label: "About", href: "/about" },
-  { label: "Assets Store", href: "/assets-store" },
+  { label: "Journal", href: "/journal" },
+  { label: "Store", href: "/store" },
 ];
 
 export const footerLinks = [
   { label: "Home", href: "/" },
   { label: "Works", href: "/projects" },
   { label: "About", href: "/about" },
-  { label: "Assets Store", href: "/assets-store" },
+  { label: "Journal", href: "/journal" },
+  { label: "Store", href: "/store" },
   { label: "Contact", href: "/contact" },
 ];
 
