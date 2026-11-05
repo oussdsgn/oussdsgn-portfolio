@@ -941,6 +941,9 @@ export type Article = {
   /** Body, top to bottom: paragraphs, images and muted looping videos (files in /public) */
   body: ({ p: string } | { img: StaticImageData; alt: string } | { video: string; poster: StaticImageData; alt: string })[];
   source?: { label: string; href: string };
+  /** External links listed at the end, followed by credits and share buttons */
+  links?: { label: string; href: string }[];
+  credits?: { role: string; name: string; href?: string }[];
 };
 
 export const articles: Article[] = [
@@ -957,7 +960,13 @@ export const articles: Article[] = [
       { video: "/journal/sevens-monograms.mp4", poster: jSevensMonogramsPoster, alt: "The six Ultimate Sevens club monograms" },
       { p: "The marks skip every sports cliché. No lions, no eagles, no fake heritage crests pretending the league has a century of history. Each club got an interlocking monogram that reads like a classic badge but looks right at home on a cap. All six were drawn from the same baseline and animate to the same tempo, so they feel like one family with six different attitudes. Each club also got its own manifesto and tagline, like Clan Taran’s “Feel The Thunder.”" },
       { img: jSevensJacket, alt: "Albion Athletic cap and jacket" },
-      { p: "The identities don’t just sit on the Reebok kits, they shape the whole kit language, from replica shirts to caps to a limited jacket drop. It’s a great reminder that when a brand has no history, you don’t fake one. You build something people want to belong to from day one." },    ],
+      { p: "The identities don’t just sit on the Reebok kits, they shape the whole kit language, from replica shirts to caps to a limited jacket drop. It’s a great reminder that when a brand has no history, you don’t fake one. You build something people want to belong to from day one." },
+    ],
+    links: [
+      { label: "Nomad", href: "https://www.nomadstudio.com/" },
+      { label: "Ultimate Sevens", href: "https://www.ultimatesevens.com/" },
+    ],
+    credits: [{ role: "Design", name: "Nomad", href: "https://www.nomadstudio.com/" }],
   },
   {
     slug: "why-algerian-art-deserves-its-own-magazine",

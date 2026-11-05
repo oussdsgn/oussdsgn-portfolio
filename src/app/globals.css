@@ -711,6 +711,19 @@ p.cs-list.is-todo { display: inline-block; }
 .ja-video { background: #111; }
 .ja-video video { display: block; width: 100%; height: auto; }
 .ja-source { justify-self: start; }
+.ja-foot { margin-top: 20px; }
+.ja-links { display: grid; gap: 22px; list-style: none; padding: 0; margin: 0 0 40px; }
+.ja-links a { display: inline-flex; gap: 14px; font-size: clamp(24px, 2.2vw, 30px); font-weight: 500; letter-spacing: -0.03em; transition: opacity 0.3s; }
+.ja-links a span { transition: transform 0.3s var(--ease); }
+.ja-links a:hover span { transform: translate(3px, -3px); }
+.ja-credits { display: grid; gap: 18px; margin: 0; padding-top: 32px; border-top: 1px solid var(--black); }
+.ja-credits__row { display: grid; grid-template-columns: 130px 1fr; align-items: center; font-size: clamp(18px, 1.5vw, 20px); font-weight: 500; }
+.ja-credits dd { margin: 0; }
+.ja-credits__name { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1.5px; }
+.ja-share { display: flex; gap: 16px; }
+.ja-share a { display: grid; place-items: center; width: 24px; height: 24px; transition: opacity 0.3s; }
+.ja-share a:hover { opacity: 0.55; }
+.ja-share svg { width: 22px; height: 22px; fill: currentColor; }
 .ja-next { margin-top: 140px; padding-top: 28px; border-top: 1px solid var(--line); }
 .ja-next__title { margin-bottom: 30px; font-size: 17px; font-weight: 500; color: var(--grey); }
 
