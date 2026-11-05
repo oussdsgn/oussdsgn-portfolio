@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { Cta } from "@/components/Cta";
-import Image from "next/image";
 import { pageText, products, site } from "@/data/site";
 import { StoreLogo } from "@/components/StoreLogo";
+import { Products } from "@/components/Products";
 
 export const metadata: Metadata = { title: "Store" };
 
@@ -31,28 +31,7 @@ export default function StorePage() {
               </Reveal>
             ))}
           </div>
-          {products.length > 0 && <div className="products">
-            {products.map((pr, i) => (
-              <Reveal key={`${pr.name}-${i}`} delay={(i % 3) * 80}>
-                {(() => {
-                  const inner = (
-                    <>
-                      <span className="product__media"><Image src={pr.image} alt="" placeholder="blur" sizes="(max-width: 760px) 50vw, 30vw" /></span>
-                      <span className="product__meta">
-                        <span className="product__name">{pr.name}</span>
-                        {pr.price !== undefined && <span className="product__price">${pr.price}</span>}
-                      </span>
-                    </>
-                  );
-                  return pr.href ? (
-                    <a className="product" href={pr.href} target="_blank" rel="noopener noreferrer" data-cursor="Buy">{inner}</a>
-                  ) : (
-                    <div className="product">{inner}</div>
-                  );
-                })()}
-              </Reveal>
-            ))}
-          </div>}
+          {products.length > 0 && <Products products={products} />}
         </div>
       </div>
       <Cta />

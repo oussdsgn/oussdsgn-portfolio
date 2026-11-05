@@ -390,13 +390,20 @@ export default config({
         products: fields.array(
           fields.object({
             name: req("Name"),
+            image: reqImg("Main picture", "Shown on the Store page; click it to open the product pop-up."),
+            images: fields.array(fields.image({ label: "Picture", validation: { isRequired: true } }), {
+              label: "More pictures",
+              description: "Extra pictures shown in the pop-up, after the main one.",
+              itemLabel: (p) => p.value?.filename ?? "Picture",
+            }),
+            description: area("Description", "A few lines shown in the pop-up."),
+            price: fields.number({ label: "Price ($)", description: "Leave empty to hide the price tag.", step: 0.01 }),
             href: fields.url({
-              label: "Link",
-              description: "The product's page, starting with https:// (e.g. https://oussdsgn.gumroad.com/l/...)",
+              label: "Download link",
+              description: "Where the button at the bottom of the pop-up goes, starting with https:// (e.g. your Gumroad product page)",
               validation: { isRequired: true },
             }),
-            price: fields.number({ label: "Price ($)", description: "Leave empty to hide the price tag.", step: 0.01 }),
-            image: reqImg("Image"),
+            button: t("Button text", "Leave empty for “Download”."),
           }),
           { label: "Products", itemLabel: (p) => p.fields.name.value }
         ),

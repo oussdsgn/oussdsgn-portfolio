@@ -925,7 +925,47 @@ p.cs-list.is-todo { display: inline-block; }
 .store-card__cta { align-self: end; justify-self: start; margin-top: 28px; padding: 10px 18px; border-radius: 999px; background: var(--white); color: var(--black); font-size: 15px; font-weight: 600; }
 .store-card__name { font-size: clamp(30px, 2.8vw, 44px); font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
 .products { display: grid; grid-template-columns: repeat(3, 1fr); align-items: start; gap: 36px 20px; margin-top: 50px; }
-.product { display: block; }
+.product { display: block; width: 100%; text-align: left; }
+.product__media { position: relative; }
+.product__count { position: absolute; left: 12px; bottom: 12px; padding: 5px 12px; border-radius: 999px; background: rgba(0, 0, 0, 0.6); color: var(--white); font-size: 13px; font-weight: 600; backdrop-filter: blur(6px); }
+
+/* Product pop-up */
+.pdialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(1100px, calc(100vw - 48px));
+  max-width: none;
+  max-height: calc(100dvh - 48px);
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--black);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.pdialog::backdrop { background: rgba(0, 0, 0, 0.88); backdrop-filter: blur(6px); }
+.pdialog[open] { animation: lb-in 0.5s var(--ease); }
+.pdialog[open]::backdrop { animation: fade 0.4s var(--ease) both; opacity: 0; }
+.pdialog__inner { position: relative; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 36px; padding: 24px; }
+.pdialog__close { position: absolute; top: 16px; right: 16px; z-index: 2; }
+/* The stage keeps the main picture's shape; other pictures fit inside it. */
+.pdialog__stage { position: relative; overflow: hidden; border-radius: var(--radius); background: #f0f0f0; }
+.pdialog__stage img { display: block; width: 100%; height: 100%; object-fit: contain; animation: fade-swap 0.5s var(--ease) both; }
+.pdialog__nav { position: absolute; top: 50%; translate: 0 -50%; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(6px); }
+.pdialog__nav--prev { left: 12px; }
+.pdialog__nav--next { right: 12px; }
+.pdialog__thumbs { display: flex; gap: 8px; margin-top: 10px; overflow-x: auto; scrollbar-width: none; }
+.pdialog__thumb { flex: none; width: 76px; aspect-ratio: 1; overflow: hidden; border-radius: 8px; opacity: 0.45; outline: 2px solid transparent; outline-offset: -2px; transition: opacity 0.3s, outline-color 0.3s; }
+.pdialog__thumb img { width: 100%; height: 100%; object-fit: cover; }
+.pdialog__thumb:hover { opacity: 0.8; }
+.pdialog__thumb[aria-pressed="true"] { opacity: 1; outline-color: var(--black); }
+.pdialog__info { display: flex; flex-direction: column; gap: 18px; padding: 36px 8px 4px 0; }
+.pdialog__head { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding-right: 56px; }
+.pdialog__name { font-size: clamp(26px, 2.4vw, 34px); font-weight: 600; line-height: 1.05; letter-spacing: -0.02em; }
+.pdialog__text { color: #444; font-size: 17px; line-height: 1.5; white-space: pre-line; }
+.pdialog__btn { width: 100%; margin-top: auto; }
 /* Each product image keeps its own shape, so covers of any size show in full. */
 .product__media { display: block; overflow: hidden; border-radius: var(--radius); background: #eee; }
 .product__media img { display: block; width: 100%; height: auto; transition: transform 1.1s var(--ease); }
@@ -1190,6 +1230,15 @@ p.cs-list.is-todo { display: inline-block; }
   .store-card { padding: 24px; }
   .products { grid-template-columns: 1fr; gap: 32px; margin-top: 30px; }
   .product__name { font-size: 17px; }
+  .pdialog { width: calc(100vw - 24px); max-height: calc(100dvh - 24px); }
+  .pdialog__inner { grid-template-columns: 1fr; gap: 22px; padding: 12px 12px 16px; }
+  .pdialog__close { top: 20px; right: 20px; width: 42px; height: 42px; font-size: 15px; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(6px); }
+  .pdialog__nav { width: 40px; height: 40px; font-size: 15px; }
+  .pdialog__thumb { width: 60px; }
+  .pdialog__info { padding: 0 4px; }
+  .pdialog__head { padding-right: 0; }
+  .pdialog__text { font-size: 16px; }
+  .pdialog__btn { margin-top: 6px; font-size: 21px; }
   .device-scene { padding: 8% 7% 10%; }
   .device-scene.has-phone { padding-right: 13%; }
   .web-card__meta { align-items: flex-start; }
