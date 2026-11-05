@@ -927,7 +927,6 @@ p.cs-list.is-todo { display: inline-block; }
 .products { display: grid; grid-template-columns: repeat(3, 1fr); align-items: start; gap: 36px 20px; margin-top: 50px; }
 .product { display: block; width: 100%; text-align: left; }
 .product__media { position: relative; }
-.product__count { position: absolute; left: 12px; bottom: 12px; padding: 5px 12px; border-radius: 999px; background: rgba(0, 0, 0, 0.6); color: var(--white); font-size: 13px; font-weight: 600; backdrop-filter: blur(6px); }
 
 /* Product pop-up */
 .pdialog {

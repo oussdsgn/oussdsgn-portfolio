@@ -16,7 +16,6 @@ export function Products({ products }: { products: Product[] }) {
             <button type="button" className="product" onClick={() => setOpen(i)} data-cursor="View" aria-haspopup="dialog">
               <span className="product__media">
                 <Image src={pr.image} alt="" placeholder="blur" sizes="(max-width: 760px) 100vw, 30vw" />
-                {pr.images.length > 0 && <span className="product__count">{pr.images.length + 1} pictures</span>}
               </span>
               <span className="product__meta">
                 <span className="product__name">{pr.name}</span>
