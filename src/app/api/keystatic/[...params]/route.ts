@@ -10,8 +10,26 @@ const ready = () =>
   process.env.NODE_ENV === "development" ||
   (process.env.KEYSTATIC_GITHUB_CLIENT_ID && process.env.KEYSTATIC_GITHUB_CLIENT_SECRET && process.env.KEYSTATIC_SECRET);
 
+// TEMP diagnostics: log GitHub's OAuth error code (never tokens or secrets).
+let patched = false;
+function logGitHubOAuthErrors() {
+  if (patched) return;
+  patched = true;
+  const orig = globalThis.fetch;
+  globalThis.fetch = async (input, init) => {
+    const res = await orig(input, init);
+    const url = typeof input === "string" ? input : input instanceof URL ? input.href : input.url;
+    if (url.startsWith("https://github.com/login/oauth/access_token")) {
+      const body = await res.clone().json().catch(() => null);
+      console.log("[keystatic] github token exchange", res.status, body?.error ?? "ok", body?.error_description ?? "", body && !body.error ? `fields=${Object.keys(body).join(",")}` : "");
+    }
+    return res;
+  };
+}
+
 function get() {
   if (!ready()) return null;
+  logGitHubOAuthErrors();
   handlers ??= makeRouteHandler({ config }) as { GET: Handler; POST: Handler };
   return handlers;
 }
@@ -22,12 +40,15 @@ const notSetUp = () =>
     { status: 503 }
   );
 
-export async function GET(req: Request) {
+async function handle(method: "GET" | "POST", req: Request) {
   const h = get();
-  return h ? h.GET(req) : notSetUp();
+  if (!h) return notSetUp();
+  const res = await h[method](req);
+  const path = new URL(req.url).pathname;
+  const cookies = req.headers.get("cookie") ?? "";
+  console.log("[keystatic]", method, path, res.status, `cookies: access=${cookies.includes("keystatic-gh-access-token")} refresh=${cookies.includes("keystatic-gh-refresh-token")}`);
+  return res;
 }
 
-export async function POST(req: Request) {
-  const h = get();
-  return h ? h.POST(req) : notSetUp();
-}
+export const GET = (req: Request) => handle("GET", req);
+export const POST = (req: Request) => handle("POST", req);
