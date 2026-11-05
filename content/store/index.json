@@ -2,14 +2,21 @@
   "products": [
     {
       "name": "Division - Bold Geometric Font Family",
-      "href": "https://drive.google.com/drive/folders/10xbzivfTg_OXqBxwy_ocC7kLm3BA2k8p?usp=drive_link",
+      "image": "products/0/image.jpg",
+      "images": [
+        "products/0/images/0.jpg",
+        "products/0/images/1.jpg",
+        "products/0/images/2.jpg"
+      ],
+      "description": "Massive army-style geometric font for bold headlines. Supports Cyrillic. In the family of 58 styles: angular, round and curved markings, as well as options with contour, inline, cystic, rough, and crumbled fact, everyone has a cursive.\n\nWhere to apply: poster headers and posters, logos and branding, video cover and preview, gaming and military endorsements, banners, printed on clothing, packaging.\n\n📁 TTF, OTF, WOFF, WOFF2 ",
       "price": 0,
-      "image": "products/0/image.jpg"
+      "href": "https://drive.google.com/drive/folders/10xbzivfTg_OXqBxwy_ocC7kLm3BA2k8p?usp=drive_link"
     },
     {
       "name": "Caviara - Display Font Family",
-      "href": "https://drive.google.com/file/d/1OOZYgk97QtUZ0qozWkGxTmqYmxJ5sa-1/view?usp=drive_link",
-      "image": "products/1/image.jpg"
+      "image": "products/1/image.jpg",
+      "images": [],
+      "href": "https://drive.google.com/file/d/1OOZYgk97QtUZ0qozWkGxTmqYmxJ5sa-1/view?usp=drive_link"
     }
   ]
 }
