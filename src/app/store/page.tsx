@@ -33,14 +33,23 @@ export default function StorePage() {
           </div>
           {products.length > 0 && <div className="products">
             {products.map((pr, i) => (
-              <Reveal key={pr.href} delay={(i % 3) * 80}>
-                <a className="product" href={pr.href} target="_blank" rel="noopener noreferrer" data-cursor="Buy">
-                  <span className="product__media"><Image src={pr.image} alt="" placeholder="blur" sizes="(max-width: 760px) 50vw, 30vw" /></span>
-                  <span className="product__meta">
-                    <span className="product__name">{pr.name}</span>
-                    <span className="product__price">${pr.price}</span>
-                  </span>
-                </a>
+              <Reveal key={`${pr.name}-${i}`} delay={(i % 3) * 80}>
+                {(() => {
+                  const inner = (
+                    <>
+                      <span className="product__media"><Image src={pr.image} alt="" placeholder="blur" sizes="(max-width: 760px) 50vw, 30vw" /></span>
+                      <span className="product__meta">
+                        <span className="product__name">{pr.name}</span>
+                        {pr.price !== undefined && <span className="product__price">${pr.price}</span>}
+                      </span>
+                    </>
+                  );
+                  return pr.href ? (
+                    <a className="product" href={pr.href} target="_blank" rel="noopener noreferrer" data-cursor="Buy">{inner}</a>
+                  ) : (
+                    <div className="product">{inner}</div>
+                  );
+                })()}
               </Reveal>
             ))}
           </div>}

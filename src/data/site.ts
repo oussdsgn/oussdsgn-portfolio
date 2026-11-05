@@ -259,6 +259,11 @@ export const webProjects: { name: string; note: string; url?: string; links?: Li
 
 /* ---------- store ---------- */
 /** Products shown under the store cards on the Store page (hidden while empty). */
-export const products: { name: string; href: string; price: number; image: StaticImageData }[] = arr(C.store.products).map(
-  (p: any) => ({ ...p, price: num(p.price ?? 0) })
+// A link that isn't a full web address is dropped, so the card can't lead to a broken page.
+export const products: { name: string; href?: string; price?: number; image: StaticImageData }[] = arr(C.store.products).map(
+  (p: any) => ({
+    ...p,
+    href: /^https?:\/\//.test(p.href ?? "") ? p.href : undefined,
+    price: p.price != null && num(p.price) > 0 ? num(p.price) : undefined,
+  })
 );

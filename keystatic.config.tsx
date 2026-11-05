@@ -388,7 +388,16 @@ export default config({
       format: { data: "json" },
       schema: {
         products: fields.array(
-          fields.object({ name: req("Name"), href: req("URL"), price: fields.number({ label: "Price ($)", step: 0.01 }), image: reqImg("Image") }),
+          fields.object({
+            name: req("Name"),
+            href: fields.url({
+              label: "Link",
+              description: "The product's page, starting with https:// (e.g. https://oussdsgn.gumroad.com/l/...)",
+              validation: { isRequired: true },
+            }),
+            price: fields.number({ label: "Price ($)", description: "Leave empty to hide the price tag.", step: 0.01 }),
+            image: reqImg("Image"),
+          }),
           { label: "Products", itemLabel: (p) => p.fields.name.value }
         ),
       },
