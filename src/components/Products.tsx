@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Reveal } from "./Reveal";
-import { Arrow } from "./Logo";
 import type { Product } from "@/data/site";
 
 /** Product cards on the Store page; clicking one opens a pop-up with its pictures, description and download button. */
@@ -106,7 +105,7 @@ function ProductDialog({ product, onClose }: { product: Product | null; onClose:
             {product.description && <p className="pdialog__text">{product.description}</p>}
             {product.href && (
               <a className="btn pdialog__btn" href={product.href} target="_blank" rel="noopener noreferrer">
-                {product.button} <Arrow />
+                {product.button}
               </a>
             )}
           </div>
