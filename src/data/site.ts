@@ -962,10 +962,7 @@ export const articles: Article[] = [
       { img: jSevensJacket, alt: "Albion Athletic cap and jacket" },
       { p: "The identities don’t just sit on the Reebok kits, they shape the whole kit language, from replica shirts to caps to a limited jacket drop. It’s a great reminder that when a brand has no history, you don’t fake one. You build something people want to belong to from day one." },
     ],
-    links: [
-      { label: "Nomad", href: "https://www.nomadstudio.com/" },
-      { label: "Ultimate Sevens", href: "https://www.ultimatesevens.com/" },
-    ],
+    links: [{ label: "Ultimate Sevens", href: "https://www.ultimatesevens.com/" }],
     credits: [{ role: "Design", name: "Nomad", href: "https://www.nomadstudio.com/" }],
   },
   {

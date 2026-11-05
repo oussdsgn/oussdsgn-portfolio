@@ -721,8 +721,9 @@ p.cs-list.is-todo { display: inline-block; }
 .ja-credits dd { margin: 0; }
 .ja-credits__name { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1.5px; }
 .ja-share { display: flex; gap: 16px; }
-.ja-share a { display: grid; place-items: center; width: 24px; height: 24px; transition: opacity 0.3s; }
-.ja-share a:hover { opacity: 0.55; }
+.ja-share a, .ja-share__btn { position: relative; display: grid; place-items: center; width: 24px; height: 24px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; transition: opacity 0.3s; }
+.ja-share a:hover, .ja-share__btn:hover { opacity: 0.55; }
+.ja-share__toast { position: absolute; left: calc(100% + 12px); top: 50%; transform: translateY(-50%); white-space: nowrap; font-size: 14px; font-weight: 500; color: var(--grey); pointer-events: none; }
 .ja-share svg { width: 22px; height: 22px; fill: currentColor; }
 .ja-next { margin-top: 140px; padding-top: 28px; border-top: 1px solid var(--line); }
 .ja-next__title { margin-bottom: 30px; font-size: 17px; font-weight: 500; color: var(--grey); }
