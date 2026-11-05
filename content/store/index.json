@@ -15,7 +15,12 @@
     {
       "name": "Caviara - Display Font Family",
       "image": "products/1/image.jpg",
-      "images": [],
+      "images": [
+        "products/1/images/0.jpg",
+        "products/1/images/1.jpg",
+        "products/1/images/2.jpg"
+      ],
+      "description": "A bold, broad grotesque inspired by the geometry of digital age logos. There is support for the Cyrillic. In the 142-style family: basic Regular, Rounded and Circular as well as textural variants (Brush, Chalk, Grainy, Worn and others) with contour and inline.\n\nWhere to apply: logos and branding, poster headers and posters, retro-futuristic visuals, game and tech admins, covers, banners and packaging.\n\n📁 TTF, OTF, WOFF, WOFF2 ",
       "href": "https://drive.google.com/file/d/1OOZYgk97QtUZ0qozWkGxTmqYmxJ5sa-1/view?usp=drive_link"
     }
   ]
