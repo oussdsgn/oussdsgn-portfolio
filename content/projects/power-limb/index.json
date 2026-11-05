@@ -1,0 +1,109 @@
+{
+  "title": "Power Limb",
+  "order": 130,
+  "draft": false,
+  "tags": [
+    "Packaging"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Packaging",
+    "Illustration"
+  ],
+  "year": "2023",
+  "info": [
+    "Power Limb is an Algerian company that provides and manufactures prosthetic and orthotic limbs for people with disabilities. They requested a design for the adhesive tape they seal their packages with."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/186059523/Power-Limb-Prosthetic-Orthotic-Adhesive-tape-Design"
+  },
+  "blocks": [
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Solution",
+        "paragraphs": [
+          "The tape carries a subtitle explaining the company’s mission and an illustration of Algiers’ Martyrs’ Memorial to represent the company’s Algerian identity.",
+          "The logo of Flash Graphic, the tape manufacturer, sits on the inner side as a watermark."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "Power Limb adhesive tape, page 1"
+          },
+          {
+            "image": "blocks/1/value/images/1/image.jpg",
+            "alt": "Power Limb adhesive tape, page 2"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Power Limb adhesive tape, page 3"
+          },
+          {
+            "image": "blocks/2/value/images/1/image.jpg",
+            "alt": "Power Limb adhesive tape, page 4"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "Power Limb adhesive tape, page 5"
+          },
+          {
+            "image": "blocks/3/value/images/1/image.jpg",
+            "alt": "Power Limb adhesive tape, page 6"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/4/value/images/0/image.jpg",
+            "alt": "Power Limb adhesive tape, page 7"
+          },
+          {
+            "image": "blocks/4/value/images/1/image.jpg",
+            "alt": "Power Limb adhesive tape, page 8"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/5/value/images/0/image.jpg",
+            "alt": "Power Limb adhesive tape, page 9"
+          }
+        ]
+      }
+    }
+  ]
+}

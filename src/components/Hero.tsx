@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { site } from "@/data/site";
+import { pageText, site } from "@/data/site";
 
 export function Hero() {
   const media = useRef<HTMLDivElement>(null);
@@ -36,17 +36,13 @@ export function Hero() {
       </div>
       <div ref={content} className="hero__inner container">
         <p className="hero__services">
-          <span className="line"><span>Brand Design</span></span>
-          <span className="line"><span>Packaging &amp; Print</span></span>
-          <span className="line"><span>Graphic Design</span></span>
+          {pageText.heroLeft.map((l) => <span key={l} className="line"><span>{l}</span></span>)}
         </p>
         <p className="hero__tagline">
-          <span className="line"><span>Multidisciplinary by nature.</span></span>
-          <span className="line"><span>Obsessive about detail.</span></span>
+          {pageText.heroRight.map((l) => <span key={l} className="line"><span>{l}</span></span>)}
         </p>
         <h1 id="hero-title" className="hero__title">
-          <span className="line"><span>Senior Graphic</span></span>
-          <span className="line"><span>Designer</span></span>
+          {pageText.heroTitle.map((l) => <span key={l} className="line"><span>{l}</span></span>)}
         </h1>
         <div className="hero__scroll" aria-hidden="true"><span>Scroll</span><i /></div>
       </div>

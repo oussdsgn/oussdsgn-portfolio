@@ -1,0 +1,100 @@
+{
+  "title": "Ultra Rapide",
+  "order": 60,
+  "draft": false,
+  "tags": [
+    "Brand Identity"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Art Direction",
+    "Brand Identity"
+  ],
+  "year": "2024",
+  "info": [
+    "Ultra Rapide is an identity built around the idea of speed, movement, and instant action. The brand targets an active, fast-paced audience and uses a visual language designed to communicate velocity at first glance.",
+    "The identity combines a dynamic sprinting figure, a bold italicized “ultra rapide” wordmark, and an energetic blue, yellow, and pink color palette. The brand voice reinforces the positioning through the French tagline: “Poussez-vous, ici on court ultra vite.”"
+  ],
+  "link": {},
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "3",
+        "ratio": "4 / 5",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "“Poussez-vous, ici on court ultra vite !” in yellow on a dark motion-blurred background"
+          },
+          {
+            "image": "blocks/0/value/images/1/image.jpg",
+            "alt": "Blue Ultra Rapide water bottle in motion"
+          },
+          {
+            "image": "blocks/0/value/images/2/image.jpg",
+            "alt": "Cream cap with the pink sprinting-figure icon in a blue bowl of lemons"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Problem",
+        "paragraphs": [
+          "The challenge was to create a visual identity that could communicate speed and energy immediately, while remaining distinctive, readable, and adaptable across different brand applications.",
+          "The brand needed more than simply a “fast” aesthetic. Its identity had to translate movement into a recognizable visual system, giving the business a strong personality while appealing to an audience that values speed, action, and efficiency."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Ultra Rapide T-shirt, colour palette and logo on black"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Solution",
+        "paragraphs": [
+          "I developed a speed-driven identity system centered around a sprinting figure that visually represents movement and urgency. The italicized wordmark reinforces this idea through its forward-leaning, energetic character.",
+          "An electric blue and yellow foundation, supported by a vivid pink accent, creates a high-energy palette that gives the brand a playful yet highly visible presence. The colors and typography work together to create a sense of acceleration even in static applications.",
+          "The tagline “Poussez-vous, ici on court ultra vite” extends the concept into the brand’s communication, giving the identity a confident and playful voice.",
+          "The result is a high-velocity brand system where the icon, typography, color, and messaging all reinforce the same central idea: speed you can see."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/4/value/images/0/image.jpg",
+            "alt": "Ultra Rapide running vest, shorts, shoes and race bib on a track"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/5/value/images/0/image.jpg",
+            "alt": "Ultra Rapide tagline on a billboard outside a stadium"
+          }
+        ]
+      }
+    }
+  ]
+}

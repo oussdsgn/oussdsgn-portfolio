@@ -1,0 +1,22 @@
+{
+  "title": "Green Burger",
+  "order": 190,
+  "draft": false,
+  "tags": [
+    "Brand Identity"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Logo Design",
+    "Brand Identity"
+  ],
+  "year": "2024",
+  "info": [
+    "Brand identity for Green Burger, a healthy-snacks restaurant."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/197551573/Green-Burger-Restaurent-Brand-Identity"
+  },
+  "blocks": []
+}

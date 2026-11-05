@@ -1,0 +1,109 @@
+{
+  "name": "oussdsgn",
+  "owner": "Oussama",
+  "fullName": "Oussama Aba",
+  "role": "Senior Graphic Designer",
+  "city": "Algiers",
+  "timeZone": "Africa/Algiers",
+  "year": 2026,
+  "email": "oussamaaba1@outlook.com",
+  "phone": "+213 777 58 59 66",
+  "formKey": "ee8a8da1-dce7-46d1-94a7-f5d170b1af73",
+  "hero": "hero.jpg",
+  "portrait": "portrait.jpg",
+  "marquee": [
+    "Brand Identity",
+    "Social Media",
+    "Packaging",
+    "Print Design",
+    "UI/UX Design"
+  ],
+  "socials": [
+    {
+      "label": "Behance",
+      "href": "https://behance.net/oussamaaba"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com/in/oussama-aba-tlm"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com/oussdesigns/"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/oussdsgn"
+    }
+  ],
+  "nav": [
+    {
+      "label": "Work",
+      "href": "/projects"
+    },
+    {
+      "label": "Journal",
+      "href": "/journal"
+    },
+    {
+      "label": "Store",
+      "href": "/store"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    }
+  ],
+  "footer": [
+    {
+      "label": "Work",
+      "href": "/projects"
+    },
+    {
+      "label": "Journal",
+      "href": "/journal"
+    },
+    {
+      "label": "Store",
+      "href": "/store"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    }
+  ],
+  "stores": [
+    {
+      "id": "gumroad",
+      "name": "Gumroad",
+      "handle": "oussdsgn.gumroad.com",
+      "note": "Digital assets & resources",
+      "cta": "Shop the store",
+      "href": "https://oussdsgn.gumroad.com"
+    },
+    {
+      "id": "magnific",
+      "name": "Magnific",
+      "handle": "magnific.com/author/suoliemane123",
+      "note": "Stock assets",
+      "cta": "Browse assets",
+      "href": "https://www.magnific.com/author/suoliemane123"
+    },
+    {
+      "id": "deviantart",
+      "name": "DeviantArt",
+      "handle": "deviantart.com/oussdesigns",
+      "note": "Artworks & illustration",
+      "cta": "See artworks",
+      "href": "https://www.deviantart.com/oussdesigns"
+    }
+  ]
+}

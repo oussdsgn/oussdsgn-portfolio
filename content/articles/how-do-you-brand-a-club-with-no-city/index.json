@@ -1,0 +1,64 @@
+{
+  "title": "How Do You Brand a Club With No City?",
+  "date": "2026-11-05",
+  "category": "Design",
+  "image": "image.jpg",
+  "dek": "How Nomad built six rugby sevens identities for Ultimate Sevens with no stadium, no history and no fans yet.",
+  "body": [
+    {
+      "discriminant": "video",
+      "value": {
+        "video": "/media/how-do-you-brand-a-club-with-no-city/body/0/value/video.mp4",
+        "poster": "body/0/value/poster.jpg",
+        "alt": "Ultimate Sevens club identities by Nomad"
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "Ultimate Sevens is a new rugby sevens league backed by BIA Sports Group, and its first season needed six club identities in six weeks. The catch: none of the clubs had a home city. Sports teams usually borrow their identity from where they play, so Nomad flipped it. Each club became a territory instead: Albion Athletic for England, Foudre Bleue for France, Sol Feroz for Spain and Latin America, Pacific Current for Oceania, plus Atlantic Novas and Clan Taran. Every name follows one system: a place, a personality, then “Sevens Club.”"
+      }
+    },
+    {
+      "discriminant": "video",
+      "value": {
+        "video": "/media/how-do-you-brand-a-club-with-no-city/body/2/value/video.mp4",
+        "poster": "body/2/value/poster.jpg",
+        "alt": "The six Ultimate Sevens club monograms"
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "The marks skip every sports cliché. No lions, no eagles, no fake heritage crests pretending the league has a century of history. Each club got an interlocking monogram that reads like a classic badge but looks right at home on a cap. All six were drawn from the same baseline and animate to the same tempo, so they feel like one family with six different attitudes. Each club also got its own manifesto and tagline, like Clan Taran’s “Feel The Thunder.”"
+      }
+    },
+    {
+      "discriminant": "image",
+      "value": {
+        "image": "body/4/value/image.jpg",
+        "alt": "Albion Athletic cap and jacket"
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "The identities don’t just sit on the Reebok kits, they shape the whole kit language, from replica shirts to caps to a limited jacket drop. It’s a great reminder that when a brand has no history, you don’t fake one. You build something people want to belong to from day one."
+      }
+    }
+  ],
+  "source": {},
+  "links": [
+    {
+      "label": "Ultimate Sevens",
+      "href": "https://www.ultimatesevens.com/"
+    }
+  ],
+  "credits": [
+    {
+      "role": "Design",
+      "name": "Nomad",
+      "href": "https://www.nomadstudio.com/"
+    }
+  ]
+}

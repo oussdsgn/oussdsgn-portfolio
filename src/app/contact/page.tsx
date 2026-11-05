@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 import { Clock } from "@/components/Clock";
 import { Reveal } from "@/components/Reveal";
-import { site } from "@/data/site";
+import { pageText, site } from "@/data/site";
 
 export const metadata: Metadata = { title: "Contact" };
 
@@ -11,7 +11,7 @@ export default function ContactPage() {
     <section className="contact dark" data-header-dark>
       <div className="container contact__inner">
         <div className="contact__aside">
-          <h1 className="contact__title"><span className="line"><span>Get in touch</span></span></h1>
+          <h1 className="contact__title"><span className="line"><span>{pageText.contactTitle}</span></span></h1>
           <Reveal className="contact__info" delay={150}>
             <div>
               <p className="contact__key">Email</p>

@@ -1,0 +1,223 @@
+{
+  "title": "INNOVEA Labs",
+  "order": 80,
+  "draft": false,
+  "tags": [
+    "Brand Identity",
+    "Brand Guidelines"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Art Direction",
+    "Brand Identity",
+    "Event Branding"
+  ],
+  "year": "2025",
+  "info": [
+    "Innovea Laboratoires is a pharmaceutical and healthcare research company requiring a full brand identity to reflect its position in scientific innovation and clinical excellence.",
+    "The brief called for a complete visual system (logo, color palette, typography and brand applications), professional and credible enough for a pharmaceutical audience, while still feeling modern and distinct within a fairly conservative industry."
+  ],
+  "link": {},
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "ratio": "1 / 1",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "INNOVEA event stage, roll-up banner and branded cup"
+          },
+          {
+            "image": "blocks/0/value/images/1/image.jpg",
+            "alt": "INNOVEA V monogram on a laptop and on an electric-blue grid"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Concept",
+        "paragraphs": [
+          "I designed the identity around a refined “V” monogram, rendered as a sharp, faceted mark that reads as both a laboratory instrument and a mark of precision, evoking accuracy, trust, and scientific rigor.",
+          "A deep navy and metallic silver-blue palette grounds the brand in credibility and clinical professionalism, while a secondary electric blue adds energy and a more contemporary, tech-forward edge.",
+          "The wordmark pairs a clean, confident “INNOVEA” with a lighter tracked “LABORATOIRES” beneath it, keeping the full name legible and formal across all applications. The system was built to move fluidly between corporate, scientific, and event contexts without losing its identity."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "INNOVEA logo system: primary lockup, monogram and colour reversals"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Solution",
+        "paragraphs": [
+          "I developed the identity as a comprehensive brand system, starting with the primary and secondary logo lockups, monogram variations, and full color and reversal guidelines to ensure consistency across dark and light backgrounds alike.",
+          "From there, I extended the identity into real-world applications: laboratory and office photography treatments, a branded PowerPoint presentation template for internal and client-facing decks, corporate stationery, and large-scale event branding, including exhibition booth graphics, backlit signage, and digital screens for trade shows and conferences.",
+          "Typography and color-coding rules were also defined to keep primary and secondary type usage consistent across every touchpoint, from a printed folder to a laboratory backdrop."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/4/value/images/0/image.jpg",
+            "alt": "INNOVEA Laboratoires sign on a textured wall in sunlight"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Guidelines",
+        "paragraphs": [
+          "The system is documented in a full brand book: logo orientation and construction grid, a wordmark based on Poppins and refined to be more geometric, primary and secondary colour palettes, brand patterns, typography, and rules for incorrect logo use."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/6/value/images/0/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 1"
+          },
+          {
+            "image": "blocks/6/value/images/1/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 2"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/7/value/images/0/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 3"
+          },
+          {
+            "image": "blocks/7/value/images/1/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 4"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/8/value/images/0/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 5"
+          },
+          {
+            "image": "blocks/8/value/images/1/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 6"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/9/value/images/0/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 7"
+          },
+          {
+            "image": "blocks/9/value/images/1/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 8"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/10/value/images/0/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 9"
+          },
+          {
+            "image": "blocks/10/value/images/1/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 10"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/11/value/images/0/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 11"
+          },
+          {
+            "image": "blocks/11/value/images/1/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 12"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/12/value/images/0/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 13"
+          },
+          {
+            "image": "blocks/12/value/images/1/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 14"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/13/value/images/0/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 15"
+          },
+          {
+            "image": "blocks/13/value/images/1/image.jpg",
+            "alt": "INNOVEA brand guidelines, page 16"
+          }
+        ]
+      }
+    }
+  ]
+}

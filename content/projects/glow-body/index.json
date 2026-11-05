@@ -1,0 +1,156 @@
+{
+  "title": "Glow Body Clinic",
+  "order": 160,
+  "draft": false,
+  "tags": [
+    "Brand Identity",
+    "Brand Guidelines"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Brand Identity",
+    "Brand Handbook"
+  ],
+  "year": "2023",
+  "info": [
+    "Brand handbook for Glow Body, a surgery clinic. The brand is meant to feel safe, compassionate, efficient, professional and caring. It covers the logo build-up, typography (Magnia and Gotham), colour palette and stationery."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/165251291/Glow-Body-Surgery-Clinic-Brand-Handbook"
+  },
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Glow Body brand handbook, page 2"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "Glow Body brand handbook, page 3"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Glow Body brand handbook, page 4"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "Glow Body brand handbook, page 5"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/4/value/images/0/image.jpg",
+            "alt": "Glow Body brand handbook, page 6"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/5/value/images/0/image.jpg",
+            "alt": "Glow Body brand handbook, page 7"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/6/value/images/0/image.jpg",
+            "alt": "Glow Body brand handbook, page 8"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/7/value/images/0/image.jpg",
+            "alt": "Glow Body brand handbook, page 9"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/8/value/images/0/image.jpg",
+            "alt": "Glow Body brand handbook, page 10"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/9/value/images/0/image.jpg",
+            "alt": "Glow Body brand handbook, page 11"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/10/value/images/0/image.jpg",
+            "alt": "Glow Body brand handbook, page 12"
+          }
+        ]
+      }
+    }
+  ]
+}

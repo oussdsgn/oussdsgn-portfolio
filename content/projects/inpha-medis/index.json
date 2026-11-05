@@ -1,0 +1,90 @@
+{
+  "title": "INPHA-MédiS 25th Anniversary",
+  "order": 50,
+  "draft": false,
+  "tags": [
+    "Rebrand",
+    "Social Media"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Art Direction",
+    "Branding",
+    "Social Media"
+  ],
+  "year": "2025",
+  "info": [
+    "INPHA-MédiS celebrated 25 years “au service de la santé”. The anniversary called for an identity that marks the milestone while staying true to the company’s established brand.",
+    "The work centres on a “25 years” anniversary mark that sits alongside the INPHA-MédiS logo, carried across print, merchandise, signage and social media throughout the year."
+  ],
+  "link": {},
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "INPHA-MédiS 25th anniversary stationery, mugs, calendar and tote bag"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Challenge",
+        "paragraphs": [
+          "An anniversary needs to feel like a celebration without competing with the main brand. The 25-year mark had to sit naturally next to the existing logo and stay consistent across very different touchpoints, from a business card to the front of a building."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "INPHA-MédiS 25 years banner on a glass office building at dusk"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Solution",
+        "paragraphs": [
+          "The “25 years” mark uses the brand’s own blue and clean, clinical layouts, so it reads as part of INPHA-MédiS rather than a separate campaign.",
+          "It was applied to stationery, mugs, calendars, tote bags and large-format building signage, and extended into social media posts for national and health awareness days: 1 November, the International Day of Persons with Disabilities, World Diabetes Day and screening campaigns."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "4",
+        "images": [
+          {
+            "image": "blocks/4/value/images/0/image.jpg",
+            "alt": "INPHA-MédiS 1 November post"
+          },
+          {
+            "image": "blocks/4/value/images/1/image.jpg",
+            "alt": "INPHA-MédiS disability day post"
+          },
+          {
+            "image": "blocks/4/value/images/2/image.jpg",
+            "alt": "INPHA-MédiS world diabetes day post"
+          },
+          {
+            "image": "blocks/4/value/images/3/image.jpg",
+            "alt": "INPHA-MédiS screening post"
+          }
+        ]
+      }
+    }
+  ]
+}

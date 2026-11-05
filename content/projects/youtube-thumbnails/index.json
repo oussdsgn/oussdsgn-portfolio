@@ -1,0 +1,40 @@
+{
+  "title": "YouTube Thumbnails",
+  "order": 270,
+  "draft": true,
+  "tags": [
+    "Thumbnails"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Thumbnail Design",
+    "Art Direction"
+  ],
+  "year": "TODO",
+  "info": [
+    "A thumbnail has a split second to earn the click, usually at phone size in a crowded feed. These redesigns put the original next to my version.",
+    "Each one is built for click-through and readability on mobile: one clear focal point, a short line of text that stays legible at small sizes, and strong contrast between subject and background."
+  ],
+  "link": {},
+  "blocks": [
+    {
+      "discriminant": "compare",
+      "value": {
+        "pairs": [
+          {
+            "label": "TODO: Thumbnail 1: channel / video title"
+          },
+          {
+            "label": "TODO: Thumbnail 2: channel / video title"
+          },
+          {
+            "label": "TODO: Thumbnail 3: channel / video title"
+          },
+          {
+            "label": "TODO: Thumbnail 4: channel / video title"
+          }
+        ]
+      }
+    }
+  ]
+}

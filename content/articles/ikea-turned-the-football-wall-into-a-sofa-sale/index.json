@@ -1,0 +1,43 @@
+{
+  "title": "IKEA Turned the Football Wall Into a Sofa Sale",
+  "date": "2026-07-16",
+  "category": "Design",
+  "image": "image.jpg",
+  "body": [
+    {
+      "discriminant": "image",
+      "value": {
+        "image": "body/0/value/image.jpg",
+        "alt": "IKEA FLAT OUT campaign"
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "On a free kick, one defender lies flat behind the wall to block shots under the jump. IKEA Saudi Arabia looked at that pose and saw a man lounging on an invisible sofa. That became FLAT OUT, a real-time campaign made with local franchisee Alsulaiman and Memac Ogilvy during the World Cup."
+      }
+    },
+    {
+      "discriminant": "image",
+      "value": {
+        "image": "body/2/value/image.jpg",
+        "alt": "IKEA FLAT OUT campaign visual"
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "The game was simple. Spot the moment a player lies down, take a photo, and send it to IKEA by direct message. You get an instant discount on a sofa, and the percentage matches the player’s shirt number. Number 7 gives 7% off, number 21 gives 21%. Every free kick became a small bet."
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "The smart part is the cost. No TV rights, no FIFA sponsorship, no star players, so the production costs almost nothing while the visibility is huge. And to claim the voucher, people share their email and phone number right when they want a sofa. IKEA didn’t just give a discount, it collected qualified leads."
+      }
+    }
+  ],
+  "source": {},
+  "links": [],
+  "credits": []
+}

@@ -1,0 +1,102 @@
+{
+  "title": "Twsel Express Logistics",
+  "order": 70,
+  "draft": false,
+  "tags": [
+    "Brand Identity"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Art Direction",
+    "Brand Identity"
+  ],
+  "year": "2026",
+  "info": [
+    "Twsel Express is a logistics and delivery brand designed around the idea of movement, reliability, and scalability. The identity needed to function across a wide range of touchpoints, from small-format stationery to large-scale transportation and shipping applications.",
+    "The visual system is centered around a “te” monogram enclosed within a square frame, supported by a navy-and-orange color palette. A custom typographic system and recurring wave pattern extend the identity across packaging, uniforms, vehicles, and marketing materials."
+  ],
+  "link": {},
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "ratio": "3 / 4",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Twsel Express brand sheet: monogram construction, typeface, app icons and stationery"
+          },
+          {
+            "image": "blocks/0/value/images/1/image.jpg",
+            "alt": "Twsel Express delivery van on a coastal highway at sunset"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Problem",
+        "paragraphs": [
+          "The challenge was to create a visual identity that could communicate trust and efficiency while remaining highly recognizable across very different physical scales.",
+          "A logistics brand operates across numerous touchpoints, from business cards and documents to delivery vehicles and shipping containers. The identity therefore needed to remain simple, legible, and distinctive, even when reproduced at very large or very small sizes.",
+          "It also needed to give Twsel Express a consistent visual language that could be extended beyond the logo itself."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Twsel Express branded truck at a loading dock"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Solution",
+        "paragraphs": [
+          "I developed a scalable identity system built around the square “te” monogram. Its simple geometric construction allows the mark to remain immediately recognizable whether applied to stationery, uniforms, packaging, vehicles, or large freight containers.",
+          "The navy-and-orange palette creates a balance between reliability and energy, while the custom typography establishes a consistent brand voice across communication materials.",
+          "A recurring wave pattern was introduced as a secondary graphic element, reinforcing the ideas of movement, routes, and continuous flow while giving the brand additional visual recognition beyond the monogram.",
+          "The result is a flexible logistics identity designed to travel with the business, maintaining consistency from the smallest piece of stationery to the largest transportation surface."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "ratio": "3 / 4",
+        "images": [
+          {
+            "image": "blocks/4/value/images/0/image.jpg",
+            "alt": "Twsel Express flag against a blue sky"
+          },
+          {
+            "image": "blocks/4/value/images/1/image.jpg",
+            "alt": "Twsel Express label on a shipping container"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/5/value/images/0/image.jpg",
+            "alt": "Twsel Express stationery, envelope, truck and containers"
+          }
+        ]
+      }
+    }
+  ]
+}

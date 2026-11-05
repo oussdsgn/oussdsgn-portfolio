@@ -1,0 +1,90 @@
+{
+  "selectedWorks": [
+    "infinix-pubg",
+    "adem-fitt",
+    "doubby-dor",
+    "heetch",
+    "inpha-medis",
+    "ultra-rapide",
+    "twsel",
+    "innovea"
+  ],
+  "services": [
+    {
+      "title": "Brand Identity",
+      "text": "I develop cohesive brand systems that go beyond logos, defining how your brand looks, feels, and communicates. The result is a distinct, memorable identity that builds trust and stands out in a crowded market.",
+      "image": "services/0/image.jpg"
+    },
+    {
+      "title": "Social Media & Campaigns",
+      "text": "I design scroll-stopping social content and campaign visuals, from monthly calendars to product launches and city openings, built on a clear system so every post strengthens the brand and drives engagement.",
+      "image": "services/1/image.jpg"
+    },
+    {
+      "title": "Packaging & Print",
+      "text": "From dielines and labels to roll-ups, medals and large-format signage, I prepare print-ready work that looks as good on the shelf as it does on screen, with the production know-how to get it printed right.",
+      "image": "services/2/image.jpg"
+    },
+    {
+      "title": "UI/UX & Web Design",
+      "text": "I design intuitive, visually engaging websites that balance aesthetics with functionality. Every experience is tailored to guide users effortlessly while reinforcing your brand and driving meaningful interaction.",
+      "phone": "services/3/phone.jpg"
+    }
+  ],
+  "process": [
+    {
+      "title": "Discovery",
+      "text": "I take time to understand your brand, objectives, and audience, gathering the insights needed to inform a clear and thoughtful direction."
+    },
+    {
+      "title": "Strategy",
+      "text": "I shape a focused plan that aligns ideas, messaging, and structure, ensuring every creative decision is intentional and effective."
+    },
+    {
+      "title": "Design",
+      "text": "I translate strategy into strong visual outcomes, crafting work that is both engaging and purposeful across every touchpoint."
+    },
+    {
+      "title": "Delivery",
+      "text": "I prepare and launch with care, delivering polished assets that are consistent, functional, and ready to perform in the real world."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Working with Oussama was seamless from start to finish. He understood our vision, elevated it with thoughtful design, and delivered results that truly set our brand apart.",
+      "name": "Nihad Ahmed Bensoltane",
+      "role": "Head of AMS Agency · My manager at AMS Group",
+      "image": "testimonials/0/image.jpg"
+    }
+  ],
+  "stats": [
+    {
+      "value": 7,
+      "decimals": 0,
+      "suffix": "+",
+      "label": "years of experience",
+      "text": "Branding, social media, print and UI/UX design since 2017."
+    },
+    {
+      "value": 14,
+      "decimals": 0,
+      "suffix": "+",
+      "label": "brands & clients",
+      "text": "From Heetch and Beko to AMS Groupe and INPHA-MédiS."
+    },
+    {
+      "value": 2.7,
+      "decimals": 1,
+      "suffix": "K+",
+      "label": "stock assets published",
+      "text": "Graphic assets designed for Freepik and Adobe Stock."
+    },
+    {
+      "value": 85,
+      "decimals": 0,
+      "suffix": "K+",
+      "label": "downloads worldwide",
+      "text": "Assets downloaded by designers around the world."
+    }
+  ]
+}

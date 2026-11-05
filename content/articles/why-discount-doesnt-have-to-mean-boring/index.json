@@ -1,0 +1,44 @@
+{
+  "title": "Why “Discount” Doesn’t Have to Mean “Boring”",
+  "date": "2026-08-08",
+  "category": "Design",
+  "image": "image.jpg",
+  "dek": "How Make Studio’s fraenk rebrand turned a budget mobile tariff into a sharp, memorable identity.",
+  "body": [
+    {
+      "discriminant": "image",
+      "value": {
+        "image": "body/0/value/image.jpg",
+        "alt": "fraenk rebrand by Make Studio"
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "Fraenk is Deutsche Telekom’s app-only mobile tariff, and Make Studio’s rebrand proves that a discount brand can still have personality. Instead of shouting louder on price, which is the usual discount playbook, they took the brand’s old principle of “radically unspectacular” and made it sharper: “spectacularly simple.”"
+      }
+    },
+    {
+      "discriminant": "image",
+      "value": {
+        "image": "body/2/value/image.jpg",
+        "alt": "fraenk typography and illustrations"
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "The logo is no longer the hero. Type is. The “æ” ligature was redrawn to feel like two letters giving each other a warm hug, and a custom headline typeface built on Displaay’s Greed carries the personality across every touchpoint. Icons were replaced with a set of playful illustrated doodles."
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "The result is more than just prettier. Brand perception rose by more than 30% among people who already knew fraenk, and willingness to recommend more than doubled. It is a great reminder that “simple” and “forgettable” are not the same thing."
+      }
+    }
+  ],
+  "source": {},
+  "links": [],
+  "credits": []
+}

@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import { SectionLabel } from "@/components/SectionLabel";
 import { Stats } from "@/components/Stats";
 import { Cta } from "@/components/Cta";
-import { about, clients, education, experience, explorations, site, stats } from "@/data/site";
+import { about, clients, education, experience, explorations, pageText, site, stats } from "@/data/site";
 
 export const metadata: Metadata = { title: "About" };
 
@@ -86,7 +86,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="explorations__head">
             <h2 className="clients__title">Visual explorations</h2>
-            <p className="explorations__note">Personal image-making: light, colour and portraiture.</p>
+            <p className="explorations__note">{pageText.explorationsNote}</p>
           </div>
           <div className="explorations__grid">
             {explorations.map((img, i) => (

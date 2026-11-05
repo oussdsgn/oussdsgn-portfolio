@@ -12,7 +12,7 @@ import { ArticleCard } from "@/components/ArticleCard";
 import { Cta } from "@/components/Cta";
 import { Arrow } from "@/components/Logo";
 import { Phone } from "@/components/DeviceMockup";
-import { articles, process, selectedWorks, services, site, stats } from "@/data/site";
+import { articles, pageText, process, selectedWorks, services, site, stats } from "@/data/site";
 
 export default function Home() {
   return (
@@ -22,17 +22,14 @@ export default function Home() {
 
       <section className="intro">
         <div className="container">
-          <RevealWords as="h2" className="intro__heading" text="I create thoughtful, high-impact visuals and structured digital experiences built to leave a lasting impression." />
+          <RevealWords as="h2" className="intro__heading" text={pageText.homeIntro} />
           <div className="intro__grid">
             <Reveal className="intro__photo">
               <Image src={site.images.portrait} alt={`Portrait of ${site.owner}`} placeholder="blur" sizes="230px" />
             </Reveal>
-            <Reveal as="p" className="intro__text" delay={80}>
-              I’m {site.owner}, a creative focused on shaping bold visuals and purposeful digital experiences. My work sits at the intersection of clarity and expression, where strong ideas meet clean execution.
-            </Reveal>
-            <Reveal as="p" className="intro__text" delay={160}>
-              I approach every project with intention, crafting solutions that not only look refined but communicate effectively and leave a lasting impression.
-            </Reveal>
+            {pageText.homeIntroText.map((t, i) => (
+              <Reveal as="p" key={i} className="intro__text" delay={80 * (i + 1)}>{t}</Reveal>
+            ))}
             <Link className="btn intro__cta" href="/about">Read more <Arrow /></Link>
           </div>
         </div>
@@ -49,7 +46,7 @@ export default function Home() {
       <section className="services dark">
         <div className="container">
           <SectionLabel index="04" title="Services" />
-          <Reveal as="h2" className="services__heading">Thoughtful, high-impact visuals and structured digital experiences built for your brand</Reveal>
+          <Reveal as="h2" className="services__heading">{pageText.servicesTitle}</Reveal>
           <div className="services__list">
             {services.map((s, i) => (
               <Reveal key={s.title} className="service">

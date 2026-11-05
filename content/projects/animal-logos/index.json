@@ -1,0 +1,70 @@
+{
+  "title": "Animal Shapes Logos",
+  "order": 260,
+  "draft": false,
+  "tags": [
+    "Logo Design"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Logo Design"
+  ],
+  "year": "2022",
+  "info": [
+    "A set of logo concepts built from animal shapes."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/147436869/Animal-shapes-logo-concepts"
+  },
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Animal shapes logo concepts, page 2"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "Animal shapes logo concepts, page 3"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Animal shapes logo concepts, page 4"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "Animal shapes logo concepts, page 5"
+          }
+        ]
+      }
+    }
+  ]
+}

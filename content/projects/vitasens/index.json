@@ -1,0 +1,72 @@
+{
+  "title": "Vitasens",
+  "order": 150,
+  "draft": false,
+  "tags": [
+    "Brand Identity",
+    "Brand Guidelines"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Brand Identity",
+    "Brand Guidelines"
+  ],
+  "year": "2023",
+  "info": [
+    "Brand identity and guidelines for Vitasens: logo build-up and grid, colours, patterns and applications."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/176829177/Vitasesns-Brand-Identity-and-Guidelines"
+  },
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Vitasens brand identity, page 2"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "Vitasens brand identity, page 3"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Vitasens brand identity, page 4"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "Vitasens brand identity, page 5"
+          }
+        ]
+      }
+    }
+  ]
+}

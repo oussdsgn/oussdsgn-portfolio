@@ -1,0 +1,104 @@
+{
+  "title": "Infinix HOT 20S × PUBG Mobile",
+  "order": 10,
+  "draft": false,
+  "tags": [
+    "Packaging"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Packaging Design",
+    "Art Direction"
+  ],
+  "year": "TODO",
+  "info": [
+    "Special-edition packaging for the Infinix HOT 20S, co-branded with PUBG Mobile. The box had to carry two brands at once: a smartphone maker and one of the best-known mobile games."
+  ],
+  "link": {},
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Infinix HOT 20S × PUBG Mobile box in shrink-wrap on a table"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Challenge",
+        "paragraphs": [
+          "A phone box is usually quiet and product-led. A gaming special edition needs to feel like the game itself, without losing the phone’s own name, key specs and the Infinix brand."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Die-line of the Infinix HOT 20S × PUBG Mobile box with colour swatches on a desk"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Solution",
+        "paragraphs": [
+          "The lid is built around a PUBG character over Infinix teal, with the model name “HOT 20S” set large on the long edge and the key specs (120Hz FHD+ and 13GB RAM) called out as yellow game-style tags.",
+          "Every face of the box has a job: the long side carries the game’s “Winner winner chicken dinner” line with chicken and rifle icons, the end panel carries the Special Edition mark, the top flap repeats the Infinix | PUBG Mobile lock-up, and the bottom flap holds the handling and recycling symbols."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "ratio": "4 / 3",
+        "images": [
+          {
+            "image": "blocks/4/value/images/0/image.jpg",
+            "alt": "Infinix HOT 20S × PUBG Mobile box held in a phone shop"
+          },
+          {
+            "image": "blocks/4/value/images/1/image.jpg",
+            "alt": "Infinix HOT 20S × PUBG Mobile box with its lid on"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "specs",
+      "value": {
+        "title": "Technical details",
+        "items": [
+          {
+            "label": "Colour",
+            "value": "TODO: CMYK / Pantone references"
+          },
+          {
+            "label": "Material / substrate",
+            "value": "TODO: board type and weight"
+          },
+          {
+            "label": "Finishes",
+            "value": "TODO: e.g. hot foil, spot UV, lamination"
+          },
+          {
+            "label": "Printing method",
+            "value": "TODO: e.g. offset, digital"
+          }
+        ]
+      }
+    }
+  ]
+}

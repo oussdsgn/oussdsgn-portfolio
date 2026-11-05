@@ -1,0 +1,102 @@
+{
+  "title": "Doubby dôr",
+  "order": 20,
+  "draft": false,
+  "tags": [
+    "Packaging"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Packaging Design"
+  ],
+  "year": "TODO",
+  "info": [
+    "Carton packaging for Doubby dôr, a 200 g Dubai-style pistachio chocolate, designed in two colourways, pistachio and deep green, so the range reads as one family on shelf."
+  ],
+  "link": {},
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Doubby dôr carton, pistachio colourway"
+          },
+          {
+            "image": "blocks/0/value/images/1/image.jpg",
+            "alt": "Doubby dôr carton, green colourway"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Challenge",
+        "paragraphs": [
+          "Dubai-style pistachio chocolate is a crowded, trend-driven category. The pack had to make the product’s filling and indulgence obvious at a glance, while giving the brand its own recognisable look."
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Solution",
+        "paragraphs": [
+          "The front leads with the Doubby dôr mark and a chocolate splash that flows into a cut-through photo of the pistachio-filled bar, over a geometric pattern. A script “Chocolat dubaï” runs along the side panel, and the back carries ingredients in English and Arabic, the nutrition table, barcode and recycling symbols.",
+          "Keeping the layout identical and changing only the background colour lets each variant stand out while the two cartons clearly belong together."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "Flat die-lines of the Doubby dôr carton in both colourways"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "specs",
+      "value": {
+        "title": "Technical details",
+        "items": [
+          {
+            "label": "Colour",
+            "value": "TODO: CMYK / Pantone references"
+          },
+          {
+            "label": "Material / substrate",
+            "value": "TODO: board type and weight"
+          },
+          {
+            "label": "Finishes",
+            "value": "TODO: e.g. hot foil, spot UV, lamination"
+          },
+          {
+            "label": "Printing method",
+            "value": "TODO: e.g. offset, digital"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "placeholder",
+      "value": {
+        "cols": "3",
+        "ratio": "4 / 5",
+        "labels": [
+          "Photo of the printed carton",
+          "Photo of the printed carton",
+          "Photo of the printed carton"
+        ]
+      }
+    }
+  ]
+}

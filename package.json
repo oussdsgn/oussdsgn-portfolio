@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/build-content.mjs --watch & next dev",
+    "content": "node scripts/build-content.mjs",
+    "prebuild": "node scripts/build-content.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "tsc --noEmit"
+    "lint": "node scripts/build-content.mjs && tsc --noEmit && tsx scripts/check-content.mts"
   },
   "dependencies": {
+    "@keystatic/core": "^0.6.9",
+    "@keystatic/next": "^5.0.5",
     "lenis": "^1.3.27",
     "next": "^16.4.2",
     "react": "^19.3.1",
@@ -18,6 +22,7 @@
     "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
     "typescript": "^5.9.3"
   }
 }

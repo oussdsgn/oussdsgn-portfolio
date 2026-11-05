@@ -1,0 +1,47 @@
+{
+  "title": "Studio Blackburn Gives Ellis Butchers a Cast of Characters From Meat",
+  "date": "2026-01-12",
+  "category": "Design",
+  "image": "image.jpg",
+  "dek": "Ripping up the butcher-branding rulebook.",
+  "body": [
+    {
+      "discriminant": "image",
+      "value": {
+        "image": "body/0/value/image.jpg",
+        "alt": "Ellis Butchers identity by Studio Blackburn"
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "No livestock silhouettes. No cut charts. Studio Blackburn ripped up the butcher-branding rulebook for Ellis Butchers."
+      }
+    },
+    {
+      "discriminant": "image",
+      "value": {
+        "image": "body/2/value/image.jpg",
+        "alt": "Ellis Butchers meat characters"
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "Instead of humanising the animal, they humanised the meat, giving cuts of meat their own legs, led by a mascot called Meat Ellis, a cast of characters wholesome, unexpected and genuinely fun."
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "Two shops, one parent brand, two distinct personalities. Proof that identity systems can flex by neighbourhood without losing coherence."
+      }
+    }
+  ],
+  "source": {
+    "label": "Full project",
+    "href": "https://lnkd.in/dBnTxXWh"
+  },
+  "links": [],
+  "credits": []
+}

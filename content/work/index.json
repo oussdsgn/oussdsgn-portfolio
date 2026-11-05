@@ -1,0 +1,671 @@
+{
+  "categories": [
+    {
+      "label": "Brand Identity",
+      "tags": [
+        "Brand Identity",
+        "Brand Guidelines",
+        "Rebrand",
+        "Logo Design"
+      ]
+    },
+    {
+      "label": "Logofolio",
+      "tags": [],
+      "archive": "Logofolio"
+    },
+    {
+      "label": "Packaging",
+      "tags": [
+        "Packaging"
+      ],
+      "archive": "Packaging"
+    },
+    {
+      "label": "Social Media",
+      "tags": [
+        "Social Media",
+        "Campaign"
+      ],
+      "archive": "Social Media"
+    },
+    {
+      "label": "Print",
+      "tags": [
+        "Print"
+      ],
+      "archive": "Print & Medals"
+    },
+    {
+      "label": "UI/UX & Web",
+      "tags": [
+        "UI/UX",
+        "Web"
+      ],
+      "archive": "UI/UX & Web"
+    },
+    {
+      "label": "Illustration & Posters",
+      "tags": [
+        "Illustration"
+      ],
+      "archive": "Posters & Apparel"
+    },
+    {
+      "label": "Web Banners",
+      "tags": [
+        "Web Banners"
+      ],
+      "archive": "Web Banners"
+    },
+    {
+      "label": "Thumbnails",
+      "tags": [
+        "Thumbnails"
+      ]
+    }
+  ],
+  "archive": [
+    {
+      "title": "Logofolio",
+      "kind": "logos",
+      "items": [
+        {
+          "image": "archive/0/items/0/image.png",
+          "alt": "Accordons nos violons logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/1/image.png",
+          "alt": "Adem Fitt Groupe logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/2/image.png",
+          "alt": "Buzz logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/3/image.png",
+          "alt": "Twsel Express logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/4/image.png",
+          "alt": "INNOVEA Laboratory logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/5/image.png",
+          "alt": "Ariadne logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/6/image.png",
+          "alt": "AMS Technologie logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/7/image.png",
+          "alt": "AMS Modulaires logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/8/image.png",
+          "alt": "Medsim logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/9/image.png",
+          "alt": "Green Burger logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/10/image.png",
+          "alt": "FrancoNet logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/11/image.png",
+          "alt": "Citrus Energy Drinks logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/12/image.png",
+          "alt": "Crust & Cup logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/13/image.png",
+          "alt": "Green Soup logo",
+          "bg": "#eeeeee"
+        },
+        {
+          "image": "archive/0/items/14/image.png",
+          "alt": "Centella logo",
+          "bg": "#eeeeee"
+        }
+      ],
+      "mocks": []
+    },
+    {
+      "title": "Social Media",
+      "kind": "posts",
+      "items": [
+        {
+          "image": "archive/1/items/0/image.jpg",
+          "alt": "AMS Agency end-of-year gifts post"
+        },
+        {
+          "image": "archive/1/items/1/image.jpg",
+          "alt": "AMS Agency Movember post"
+        },
+        {
+          "image": "archive/1/items/2/image.jpg",
+          "alt": "AMS Agency packaging post"
+        },
+        {
+          "image": "archive/1/items/3/image.jpg",
+          "alt": "AMS Agency brand post"
+        },
+        {
+          "image": "archive/1/items/4/image.jpg",
+          "alt": "AMS Groupe Mother’s Day post"
+        },
+        {
+          "image": "archive/1/items/5/image.jpg",
+          "alt": "AMS Groupe Independence Day post"
+        },
+        {
+          "image": "archive/1/items/6/image.jpg",
+          "alt": "AMS Groupe Blue November post"
+        },
+        {
+          "image": "archive/1/items/7/image.jpg",
+          "alt": "AMS Groupe 1 November 1954 post"
+        },
+        {
+          "image": "archive/1/items/8/image.jpg",
+          "alt": "Capilos Colors product ad"
+        },
+        {
+          "image": "archive/1/items/9/image.jpg",
+          "alt": "Capilos Colors hair campaign"
+        },
+        {
+          "image": "archive/1/items/10/image.jpg",
+          "alt": "Capilos Colors shades campaign"
+        },
+        {
+          "image": "archive/1/items/11/image.jpg",
+          "alt": "Capilos Colors swirl campaign"
+        },
+        {
+          "image": "archive/1/items/12/image.jpg",
+          "alt": "Adem Fitt Tourism Algiers trip post"
+        },
+        {
+          "image": "archive/1/items/13/image.jpg",
+          "alt": "Adem Fitt Tourism summer post"
+        },
+        {
+          "image": "archive/1/items/14/image.jpg",
+          "alt": "Adem Fitt Tourism explore post"
+        },
+        {
+          "image": "archive/1/items/15/image.jpg",
+          "alt": "Adem Fitt Tourism travel post"
+        },
+        {
+          "image": "archive/1/items/16/image.jpg",
+          "alt": "INPHA-MédiS 1 November post"
+        },
+        {
+          "image": "archive/1/items/17/image.jpg",
+          "alt": "INPHA-MédiS disability day post"
+        },
+        {
+          "image": "archive/1/items/18/image.jpg",
+          "alt": "INPHA-MédiS world diabetes day post"
+        },
+        {
+          "image": "archive/1/items/19/image.jpg",
+          "alt": "INPHA-MédiS screening post"
+        },
+        {
+          "image": "archive/1/items/20/image.jpg",
+          "alt": "Flash Graphic roll-up banner post"
+        },
+        {
+          "image": "archive/1/items/21/image.jpg",
+          "alt": "Flash Graphic DHL tape post"
+        },
+        {
+          "image": "archive/1/items/22/image.jpg",
+          "alt": "Pulse suture training post"
+        },
+        {
+          "image": "archive/1/items/23/image.jpg",
+          "alt": "Pulse nursing training post"
+        },
+        {
+          "image": "archive/1/items/24/image.jpg",
+          "alt": "AIESEC global aspect post"
+        }
+      ],
+      "mocks": []
+    },
+    {
+      "title": "Packaging",
+      "kind": "mockups",
+      "items": [],
+      "mocks": [
+        {
+          "discriminant": "box",
+          "value": {
+            "front": "archive/2/mocks/0/value/front.jpg",
+            "side": "archive/2/mocks/0/value/side.jpg",
+            "top": "#0b100d",
+            "alt": "La Trasse Dubai chocolate box",
+            "bg": "linear-gradient(160deg, #2f5d4a, #0f2a20)"
+          }
+        },
+        {
+          "discriminant": "photo",
+          "value": {
+            "image": "archive/2/mocks/1/value/image.jpg",
+            "alt": "My Honey “secret recipe” jar"
+          }
+        },
+        {
+          "discriminant": "photo",
+          "value": {
+            "image": "archive/2/mocks/2/value/image.jpg",
+            "alt": "Rivano Fix Primer paint buckets and pails"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Print & Medals",
+      "kind": "mockups",
+      "items": [],
+      "mocks": [
+        {
+          "discriminant": "rollups",
+          "value": {
+            "images": [
+              "archive/3/mocks/0/value/images/0.jpg",
+              "archive/3/mocks/0/value/images/1.jpg"
+            ],
+            "alt": "Netto Magic and Netto Star roll-up banners",
+            "bg": "linear-gradient(180deg, #f2efe9 0 74%, #ddd6ca 74%)"
+          }
+        },
+        {
+          "discriminant": "billboard",
+          "value": {
+            "image": "archive/3/mocks/1/value/image.jpg",
+            "alt": "Netto Star & Magic billboard",
+            "bg": "linear-gradient(180deg, #8fc6ef, #d8eefb 70%, #c9d8c2 70%)"
+          }
+        },
+        {
+          "discriminant": "billboard",
+          "value": {
+            "image": "archive/3/mocks/2/value/image.jpg",
+            "alt": "Al Aksa Halwa Turc billboard",
+            "bg": "linear-gradient(180deg, #f6b779, #fbe3c4 70%, #d7c7a8 70%)"
+          }
+        },
+        {
+          "discriminant": "billboard",
+          "value": {
+            "image": "archive/3/mocks/3/value/image.jpg",
+            "alt": "Al Aksa Tartilla billboard",
+            "bg": "linear-gradient(180deg, #6f87b6, #c3d0ea 70%, #b9b5a3 70%)"
+          }
+        },
+        {
+          "discriminant": "worn",
+          "value": {
+            "medal": "archive/3/mocks/4/value/medal.png",
+            "garment": "singlet",
+            "color": "#e2262c",
+            "trim": "#fff",
+            "ribbon": [
+              "#e2262c",
+              "#f7c600",
+              "#e2262c"
+            ],
+            "bg": "linear-gradient(160deg, #f6efe4, #e3d6c2)",
+            "alt": "COS 2024 race medal"
+          }
+        },
+        {
+          "discriminant": "worn",
+          "value": {
+            "medal": "archive/3/mocks/5/value/medal.png",
+            "garment": "tee",
+            "color": "#f4f4f2",
+            "trim": "#1d9ad6",
+            "ribbon": [
+              "#1d9ad6",
+              "#ffffff",
+              "#1d9ad6"
+            ],
+            "bg": "linear-gradient(160deg, #cfe9f8, #8fc6e8)",
+            "alt": "CAMA 10 km Kouba medal"
+          }
+        },
+        {
+          "discriminant": "worn",
+          "value": {
+            "medal": "archive/3/mocks/6/value/medal.png",
+            "garment": "tee",
+            "color": "#1b1b1d",
+            "trim": "#000",
+            "ribbon": [
+              "#006233",
+              "#ffffff",
+              "#d21034",
+              "#ffffff",
+              "#006233"
+            ],
+            "bg": "linear-gradient(160deg, #e7b48f, #b8643a)",
+            "alt": "Algiers Urban Trail medal"
+          }
+        },
+        {
+          "discriminant": "worn",
+          "value": {
+            "medal": "archive/3/mocks/7/value/medal.png",
+            "garment": "stripes",
+            "color": "#1f2f5c",
+            "trim": "#f3f1ea",
+            "ribbon": [
+              "#1f2f5c",
+              "#ffffff",
+              "#1f2f5c"
+            ],
+            "bg": "linear-gradient(160deg, #bfe3ef, #5ea6c4)",
+            "alt": "Nautical 2024 medal"
+          }
+        },
+        {
+          "discriminant": "worn",
+          "value": {
+            "medal": "archive/3/mocks/8/value/medal.png",
+            "garment": "jacket",
+            "color": "#f07a1a",
+            "trim": "#2a2a2a",
+            "ribbon": [
+              "#2a2a2a",
+              "#f07a1a",
+              "#2a2a2a"
+            ],
+            "bg": "linear-gradient(160deg, #cfd3d6, #7d858c)",
+            "alt": "Trail Azro N’Thor winner medal"
+          }
+        },
+        {
+          "discriminant": "worn",
+          "value": {
+            "medal": "archive/3/mocks/9/value/medal.png",
+            "garment": "kid",
+            "color": "#4fae4a",
+            "trim": "#2c6e2a",
+            "ribbon": [
+              "#1aa3d9",
+              "#7bc043",
+              "#1aa3d9"
+            ],
+            "bg": "linear-gradient(160deg, #e5f6ff, #a9dcf5)",
+            "alt": "Kids Trail finisher medal"
+          }
+        },
+        {
+          "discriminant": "worn",
+          "value": {
+            "medal": "archive/3/mocks/10/value/medal.png",
+            "garment": "polo",
+            "color": "#f2c230",
+            "trim": "#1b1b1b",
+            "ribbon": [
+              "#008751",
+              "#fcd116",
+              "#e8112d",
+              "#000000"
+            ],
+            "bg": "linear-gradient(160deg, #f8e7c6, #e2b36a)",
+            "alt": "ASBAC semi-marathon medal"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Posters & Apparel",
+      "kind": "posters",
+      "items": [
+        {
+          "image": "archive/4/items/0/image.jpg",
+          "alt": "Car-culture graphic"
+        },
+        {
+          "image": "archive/4/items/1/image.jpg",
+          "alt": "Car-culture graphic"
+        },
+        {
+          "image": "archive/4/items/2/image.jpg",
+          "alt": "Car-culture graphic"
+        },
+        {
+          "image": "archive/4/items/3/image.jpg",
+          "alt": "Car-culture graphic"
+        },
+        {
+          "image": "archive/4/items/4/image.jpg",
+          "alt": "Car-culture graphic"
+        },
+        {
+          "image": "archive/4/items/5/image.jpg",
+          "alt": "Car-culture graphic"
+        },
+        {
+          "image": "archive/4/items/6/image.jpg",
+          "alt": "Car-culture graphic"
+        },
+        {
+          "image": "archive/4/items/7/image.jpg",
+          "alt": "Car-culture graphic"
+        },
+        {
+          "image": "archive/4/items/8/image.jpg",
+          "alt": "Car-culture graphic"
+        },
+        {
+          "image": "archive/4/items/9/image.jpg",
+          "alt": "Car-culture graphic"
+        },
+        {
+          "image": "archive/4/items/10/image.jpg",
+          "alt": "Space & streetwear graphic"
+        },
+        {
+          "image": "archive/4/items/11/image.jpg",
+          "alt": "Space & streetwear graphic"
+        },
+        {
+          "image": "archive/4/items/12/image.jpg",
+          "alt": "Space & streetwear graphic"
+        },
+        {
+          "image": "archive/4/items/13/image.jpg",
+          "alt": "Space & streetwear graphic"
+        },
+        {
+          "image": "archive/4/items/14/image.jpg",
+          "alt": "Space & streetwear graphic"
+        },
+        {
+          "image": "archive/4/items/15/image.jpg",
+          "alt": "Space & streetwear graphic"
+        },
+        {
+          "image": "archive/4/items/16/image.jpg",
+          "alt": "Space & streetwear graphic"
+        },
+        {
+          "image": "archive/4/items/17/image.jpg",
+          "alt": "Space & streetwear graphic"
+        },
+        {
+          "image": "archive/4/items/18/image.jpg",
+          "alt": "Space & streetwear graphic"
+        },
+        {
+          "image": "archive/4/items/19/image.jpg",
+          "alt": "Space & streetwear graphic"
+        },
+        {
+          "image": "archive/4/items/20/image.jpg",
+          "alt": "Space & streetwear graphic"
+        }
+      ],
+      "mocks": []
+    },
+    {
+      "title": "UI/UX & Web",
+      "kind": "web",
+      "items": [],
+      "mocks": []
+    },
+    {
+      "title": "Web Banners",
+      "kind": "mockups",
+      "items": [],
+      "mocks": [
+        {
+          "discriminant": "browser",
+          "value": {
+            "image": "archive/6/mocks/0/value/image.jpg",
+            "alt": "Beko dishwasher web banner",
+            "layout": "hero",
+            "bg": "linear-gradient(150deg, #1f4c8f, #0b2550)"
+          }
+        },
+        {
+          "discriminant": "browser",
+          "value": {
+            "image": "archive/6/mocks/1/value/image.jpg",
+            "alt": "Beko leaderboard banner",
+            "layout": "leaderboard",
+            "bg": "linear-gradient(150deg, #dfe8f5, #b7c7df)"
+          }
+        },
+        {
+          "discriminant": "phones",
+          "value": {
+            "images": [
+              "archive/6/mocks/2/value/images/0.jpg",
+              "archive/6/mocks/2/value/images/1.jpg",
+              "archive/6/mocks/2/value/images/2.jpg"
+            ],
+            "alt": "Telecoming × Real Madrid banners",
+            "bg": "linear-gradient(150deg, #3b2a7a, #120c2c)"
+          }
+        }
+      ]
+    }
+  ],
+  "webProjects": [
+    {
+      "name": "Rahil Mohamed Islam",
+      "note": "Portfolio website for a full-stack developer, designed and built",
+      "url": "https://portfolio-islem-one.vercel.app/en",
+      "links": [],
+      "desktop": "webProjects/0/desktop.jpg",
+      "mobile": "webProjects/0/mobile.jpg",
+      "background": "linear-gradient(140deg, #ff8a65, #2a1a14)"
+    },
+    {
+      "name": "FAR-IT",
+      "note": "IT recruitment agency website, designed and built",
+      "url": "https://far-it.vercel.app",
+      "links": [],
+      "desktop": "webProjects/1/desktop.jpg",
+      "mobile": "webProjects/1/mobile.jpg",
+      "background": "linear-gradient(140deg, #3a3f25, #14171a)"
+    },
+    {
+      "name": "La Cité Asiatique",
+      "note": "Restaurant website, designed and built",
+      "url": "https://la-cit-asiatique-rho.vercel.app",
+      "links": [],
+      "desktop": "webProjects/2/desktop.jpg",
+      "mobile": "webProjects/2/mobile.jpg",
+      "background": "linear-gradient(140deg, #e3263f, #6d0b18)"
+    },
+    {
+      "name": "IMMO Agency",
+      "note": "Resident app (Android & web) and agency dashboard, designed and built",
+      "url": "https://oussdsgn.github.io/immo-agency/",
+      "links": [],
+      "desktop": "webProjects/3/desktop.jpg",
+      "mobile": "webProjects/3/mobile.jpg",
+      "background": "linear-gradient(140deg, #f7c7a8, #e0622a)"
+    },
+    {
+      "name": "Benyahia Hicham",
+      "note": "Portfolio website for an art director, designed and built",
+      "url": "https://hichembenyahia.vercel.app",
+      "links": [],
+      "desktop": "webProjects/4/desktop.jpg",
+      "mobile": "webProjects/4/mobile.jpg",
+      "background": "linear-gradient(140deg, #e9e9e9, #bdbdbd)"
+    },
+    {
+      "name": "Apron",
+      "note": "E-commerce website for chef workwear, aprons and kitchen utensils",
+      "url": "https://chef-apron.vercel.app/",
+      "links": [],
+      "desktop": "webProjects/5/desktop.jpg",
+      "mobile": "webProjects/5/mobile.jpg",
+      "background": "linear-gradient(140deg, #5a3a2a, #1a110c)"
+    },
+    {
+      "name": "Buzz",
+      "note": "Landing page & app for an online services marketplace",
+      "links": [],
+      "desktop": "webProjects/6/desktop.jpg",
+      "background": "linear-gradient(140deg, #ff3b7f, #c3004f)"
+    },
+    {
+      "name": "IB Digital",
+      "note": "Agency website",
+      "url": "https://ib-digital.com",
+      "links": [],
+      "desktop": "webProjects/7/desktop.jpg",
+      "mobile": "webProjects/7/mobile.jpg",
+      "background": "linear-gradient(140deg, #e9e5ff, #ffe8df)"
+    },
+    {
+      "name": "Karin Bastin",
+      "note": "Consulting website",
+      "url": "https://karinbastin.com",
+      "links": [],
+      "desktop": "webProjects/8/desktop.jpg",
+      "mobile": "webProjects/8/mobile.jpg",
+      "background": "linear-gradient(140deg, #24314a, #0c1220)"
+    },
+    {
+      "name": "AMS Groupe",
+      "note": "Group website & subsidiaries",
+      "url": "https://amsgroupes.com",
+      "links": [],
+      "desktop": "webProjects/9/desktop.jpg",
+      "mobile": "webProjects/9/mobile.jpg",
+      "background": "linear-gradient(140deg, #2a63c4, #0a2a66)"
+    }
+  ]
+}

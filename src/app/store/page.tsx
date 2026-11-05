@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { Cta } from "@/components/Cta";
 import Image from "next/image";
-import { products, site } from "@/data/site";
+import { pageText, products, site } from "@/data/site";
 import { StoreLogo } from "@/components/StoreLogo";
 
 export const metadata: Metadata = { title: "Store" };
@@ -16,7 +16,7 @@ export default function StorePage() {
             <h1 className="page-title"><span className="line"><span>Store</span></span></h1>
           </div>
           <Reveal as="p" className="store__intro">
-            Alongside client work, I create digital assets and artwork for other creatives, available on Gumroad, Magnific and DeviantArt.
+            {pageText.storeIntro}
           </Reveal>
           <div className="store__cards">
             {site.stores.map((st, i) => (

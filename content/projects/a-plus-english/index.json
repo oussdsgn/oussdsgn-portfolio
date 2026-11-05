@@ -1,0 +1,88 @@
+{
+  "title": "A+ English",
+  "order": 140,
+  "draft": false,
+  "tags": [
+    "Brand Identity",
+    "Brand Guidelines"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Brand Identity",
+    "Brand Guidelines"
+  ],
+  "year": "2023",
+  "info": [
+    "Brand identity and guidelines for A+ English, a language school."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/178029797/A-English-Brand-Identity-and-Guidelines"
+  },
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "A+ English brand guidelines, page 2"
+          },
+          {
+            "image": "blocks/0/value/images/1/image.jpg",
+            "alt": "A+ English brand guidelines, page 3"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "A+ English brand guidelines, page 4"
+          },
+          {
+            "image": "blocks/1/value/images/1/image.jpg",
+            "alt": "A+ English brand guidelines, page 5"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "A+ English brand guidelines, page 6"
+          },
+          {
+            "image": "blocks/2/value/images/1/image.jpg",
+            "alt": "A+ English brand guidelines, page 7"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "A+ English brand guidelines, page 8"
+          },
+          {
+            "image": "blocks/3/value/images/1/image.jpg",
+            "alt": "A+ English brand guidelines, page 9"
+          }
+        ]
+      }
+    }
+  ]
+}

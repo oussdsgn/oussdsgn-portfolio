@@ -1,0 +1,168 @@
+{
+  "title": "Ace Playing Cards",
+  "order": 200,
+  "draft": false,
+  "tags": [
+    "Illustration",
+    "Packaging"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Illustration",
+    "Packaging"
+  ],
+  "year": "2023",
+  "info": [
+    "A minimal deck of playing cards built from geometric shapes: a logo, gradient colours, suit build-ups, a textured card back and box packaging."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/160399265/A-Minimal-playing-cards-deck-Oussama-A"
+  },
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 2"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 3"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 4"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 5"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/4/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 6"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/5/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 7"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/6/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 8"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/7/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 9"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/8/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 10"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/9/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 11"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/10/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 12"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/11/value/images/0/image.jpg",
+            "alt": "Ace playing cards, page 13"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "title": "Sisters",
+  "order": 230,
+  "draft": false,
+  "tags": [
+    "Brand Identity",
+    "Packaging"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Brand Identity",
+    "Packaging"
+  ],
+  "year": "2022",
+  "info": [
+    "Brand identity for Sisters, a brand sewing Islamic headscarves: logo, fonts, colours, pattern, tags and packaging."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/153905643/Sisters-Brand-Sewing-Islamic-Headscarves"
+  },
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Sisters brand identity, page 2"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "Sisters brand identity, page 3"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Sisters brand identity, page 4"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "Sisters brand identity, page 5"
+          }
+        ]
+      }
+    }
+  ]
+}

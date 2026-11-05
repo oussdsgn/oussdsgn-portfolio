@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { site } from "@/data/site";
+import { pageText, site } from "@/data/site";
 import { Reveal } from "./Reveal";
 
 export function Cta() {
@@ -34,7 +34,7 @@ export function Cta() {
         <Image src={site.images.hero} alt="" fill sizes="(max-aspect-ratio: 16/9) 178vh, 100vw" quality={90} placeholder="blur" style={{ objectFit: "cover", objectPosition: "center 20%" }} />
       </div>
       <Reveal className="cta__inner">
-        <h2 id="cta-title" className="cta__title">Let’s make something<br />amazing together.</h2>
+        <h2 id="cta-title" className="cta__title">{pageText.ctaTitle.map((l, i) => <span key={i}>{i > 0 && <br />}{l}</span>)}</h2>
         <Link className="btn-outline" href="/contact">Contact</Link>
       </Reveal>
     </section>

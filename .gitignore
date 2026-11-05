@@ -5,3 +5,7 @@ next-env.d.ts
 *.tsbuildinfo
 .env*.local
 .DS_Store
+
+# generated from content/ by scripts/build-content.mjs
+/src/data/generated/
+/AGENTS.md

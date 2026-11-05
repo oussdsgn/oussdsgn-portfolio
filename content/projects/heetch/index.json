@@ -1,0 +1,96 @@
+{
+  "title": "Heetch",
+  "order": 40,
+  "draft": false,
+  "tags": [
+    "Campaign",
+    "Social Media"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Art Direction",
+    "Campaign Design",
+    "Social Media"
+  ],
+  "year": "2025",
+  "info": [
+    "Heetch is a French ride-hailing platform operating across multiple markets, including Algeria. For this project, the focus was on developing localized promotional and city-launch visuals for the Algerian market.",
+    "The campaign covered two objectives: promoting a 50% ride discount using the localized promo code “Erkeb50”, and announcing Heetch’s expansion into Ghardaïa. The visuals needed to remain recognizably Heetch while connecting with Algerian audiences through language, culture, and local visual references."
+  ],
+  "link": {},
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "3",
+        "ratio": "3 / 4",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Heetch poster: 50% off with the promo code Erkeb50"
+          },
+          {
+            "image": "blocks/0/value/images/1/image.jpg",
+            "alt": "Heetch Ghardaïa launch on a digital billboard in the old town at dusk"
+          },
+          {
+            "image": "blocks/0/value/images/2/image.jpg",
+            "alt": "Heetch Ghardaïa launch poster with a black car over the M’zab skyline"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Problem",
+        "paragraphs": [
+          "The challenge was to communicate Heetch’s bold, energetic brand personality while making the campaign feel genuinely relevant to the Algerian market.",
+          "The promotional campaign needed to capture attention quickly in crowded social-media feeds, while the Ghardaïa launch required a more location-specific approach that could celebrate the city’s distinctive cultural identity without losing Heetch’s visual language.",
+          "The campaign also needed to work across French and Arabic, multiple formats, and different communication purposes while maintaining a coherent visual system."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Heetch Ghardaïa launch key visual in magenta"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Solution",
+        "paragraphs": [
+          "I developed a localized campaign system built around Heetch’s signature pink, combining high-contrast magenta-to-black gradients, condensed typography, diagonal graphic accents, and strong product-focused compositions.",
+          "For the promotional campaign, the “Erkeb50” code became a central communication element, supported by Arabic treatments such as “Heetch Confort” to strengthen local brand recognition.",
+          "For the Ghardaïa launch, I incorporated M’zab architecture, ochre tones, traditional clothing, and the city’s distinctive skyline into the compositions, reinterpreting these cultural elements through Heetch’s pink visual language.",
+          "The result was a campaign system that balanced global brand consistency with local cultural relevance, allowing Heetch to communicate both as an established brand and as a service entering a specific Algerian community."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "ratio": "4 / 5",
+        "images": [
+          {
+            "image": "blocks/4/value/images/0/image.jpg",
+            "alt": "Erkeb50 promotion shown on an Instagram feed on a phone"
+          },
+          {
+            "image": "blocks/4/value/images/1/image.jpg",
+            "alt": "“Heetch Confort” poster in Arabic with a passenger in a pink-lit car"
+          }
+        ]
+      }
+    }
+  ]
+}

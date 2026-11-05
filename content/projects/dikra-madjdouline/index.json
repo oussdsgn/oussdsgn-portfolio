@@ -1,0 +1,139 @@
+{
+  "title": "Dikra Madjdouline",
+  "order": 90,
+  "draft": false,
+  "tags": [
+    "Brand Identity",
+    "Brand Guidelines"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Brand Identity",
+    "Logo Design",
+    "Brand Guidelines"
+  ],
+  "year": "2026",
+  "info": [
+    "A complete, editorial brand identity system for Dikra Madjdouline, a personal lash and brow studio. The identity is built around a delicate “dm” monogram, a warm palette of blush, cream, ink black and gold, and a soft, precise, unmistakably feminine tone.",
+    "The 15-page guideline covers the full visual language: logo suite and clear-space rules, colour palette, typography, supporting motifs, photography direction, brand voice, and real-world applications across social media and stationery.",
+    "Soft natural light, warm tones and room to breathe, detail over drama throughout. Designed to feel calm, refined and reassuring: where a steady hand becomes quiet beauty."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/252455061/Dikra-Madjdouline-Lash-Brow-Studio-Brand-Identity"
+  },
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 2"
+          },
+          {
+            "image": "blocks/0/value/images/1/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 3"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 4"
+          },
+          {
+            "image": "blocks/1/value/images/1/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 5"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 6"
+          },
+          {
+            "image": "blocks/2/value/images/1/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 7"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 8"
+          },
+          {
+            "image": "blocks/3/value/images/1/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 9"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/4/value/images/0/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 10"
+          },
+          {
+            "image": "blocks/4/value/images/1/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 11"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/5/value/images/0/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 12"
+          },
+          {
+            "image": "blocks/5/value/images/1/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 13"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/6/value/images/0/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 14"
+          },
+          {
+            "image": "blocks/6/value/images/1/image.jpg",
+            "alt": "Dikra Madjdouline brand guidelines, page 15"
+          }
+        ]
+      }
+    }
+  ]
+}

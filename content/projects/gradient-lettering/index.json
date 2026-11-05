@@ -1,0 +1,83 @@
+{
+  "title": "Abstract Gradient Lettering",
+  "order": 210,
+  "draft": false,
+  "tags": [
+    "Illustration"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Lettering",
+    "Illustration"
+  ],
+  "year": "2024",
+  "info": [
+    "A series of abstract lettering pieces with gradient colour."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/195245921/Abstract-Gradient-Lettering"
+  },
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Abstract gradient lettering, page 1"
+          },
+          {
+            "image": "blocks/0/value/images/1/image.jpg",
+            "alt": "Abstract gradient lettering, page 2"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "Abstract gradient lettering, page 3"
+          },
+          {
+            "image": "blocks/1/value/images/1/image.jpg",
+            "alt": "Abstract gradient lettering, page 4"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Abstract gradient lettering, page 5"
+          },
+          {
+            "image": "blocks/2/value/images/1/image.jpg",
+            "alt": "Abstract gradient lettering, page 6"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "Abstract gradient lettering, page 7"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "Why Algerian Art Deserves Its Own Magazine",
+  "date": "2026-10-04",
+  "category": "Design",
+  "image": "image.jpg",
+  "dek": "The Algérian is a concept art magazine that puts Algerian paintings and the stories behind them on the cover.",
+  "body": [
+    {
+      "discriminant": "image",
+      "value": {
+        "image": "body/0/value/image.jpg",
+        "alt": "The Algérian magazine covers"
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "What if Algeria had its own art magazine? The Algérian is a concept I designed to explore exactly that. It celebrates Algerian art through paintings, artists and the stories behind them, inspired by The Barcelonian Illustrated."
+      }
+    },
+    {
+      "discriminant": "image",
+      "value": {
+        "image": "body/2/value/image.jpg",
+        "alt": "The Algérian magazine mock-up"
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "Every issue is built around a single painting. Issue 001 features a girl with a striped headscarf and a bowl of pomegranates, and Issue 002 features a portrait by Antonio Zeno Shindler. A bold slab serif masthead and a dark spine strip keep the cover simple, so the artwork does the talking."
+      }
+    },
+    {
+      "discriminant": "paragraph",
+      "value": {
+        "text": "It is still just an idea, but I wanted to see how it would feel in real life. So I designed the covers and built mockups in a café and on a bookstore shelf. Algerian art deserves to be held, collected and talked about."
+      }
+    }
+  ],
+  "source": {},
+  "links": [],
+  "credits": []
+}

@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { ArticleCard } from "@/components/ArticleCard";
 import { Reveal } from "@/components/Reveal";
 import { Cta } from "@/components/Cta";
-import { articles } from "@/data/site";
+import { articles, pageText } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Journal",
-  description: "Notes on design, my thoughts and ideas from other studios that caught my eye.",
+  description: pageText.journalIntro,
 };
 
 export default function JournalPage() {
@@ -18,7 +18,7 @@ export default function JournalPage() {
             <h1 className="page-title"><span className="line"><span>Journal</span></span></h1>
           </div>
           <Reveal as="p" className="store__intro">
-            Notes on design, my thoughts and ideas from other studios that caught my eye.
+            {pageText.journalIntro}
           </Reveal>
           <div className="grid-2 journal__grid">
             {articles.map((a, i) => <ArticleCard key={a.slug} {...a} wide delay={(i % 2) * 90} />)}

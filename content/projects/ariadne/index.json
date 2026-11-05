@@ -1,0 +1,105 @@
+{
+  "title": "Ariadne",
+  "order": 100,
+  "draft": false,
+  "tags": [
+    "Brand Identity"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Brand Identity",
+    "Logo Design"
+  ],
+  "year": "2024",
+  "info": [
+    "Ariadne is a youthful clothing brand. The brief was to create a memorable brand identity with a minimalist, modern logo: simple, effective and appealing to a young, progressive audience, built on three principles: comfort, relevance to fashion trends, and expression of individuality."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/208883737/Ariadne-Clothing-Brand-Identity"
+  },
+  "blocks": [
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Solution",
+        "paragraphs": [
+          "The wordmark features a distinctive stylized “A”, the first letter of the brand name, while the “R” is drawn in a cursive style that adds a touch of elegance and sophistication. This stylized “R” becomes the key element of the identity, a simple, memorable symbol of the brand’s commitment to quality.",
+          "A predominantly monochromatic colour scheme with a single red accent balances individuality with current fashion trends, giving Ariadne a modern, distinctive presence."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "Ariadne brand identity, page 2"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/2/value/images/0/image.jpg",
+            "alt": "Ariadne brand identity, page 3"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "Ariadne brand identity, page 4"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/4/value/images/0/image.jpg",
+            "alt": "Ariadne brand identity, page 5"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/5/value/images/0/image.jpg",
+            "alt": "Ariadne brand identity, page 6"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/6/value/images/0/image.jpg",
+            "alt": "Ariadne brand identity, page 7"
+          }
+        ]
+      }
+    }
+  ]
+}

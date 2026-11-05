@@ -1,0 +1,56 @@
+{
+  "title": "Scary Cupcake",
+  "order": 250,
+  "draft": false,
+  "tags": [
+    "Brand Identity",
+    "Illustration"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Logo Design",
+    "Illustration"
+  ],
+  "year": "2022",
+  "info": [
+    "Brand identity for Scary Cupcake, a bakery shop."
+  ],
+  "link": {
+    "label": "Full project on Behance",
+    "href": "https://www.behance.net/gallery/143805433/Scary-Cupcake-Bakery-Shop"
+  },
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Scary Cupcake brand identity, page 2"
+          },
+          {
+            "image": "blocks/0/value/images/1/image.jpg",
+            "alt": "Scary Cupcake brand identity, page 3"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "Scary Cupcake brand identity, page 4"
+          },
+          {
+            "image": "blocks/1/value/images/1/image.jpg",
+            "alt": "Scary Cupcake brand identity, page 5"
+          }
+        ]
+      }
+    }
+  ]
+}

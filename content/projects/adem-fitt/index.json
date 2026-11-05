@@ -1,0 +1,116 @@
+{
+  "title": "Adem Fitt Group",
+  "order": 30,
+  "draft": false,
+  "tags": [
+    "Brand Guidelines"
+  ],
+  "image": "image.jpg",
+  "services": [
+    "Art Direction",
+    "Branding",
+    "Brand Identity"
+  ],
+  "year": "2025",
+  "info": [
+    "Adem Fitt Group is a multi-business group bringing together two distinct activities: Adem Fitt Tourism and Adem Fitt Auto X. The brand needed a visual system capable of presenting both businesses as independent entities while clearly communicating their connection to the same parent group.",
+    "The identity is built around the AF monogram, supported by a shared navy-and-orange color palette and a consistent visual language. Each sub-brand uses its own adapted mark while retaining recognizable elements from the group identity.",
+    "The system is designed to work across multiple touchpoints, from office signage and stationery to badges, tote bags, and staff uniforms, creating a consistent brand experience across physical and professional environments."
+  ],
+  "link": {},
+  "blocks": [
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/0/value/images/0/image.jpg",
+            "alt": "Pages from the Adem Fitt brand guidelines: clear space, brand story, logo usage, typography and applications"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "ratio": "16 / 9",
+        "images": [
+          {
+            "image": "blocks/1/value/images/0/image.jpg",
+            "alt": "Adem Fitt Groupe logo in white and orange on navy"
+          },
+          {
+            "image": "blocks/1/value/images/1/image.jpg",
+            "alt": "The Adem Fitt brand family: group, Tourism and Auto X marks"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Problem",
+        "paragraphs": [
+          "The challenge was to create a unified identity for multiple businesses with different activities without making them look identical or disconnected.",
+          "Adem Fitt Tourism and Adem Fitt Auto X operate in different sectors and therefore require their own visual personalities. At the same time, both needed to be immediately recognizable as part of the Adem Fitt Group.",
+          "The identity also needed to remain clear, recognizable, and adaptable across different applications and scales, from small staff badges to large-format signage."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/3/value/images/0/image.jpg",
+            "alt": "Adem Fitt letterhead, business cards and pencils"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "text",
+      "value": {
+        "title": "Solution",
+        "paragraphs": [
+          "A flexible brand architecture was developed around a central AF monogram representing the parent group.",
+          "Each business received a distinct mark derived from the same visual DNA, allowing the sub-brands to maintain their own identities while remaining visually connected. The shared navy-and-orange palette, typography, proportions, and graphic principles create consistency across the entire family.",
+          "The resulting system provides a clear hierarchy: Adem Fitt Group → AF monogram → Tourism / Auto X.",
+          "This approach creates a brand identity that is recognizable as one group, flexible across different businesses, and scalable across both digital and physical applications."
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "2",
+        "ratio": "16 / 10",
+        "images": [
+          {
+            "image": "blocks/5/value/images/0/image.jpg",
+            "alt": "Round Adem Fitt stickers in navy and white"
+          },
+          {
+            "image": "blocks/5/value/images/1/image.jpg",
+            "alt": "Adem Fitt tote bag, badge, desk flag and staff polo shirts"
+          }
+        ]
+      }
+    },
+    {
+      "discriminant": "gallery",
+      "value": {
+        "cols": "1",
+        "images": [
+          {
+            "image": "blocks/6/value/images/0/image.jpg",
+            "alt": "Adem Fitt Tourism social media posts and app screen"
+          }
+        ]
+      }
+    }
+  ]
+}
