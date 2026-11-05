@@ -45,6 +45,10 @@ export default async function ArticlePage({ params }: Params) {
             {a.body.map((b, i) =>
               "p" in b ? (
                 <Reveal as="p" key={i} className="ja-p">{b.p}</Reveal>
+              ) : "video" in b ? (
+                <Reveal key={i} className="ja-img ja-video">
+                  <video src={b.video} poster={b.poster.src} width={b.poster.width} height={b.poster.height} autoPlay muted loop playsInline preload="metadata" aria-label={b.alt} />
+                </Reveal>
               ) : (
                 <Reveal key={i} className="ja-img">
                   <Image src={b.img} alt={b.alt} placeholder="blur" sizes="(max-width: 760px) 100vw, 900px" />

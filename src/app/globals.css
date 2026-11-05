@@ -708,6 +708,8 @@ p.cs-list.is-todo { display: inline-block; }
 .ja-p { font-size: clamp(19px, 1.6vw, 22px); font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; }
 .ja-img { overflow: hidden; border-radius: var(--radius); }
 .ja-img img { width: 100%; height: auto; }
+.ja-video { background: #111; }
+.ja-video video { display: block; width: 100%; height: auto; }
 .ja-source { justify-self: start; }
 .ja-next { margin-top: 140px; padding-top: 28px; border-top: 1px solid var(--line); }
 .ja-next__title { margin-bottom: 30px; font-size: 17px; font-weight: 500; color: var(--grey); }

@@ -136,6 +136,10 @@ import nihad from "@/assets/images/testimonial-nihad.jpg";
 import artStandard from "@/assets/images/article-standard.jpg";
 import artFraenk from "@/assets/images/article-fraenk.jpg";
 import artAlgerian from "@/assets/images/article-algerian.jpg";
+import artSevens from "@/assets/images/article-ultimate-sevens.jpg";
+import jSevensJacket from "@/assets/images/journal/sevens-jacket.jpg";
+import jSevensIdentitiesPoster from "@/assets/images/journal/sevens-identities-poster.jpg";
+import jSevensMonogramsPoster from "@/assets/images/journal/sevens-monograms-poster.jpg";
 import artIkea from "@/assets/images/article-ikea.jpg";
 import logo01 from "@/assets/images/clients/logo-01.png";
 import logo02 from "@/assets/images/clients/logo-02.png";
@@ -934,12 +938,27 @@ export type Article = {
   image: StaticImageData;
   /** Short line under the title */
   dek?: string;
-  /** Body, top to bottom: paragraphs and images */
-  body: ({ p: string } | { img: StaticImageData; alt: string })[];
+  /** Body, top to bottom: paragraphs, images and muted looping videos (files in /public) */
+  body: ({ p: string } | { img: StaticImageData; alt: string } | { video: string; poster: StaticImageData; alt: string })[];
   source?: { label: string; href: string };
 };
 
 export const articles: Article[] = [
+  {
+    slug: "how-do-you-brand-a-club-with-no-city",
+    title: "How Do You Brand a Club With No City?",
+    category: "Design",
+    date: "Nov 5, 2026",
+    image: artSevens,
+    dek: "How Nomad built six rugby sevens identities for Ultimate Sevens with no stadium, no history and no fans yet.",
+    body: [
+      { video: "/journal/sevens-identities.mp4", poster: jSevensIdentitiesPoster, alt: "Ultimate Sevens club identities by Nomad" },
+      { p: "Ultimate Sevens is a new rugby sevens league backed by BIA Sports Group, and its first season needed six club identities in six weeks. The catch: none of the clubs had a home city. Sports teams usually borrow their identity from where they play, so Nomad flipped it. Each club became a territory instead: Albion Athletic for England, Foudre Bleue for France, Sol Feroz for Spain and Latin America, Pacific Current for Oceania, plus Atlantic Novas and Clan Taran. Every name follows one system: a place, a personality, then “Sevens Club.”" },
+      { video: "/journal/sevens-monograms.mp4", poster: jSevensMonogramsPoster, alt: "The six Ultimate Sevens club monograms" },
+      { p: "The marks skip every sports cliché. No lions, no eagles, no fake heritage crests pretending the league has a century of history. Each club got an interlocking monogram that reads like a classic badge but looks right at home on a cap. All six were drawn from the same baseline and animate to the same tempo, so they feel like one family with six different attitudes. Each club also got its own manifesto and tagline, like Clan Taran’s “Feel The Thunder.”" },
+      { img: jSevensJacket, alt: "Albion Athletic cap and jacket" },
+      { p: "The identities don’t just sit on the Reebok kits, they shape the whole kit language, from replica shirts to caps to a limited jacket drop. It’s a great reminder that when a brand has no history, you don’t fake one. You build something people want to belong to from day one." },    ],
+  },
   {
     slug: "why-algerian-art-deserves-its-own-magazine",
     title: "Why Algerian Art Deserves Its Own Magazine",
